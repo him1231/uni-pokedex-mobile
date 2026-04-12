@@ -18,6 +18,13 @@ function App() {
   const [loadingMoveDetail, setLoadingMoveDetail] = useState(false)
   const [typeChart, setTypeChart] = useState(null)
   const [loadingTypeChart, setLoadingTypeChart] = useState(false)
+
+  // Global move dex panel states
+  const [showMoveDex, setShowMoveDex] = useState(false)
+  const [moveQuery, setMoveQuery] = useState('')
+  const [moveFilterType, setMoveFilterType] = useState('all')
+  const [moveFilterDamage, setMoveFilterDamage] = useState('all')
+  const [moveFilterGen, setMoveFilterGen] = useState('all')
   const dataUrl = (path) => `${import.meta.env.BASE_URL}${path}`
   const [favorites, setFavorites] = useState(() => {
     try {
@@ -135,6 +142,35 @@ function App() {
     [list],
   )
 
+  // global moves list and filters
+  const movesList = useMemo(() => Array.from(movesMap.values()), [movesMap])
+
+  const generationOptions = useMemo(() => {
+    const set = new Set()
+    movesList.forEach((m) => {
+      if (m.generationLabel) set.add(m.generationLabel)
+    })
+    return Array.from(set)
+  }, [movesList])
+
+  const filteredMoves = useMemo(() => {
+    const q = moveQuery.trim().toLowerCase()
+    return movesList.filter((m) => {
+      if (q) {
+        const matchQuery =
+          String(m.id) === q ||
+          (m.nameZhHant && m.nameZhHant.toLowerCase().includes(q)) ||
+          (m.nameEn && m.nameEn.toLowerCase().includes(q)) ||
+          (m.slug && m.slug.toLowerCase().includes(q))
+        if (!matchQuery) return false
+      }
+      if (moveFilterType !== 'all' && (!m.type || m.type.slug !== moveFilterType)) return false
+      if (moveFilterDamage !== 'all' && (!m.damageClass || m.damageClass.slug !== moveFilterDamage)) return false
+      if (moveFilterGen !== 'all' && m.generationLabel !== moveFilterGen) return false
+      return true
+    })
+  }, [movesList, moveQuery, moveFilterType, moveFilterDamage, moveFilterGen])
+
   function toggleFav(id) {
     const next = favorites.includes(id) ? favorites.filter((x) => x !== id) : [...favorites, id]
     setFavorites(next)
@@ -202,6 +238,9 @@ function App() {
               </option>
             ))}
           </select>
+          <button type="button" className="search" onClick={() => setShowMoveDex(true)} aria-label="招式搜尋">
+            招式
+          </button>
         </div>
       </header>
 
@@ -464,6 +503,122 @@ function App() {
                   </>
                 )
               )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showMoveDex && (
+        <div className="detail-overlay" onClick={() => setShowMoveDex(false)}>
+          <div className="detail" onClick={(e) => e.stopPropagation()}>
+            <button className="close" onClick={() => setShowMoveDex(false)} aria-label="close">
+              ✕
+            </button>
+            <div className="detail-top">
+              <h2 style={{margin:0}}>全域招式搜尋</h2>
+            </div>
+
+            <div className="detail-body">
+              <div style={{display:'flex',flexDirection:'column',gap:8}}>
+                <input
+                  placeholder="搜尋招式或編號 (例：火焰拳 / fire-punch)"
+                  value={moveQuery}
+                  onChange={(e) => setMoveQuery(e.target.value)}
+                  className="search"
+                />
+                <div style={{display:'flex',gap:8}}>
+                  <select value={moveFilterType} onChange={(e) => setMoveFilterType(e.target.value)} className="search" aria-label="屬性">
+                    <option value="all">全部屬性</option>
+                    {Object.keys(TYPE_LABELS).map((k) => (
+                      <option key={k} value={k}>{TYPE_LABELS[k].zh} · {TYPE_LABELS[k].en}</option>
+                    ))}
+                  </select>
+
+                  <select value={moveFilterDamage} onChange={(e) => setMoveFilterDamage(e.target.value)} className="search" aria-label="招式分類">
+                    <option value="all">全部招式分類</option>
+                    <option value="physical">物理</option>
+                    <option value="special">特殊</option>
+                    <option value="status">變化</option>
+                  </select>
+
+                  <select value={moveFilterGen} onChange={(e) => setMoveFilterGen(e.target.value)} className="search" aria-label="世代">
+                    <option value="all">全部世代</option>
+                    {generationOptions.map((g) => (
+                      <option key={g} value={g}>{g}</option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
+              <div className="move-list" style={{marginTop:12,maxHeight:'50vh',overflowY:'auto'}}>
+                {filteredMoves.length === 0 ? (
+                  <div className="empty-subsection">找不到招式</div>
+                ) : (
+                  filteredMoves.map((move) => (
+                    <button
+                      key={move.id}
+                      type="button"
+                      className={`move-row ${selectedMove?.id === move.id ? 'is-active' : ''}`}
+                      onClick={() => openMoveDetail({ ...move, moveId: move.id })}
+                    >
+                      <div className="move-row__main">
+                        <div className="move-row__titleline">
+                          <strong>{move.nameZhHant}</strong>
+                          <span className="move-row__subname">{move.nameEn}</span>
+                        </div>
+                        <div className="move-row__meta">
+                          {move.type && <span className={`type-pill type-${move.type.slug}`}>{move.type.nameZhHant}</span>}
+                          {move.damageClass && <span className="move-meta-pill">{move.damageClass.labelZhHant}</span>}
+                          {move.power !== null && <span className="move-meta-pill">威力 {move.power}</span>}
+                          {move.accuracy !== null && <span className="move-meta-pill">命中 {move.accuracy}</span>}
+                          {move.pp !== null && <span className="move-meta-pill">PP {move.pp}</span>}
+                        </div>
+                      </div>
+                    </button>
+                  ))
+                )}
+              </div>
+
+              <div className="move-detail-panel" style={{marginTop:12}}>
+                <div className="move-detail-panel__header">
+                  <h4>招式詳情</h4>
+                  <span>{selectedMove ? '點選其他招式可切換' : '點選上面任一招式查看'}</span>
+                </div>
+
+                {!selectedMove ? (
+                  <div className="empty-subsection">請先點選一個招式</div>
+                ) : loadingMoveDetail ? (
+                  <div className="empty-subsection">載入招式詳情中…</div>
+                ) : moveDetail?.error ? (
+                  <div className="empty-subsection">無法取得招式詳情</div>
+                ) : (
+                  <div className="move-detail-card">
+                    <div className="move-detail-card__titleline">
+                      <strong>{selectedMove.nameZhHant}</strong>
+                      <span>{selectedMove.nameEn}</span>
+                    </div>
+                    <div className="move-detail-card__pills">
+                      {selectedMove.type && <span className={`type-pill type-${selectedMove.type.slug}`}>{selectedMove.type.nameZhHant}</span>}
+                      {selectedMove.damageClass && <span className="move-meta-pill">{selectedMove.damageClass.labelZhHant}</span>}
+                      {selectedMove.power !== null && <span className="move-meta-pill">威力 {selectedMove.power}</span>}
+                      {selectedMove.accuracy !== null && <span className="move-meta-pill">命中 {selectedMove.accuracy}</span>}
+                      {selectedMove.pp !== null && <span className="move-meta-pill">PP {selectedMove.pp}</span>}
+                    </div>
+                    <p className="move-detail-card__effect">{moveDetail?.effect || '暫時未有簡述。'}</p>
+                    <div className="move-detail-grid">
+                      <div className="move-detail-item"><span>對象</span><strong>{moveDetail?.target || '—'}</strong></div>
+                      <div className="move-detail-item"><span>異常</span><strong>{moveDetail?.ailment || '—'}</strong></div>
+                      <div className="move-detail-item"><span>最少命中</span><strong>{moveDetail?.minHits ?? '—'}</strong></div>
+                      <div className="move-detail-item"><span>最多命中</span><strong>{moveDetail?.maxHits ?? '—'}</strong></div>
+                      <div className="move-detail-item"><span>吸血</span><strong>{moveDetail?.drain ?? '—'}</strong></div>
+                      <div className="move-detail-item"><span>治療</span><strong>{moveDetail?.healing ?? '—'}</strong></div>
+                      <div className="move-detail-item"><span>要害率</span><strong>{moveDetail?.critRate ?? '—'}</strong></div>
+                      <div className="move-detail-item"><span>畏縮率</span><strong>{moveDetail?.flinchChance ?? '—'}</strong></div>
+                      <div className="move-detail-item"><span>能力變化率</span><strong>{moveDetail?.statChance ?? '—'}</strong></div>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
