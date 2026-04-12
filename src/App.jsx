@@ -294,12 +294,21 @@ function App() {
                     <section className="detail-section stats">
                       <h3>種族值</h3>
                       <div className="stat-list">
-                        {detail.stats.map((s) => (
-                          <div key={s.slug} className="stat-row">
-                            <div className="stat-label">{s.label}</div>
-                            <div className="stat-value">{s.value}</div>
-                          </div>
-                        ))}
+                        {detail.stats.map((s) => {
+                          const maxStat = 255
+                          const pct = Math.round((s.value / maxStat) * 100)
+                          return (
+                            <div key={s.slug} className="stat-row">
+                              <div className="stat-label">{s.label}</div>
+                              <div className="stat-bar-wrap">
+                                <div className="stat-bar" aria-hidden>
+                                  <div className="stat-bar__fill" style={{ width: `${pct}%` }} />
+                                </div>
+                                <div className="stat-value">{s.value}</div>
+                              </div>
+                            </div>
+                          )
+                        })}
                       </div>
                     </section>
 
