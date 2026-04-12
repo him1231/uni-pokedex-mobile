@@ -1,6 +1,6 @@
 const API_BASE = 'https://pokeapi.co/api/v2'
 
-const pickLocalizedText = (entries, lang, fallbackLang = 'en') => {
+const pickLocalizedText = (entries = [], lang, fallbackLang = 'en') => {
   const primary = entries.find((entry) => entry.language?.name === lang)
   if (primary) return primary
   return entries.find((entry) => entry.language?.name === fallbackLang) ?? null
@@ -18,12 +18,22 @@ const statLabels = {
   speed: '速度',
 }
 
+const damageClassLabels = {
+  status: '變化',
+  physical: '物理',
+  special: '特殊',
+}
+
+function formatGenerationSlug(slug = '') {
+  return slug.replace('generation-', 'Generation ').replace(/-/g, ' ')
+}
+
 export const getAbilityIdFromUrl = (url = '') => {
   const match = url.match(/\/ability\/(\d+)\//)
   return match ? Number(match[1]) : null
 }
 
-export async function fetchPokemonDetail(pokemonId, abilityMap) {
+export async function fetchPokemonDetail(pokemonId, abilityMap = new Map()) {
   const [pokemonRes, speciesRes] = await Promise.all([
     fetch(`${API_BASE}/pokemon/${pokemonId}`),
     fetch(`${API_BASE}/pokemon-species/${pokemonId}`),
@@ -97,5 +107,27 @@ export async function fetchMoveDetail(moveId) {
     critRate: move.meta?.crit_rate ?? null,
     flinchChance: move.meta?.flinch_chance ?? null,
     statChance: move.meta?.stat_chance ?? null,
+    damageClassLabel: damageClassLabels[move.damage_class?.name] ?? move.damage_class?.name ?? '',
+  }
+}
+
+export async function fetchAbilityDetail(abilityId) {
+  const response = await fetch(`${API_BASE}/ability/${abilityId}`)
+  if (!response.ok) {
+    throw new Error('無法載入特性詳情')
+  }
+
+  const ability = await response.json()
+  const effectEntry = pickLocalizedText(ability.effect_entries, 'zh-Hant')
+    ?? pickLocalizedText(ability.effect_entries, 'en')
+  const flavorEntry = pickLocalizedText(ability.flavor_text_entries, 'zh-Hant')
+    ?? pickLocalizedText(ability.flavor_text_entries, 'en')
+
+  return {
+    id: ability.id,
+    effect: cleanupFlavorText(effectEntry?.short_effect ?? ''),
+    flavorText: cleanupFlavorText(flavorEntry?.flavor_text ?? ''),
+    generationLabel: formatGenerationSlug(ability.generation?.name ?? ''),
+    pokemonCount: ability.pokemon?.length ?? 0,
   }
 }

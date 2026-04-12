@@ -1,41 +1,81 @@
-/* Mobile-first card */
-.pc-card{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  padding:10px;
-  border-radius:10px;
-  background:var(--card-bg, #fff);
-  box-shadow:0 1px 0 rgba(0,0,0,0.06);
-  margin:8px 12px;
+.pokemon-card {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 12px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  cursor: pointer;
+  text-align: left;
 }
-.pc-left{width:72px;flex:0 0 72px}
-.pc-sprite{width:72px;height:72px;object-fit:contain}
-.pc-main{flex:1}
-.pc-id{font-size:12px;color:#666}
-.pc-name{font-weight:600;font-size:16px}
-.pc-types{margin-top:6px;display:flex;gap:6px}
-.pill{padding:4px 8px;border-radius:999px;font-size:12px;color:#fff}
-.pc-fav{background:none;border:none;font-size:18px;padding:6px;margin-right:6px}
-.pc-fav.on{color:gold}
 
-/* Type colours (simple fallback) */
-.type.pokemon{background:#999}
-.type.grass{background:#78C850}
-.type.fire{background:#F08030}
-.type.water{background:#6890F0}
-.type.electric{background:#F8D030}
-.type.ice{background:#98D8D8}
-.type.fighting{background:#C03028}
-.type.poison{background:#A040A0}
-.type.ground{background:#E0C068}
-.type.flying{background:#A890F0}
-.type.psychic{background:#F85888}
-.type.bug{background:#A8B820}
-.type.rock{background:#B8A038}
-.type.dark{background:#705848}
-.type.ghost{background:#705898}
-.type.dragon{background:#7038F8}
-.type.steel{background:#B8B8D0}
-.type.fairy{background:#EE99AC}
-.type.normal{background:#A8A878}
+.pokemon-card__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #eef2ff 0%, #f8fafc 100%);
+  min-height: 92px;
+}
+
+.pokemon-card__sprite {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+}
+
+.pokemon-card__body {
+  min-width: 0;
+}
+
+.pokemon-card__topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.pokemon-card__id {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6b7280;
+}
+
+.pokemon-card__fav {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font-size: 22px;
+  line-height: 1;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.pokemon-card__fav.is-on {
+  color: #f59e0b;
+}
+
+.pokemon-card__name {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.pokemon-card__subname,
+.pokemon-card__meta {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.pokemon-card__pills,
+.pokemon-card__versions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
