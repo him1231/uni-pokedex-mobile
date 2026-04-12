@@ -191,12 +191,35 @@ function App() {
     return Array.from(set)
   }, [abilitiesList])
 
+  const GENERATION_ORDER = [
+    'Gen 1 · 關都',
+    'Gen 2 · 城都',
+    'Gen 3 · 豐緣',
+    'Gen 4 · 神奧',
+    'Gen 5 · 合眾',
+    'Gen 6 · 卡洛斯',
+    'Gen 7 · 阿羅拉',
+    'Gen 8 · 伽勒爾 / 洗翠',
+    'Gen 9 · 帕底亞',
+  ]
+
+  function sortByGenerationOrder(arr) {
+    return arr.slice().sort((a, b) => {
+      const ai = GENERATION_ORDER.indexOf(a)
+      const bi = GENERATION_ORDER.indexOf(b)
+      if (ai === -1 && bi === -1) return a.localeCompare(b)
+      if (ai === -1) return 1
+      if (bi === -1) return -1
+      return ai - bi
+    })
+  }
+
   const pokedexGenerationOptions = useMemo(() => {
     const set = new Set()
     list.forEach((p) => {
       if (p.generationLabel) set.add(p.generationLabel)
     })
-    return Array.from(set)
+    return sortByGenerationOrder(Array.from(set))
   }, [list])
 
   const filteredAbilities = useMemo(() => {
@@ -223,7 +246,7 @@ function App() {
     movesList.forEach((m) => {
       if (m.generationLabel) set.add(m.generationLabel)
     })
-    return Array.from(set)
+    return sortByGenerationOrder(Array.from(set))
   }, [movesList])
 
   const filteredMoves = useMemo(() => {
