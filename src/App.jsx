@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import './App.css'
 import PokemonCard from './components/PokemonCard'
-import { fetchPokemonDetail } from './lib/pokeapi'
+import { fetchMoveDetail, fetchPokemonDetail } from './lib/pokeapi'
 import { VERSION_FILTER_OPTIONS, getVersionTags, isChampionAvailable, matchesVersionFilter } from './data/versionExclusives'
 
 function App() {
@@ -13,6 +13,9 @@ function App() {
   const [selected, setSelected] = useState(null)
   const [detail, setDetail] = useState(null)
   const [loadingDetail, setLoadingDetail] = useState(false)
+  const [selectedMove, setSelectedMove] = useState(null)
+  const [moveDetail, setMoveDetail] = useState(null)
+  const [loadingMoveDetail, setLoadingMoveDetail] = useState(false)
   const dataUrl = (path) => `${import.meta.env.BASE_URL}${path}`
   const [favorites, setFavorites] = useState(() => {
     try {
@@ -79,6 +82,8 @@ function App() {
   async function openDetail(p) {
     setSelected(p)
     setDetail(null)
+    setSelectedMove(null)
+    setMoveDetail(null)
     setLoadingDetail(true)
     try {
       const d = await fetchPokemonDetail(p.id, abilitiesMap, movesMap)
@@ -90,9 +95,25 @@ function App() {
     }
   }
 
+  async function openMoveDetail(move) {
+    setSelectedMove(move)
+    setMoveDetail(null)
+    setLoadingMoveDetail(true)
+    try {
+      const data = await fetchMoveDetail(move.moveId)
+      setMoveDetail(data)
+    } catch (e) {
+      setMoveDetail({ error: true })
+    } finally {
+      setLoadingMoveDetail(false)
+    }
+  }
+
   function closeDetail() {
     setSelected(null)
     setDetail(null)
+    setSelectedMove(null)
+    setMoveDetail(null)
   }
 
   return (
@@ -242,7 +263,12 @@ function App() {
                             </div>
                             <div className="move-list">
                               {section.items.map((move) => (
-                                <div key={move.id} className="move-row">
+                                <button
+                                  key={move.id}
+                                  type="button"
+                                  className={`move-row ${selectedMove?.id === move.id ? 'is-active' : ''}`}
+                                  onClick={() => openMoveDetail(move)}
+                                >
                                   <div className="move-row__main">
                                     <div className="move-row__titleline">
                                       {section.key === 'levelUp' && (
@@ -265,7 +291,7 @@ function App() {
                                       {move.pp !== null && <span className="move-meta-pill">PP {move.pp}</span>}
                                     </div>
                                   </div>
-                                </div>
+                                </button>
                               ))}
                             </div>
                           </div>
@@ -273,6 +299,53 @@ function App() {
                       ) : (
                         <div className="empty-subsection">暫時未有可顯示招式資料</div>
                       )}
+
+                      <div className="move-detail-panel">
+                        <div className="move-detail-panel__header">
+                          <h4>招式詳情</h4>
+                          <span>{selectedMove ? '點選其他招式可切換' : '點選上面任一招式查看'}</span>
+                        </div>
+
+                        {!selectedMove ? (
+                          <div className="empty-subsection">請先點選一個招式</div>
+                        ) : loadingMoveDetail ? (
+                          <div className="empty-subsection">載入招式詳情中…</div>
+                        ) : moveDetail?.error ? (
+                          <div className="empty-subsection">無法取得招式詳情</div>
+                        ) : (
+                          <div className="move-detail-card">
+                            <div className="move-detail-card__titleline">
+                              <strong>{selectedMove.nameZhHant}</strong>
+                              <span>{selectedMove.nameEn}</span>
+                            </div>
+                            <div className="move-detail-card__pills">
+                              {selectedMove.type && (
+                                <span className={`type-pill type-${selectedMove.type.slug}`}>
+                                  {selectedMove.type.nameZhHant}
+                                </span>
+                              )}
+                              {selectedMove.damageClass && (
+                                <span className="move-meta-pill">{selectedMove.damageClass.labelZhHant}</span>
+                              )}
+                              {selectedMove.power !== null && <span className="move-meta-pill">威力 {selectedMove.power}</span>}
+                              {selectedMove.accuracy !== null && <span className="move-meta-pill">命中 {selectedMove.accuracy}</span>}
+                              {selectedMove.pp !== null && <span className="move-meta-pill">PP {selectedMove.pp}</span>}
+                            </div>
+                            <p className="move-detail-card__effect">{moveDetail?.effect || '暫時未有簡述。'}</p>
+                            <div className="move-detail-grid">
+                              <div className="move-detail-item"><span>對象</span><strong>{moveDetail?.target || '—'}</strong></div>
+                              <div className="move-detail-item"><span>異常</span><strong>{moveDetail?.ailment || '—'}</strong></div>
+                              <div className="move-detail-item"><span>最少命中</span><strong>{moveDetail?.minHits ?? '—'}</strong></div>
+                              <div className="move-detail-item"><span>最多命中</span><strong>{moveDetail?.maxHits ?? '—'}</strong></div>
+                              <div className="move-detail-item"><span>吸血</span><strong>{moveDetail?.drain ?? '—'}</strong></div>
+                              <div className="move-detail-item"><span>治療</span><strong>{moveDetail?.healing ?? '—'}</strong></div>
+                              <div className="move-detail-item"><span>要害率</span><strong>{moveDetail?.critRate ?? '—'}</strong></div>
+                              <div className="move-detail-item"><span>畏縮率</span><strong>{moveDetail?.flinchChance ?? '—'}</strong></div>
+                              <div className="move-detail-item"><span>能力變化率</span><strong>{moveDetail?.statChance ?? '—'}</strong></div>
+                            </div>
+                          </div>
+                        )}
+                      </div>
                     </section>
                   </>
                 )
