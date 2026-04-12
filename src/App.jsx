@@ -2,11 +2,13 @@ import React, { useEffect, useMemo, useState } from 'react'
 import './App.css'
 import PokemonCard from './components/PokemonCard'
 import { fetchPokemonDetail } from './lib/pokeapi'
+import { VERSION_FILTER_OPTIONS, getVersionTags, matchesVersionFilter } from './data/versionExclusives'
 
 function App() {
   const [list, setList] = useState([])
   const [abilitiesMap, setAbilitiesMap] = useState(new Map())
   const [query, setQuery] = useState('')
+  const [versionFilter, setVersionFilter] = useState('all')
   const [selected, setSelected] = useState(null)
   const [detail, setDetail] = useState(null)
   const [loadingDetail, setLoadingDetail] = useState(false)
@@ -21,7 +23,11 @@ function App() {
   useEffect(() => {
     fetch('/data/pokedex-summary.json')
       .then((r) => r.json())
-      .then((data) => setList(data))
+      .then((data) => {
+        // enrich with version tags for filtering/UI
+        const enriched = data.map((p) => ({ ...p, versionTags: getVersionTags(p.speciesId || p.id) }))
+        setList(enriched)
+      })
       .catch(() => setList([]))
 
     fetch('/data/abilities-summary.json')
@@ -32,16 +38,21 @@ function App() {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
-    if (!q) return list
     return list.filter((p) => {
-      return (
-        String(p.id) === q ||
-        p.nameZhHant.toLowerCase().includes(q) ||
-        p.nameEn.toLowerCase().includes(q) ||
-        p.slug.toLowerCase().includes(q)
-      )
+      if (q) {
+        const matchQuery =
+          String(p.id) === q ||
+          p.nameZhHant.toLowerCase().includes(q) ||
+          p.nameEn.toLowerCase().includes(q) ||
+          p.slug.toLowerCase().includes(q)
+        if (!matchQuery) return false
+      }
+      // version filter
+      const tags = p.versionTags || []
+      if (!matchesVersionFilter(tags, versionFilter)) return false
+      return true
     })
-  }, [list, query])
+  }, [list, query, versionFilter])
 
   function toggleFav(id) {
     const next = favorites.includes(id) ? favorites.filter((x) => x !== id) : [...favorites, id]
@@ -79,6 +90,19 @@ function App() {
             onChange={(e) => setQuery(e.target.value)}
             className="search"
           />
+
+          <select
+            value={versionFilter}
+            onChange={(e) => setVersionFilter(e.target.value)}
+            className="search"
+            aria-label="版本篩選"
+          >
+            {VERSION_FILTER_OPTIONS.map((opt) => (
+              <option key={opt.value} value={opt.value}>
+                {opt.label}
+              </option>
+            ))}
+          </select>
         </div>
       </header>
 
