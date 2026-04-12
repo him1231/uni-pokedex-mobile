@@ -1,0 +1,2599 @@
+[
+  {
+    "id": 1,
+    "slug": "stench",
+    "nameZhHant": "惡臭",
+    "nameEn": "Stench",
+    "nameJa": "あくしゅう"
+  },
+  {
+    "id": 2,
+    "slug": "drizzle",
+    "nameZhHant": "降雨",
+    "nameEn": "Drizzle",
+    "nameJa": "あめふらし"
+  },
+  {
+    "id": 3,
+    "slug": "speed-boost",
+    "nameZhHant": "加速",
+    "nameEn": "Speed Boost",
+    "nameJa": "かそく"
+  },
+  {
+    "id": 4,
+    "slug": "battle-armor",
+    "nameZhHant": "戰鬥盔甲",
+    "nameEn": "Battle Armor",
+    "nameJa": "カブトアーマー"
+  },
+  {
+    "id": 5,
+    "slug": "sturdy",
+    "nameZhHant": "結實",
+    "nameEn": "Sturdy",
+    "nameJa": "がんじょう"
+  },
+  {
+    "id": 6,
+    "slug": "damp",
+    "nameZhHant": "濕氣",
+    "nameEn": "Damp",
+    "nameJa": "しめりけ"
+  },
+  {
+    "id": 7,
+    "slug": "limber",
+    "nameZhHant": "柔軟",
+    "nameEn": "Limber",
+    "nameJa": "じゅうなん"
+  },
+  {
+    "id": 8,
+    "slug": "sand-veil",
+    "nameZhHant": "沙隱",
+    "nameEn": "Sand Veil",
+    "nameJa": "すながくれ"
+  },
+  {
+    "id": 9,
+    "slug": "static",
+    "nameZhHant": "靜電",
+    "nameEn": "Static",
+    "nameJa": "せいでんき"
+  },
+  {
+    "id": 10,
+    "slug": "volt-absorb",
+    "nameZhHant": "蓄電",
+    "nameEn": "Volt Absorb",
+    "nameJa": "ちくでん"
+  },
+  {
+    "id": 11,
+    "slug": "water-absorb",
+    "nameZhHant": "儲水",
+    "nameEn": "Water Absorb",
+    "nameJa": "ちょすい"
+  },
+  {
+    "id": 12,
+    "slug": "oblivious",
+    "nameZhHant": "遲鈍",
+    "nameEn": "Oblivious",
+    "nameJa": "どんかん"
+  },
+  {
+    "id": 13,
+    "slug": "cloud-nine",
+    "nameZhHant": "無關天氣",
+    "nameEn": "Cloud Nine",
+    "nameJa": "ノーてんき"
+  },
+  {
+    "id": 14,
+    "slug": "compound-eyes",
+    "nameZhHant": "複眼",
+    "nameEn": "Compound Eyes",
+    "nameJa": "ふくがん"
+  },
+  {
+    "id": 15,
+    "slug": "insomnia",
+    "nameZhHant": "不眠",
+    "nameEn": "Insomnia",
+    "nameJa": "ふみん"
+  },
+  {
+    "id": 16,
+    "slug": "color-change",
+    "nameZhHant": "變色",
+    "nameEn": "Color Change",
+    "nameJa": "へんしょく"
+  },
+  {
+    "id": 17,
+    "slug": "immunity",
+    "nameZhHant": "免疫",
+    "nameEn": "Immunity",
+    "nameJa": "めんえき"
+  },
+  {
+    "id": 18,
+    "slug": "flash-fire",
+    "nameZhHant": "引火",
+    "nameEn": "Flash Fire",
+    "nameJa": "もらいび"
+  },
+  {
+    "id": 19,
+    "slug": "shield-dust",
+    "nameZhHant": "鱗粉",
+    "nameEn": "Shield Dust",
+    "nameJa": "りんぷん"
+  },
+  {
+    "id": 20,
+    "slug": "own-tempo",
+    "nameZhHant": "我行我素",
+    "nameEn": "Own Tempo",
+    "nameJa": "マイペース"
+  },
+  {
+    "id": 21,
+    "slug": "suction-cups",
+    "nameZhHant": "吸盤",
+    "nameEn": "Suction Cups",
+    "nameJa": "きゅうばん"
+  },
+  {
+    "id": 22,
+    "slug": "intimidate",
+    "nameZhHant": "威嚇",
+    "nameEn": "Intimidate",
+    "nameJa": "いかく"
+  },
+  {
+    "id": 23,
+    "slug": "shadow-tag",
+    "nameZhHant": "踩影",
+    "nameEn": "Shadow Tag",
+    "nameJa": "かげふみ"
+  },
+  {
+    "id": 24,
+    "slug": "rough-skin",
+    "nameZhHant": "粗糙皮膚",
+    "nameEn": "Rough Skin",
+    "nameJa": "さめはだ"
+  },
+  {
+    "id": 25,
+    "slug": "wonder-guard",
+    "nameZhHant": "神奇守護",
+    "nameEn": "Wonder Guard",
+    "nameJa": "ふしぎなまもり"
+  },
+  {
+    "id": 26,
+    "slug": "levitate",
+    "nameZhHant": "飄浮",
+    "nameEn": "Levitate",
+    "nameJa": "ふゆう"
+  },
+  {
+    "id": 27,
+    "slug": "effect-spore",
+    "nameZhHant": "孢子",
+    "nameEn": "Effect Spore",
+    "nameJa": "ほうし"
+  },
+  {
+    "id": 28,
+    "slug": "synchronize",
+    "nameZhHant": "同步",
+    "nameEn": "Synchronize",
+    "nameJa": "シンクロ"
+  },
+  {
+    "id": 29,
+    "slug": "clear-body",
+    "nameZhHant": "恆淨之軀",
+    "nameEn": "Clear Body",
+    "nameJa": "クリアボディ"
+  },
+  {
+    "id": 30,
+    "slug": "natural-cure",
+    "nameZhHant": "自然回復",
+    "nameEn": "Natural Cure",
+    "nameJa": "しぜんかいふく"
+  },
+  {
+    "id": 31,
+    "slug": "lightning-rod",
+    "nameZhHant": "避雷針",
+    "nameEn": "Lightning Rod",
+    "nameJa": "ひらいしん"
+  },
+  {
+    "id": 32,
+    "slug": "serene-grace",
+    "nameZhHant": "天恩",
+    "nameEn": "Serene Grace",
+    "nameJa": "てんのめぐみ"
+  },
+  {
+    "id": 33,
+    "slug": "swift-swim",
+    "nameZhHant": "悠游自如",
+    "nameEn": "Swift Swim",
+    "nameJa": "すいすい"
+  },
+  {
+    "id": 34,
+    "slug": "chlorophyll",
+    "nameZhHant": "葉綠素",
+    "nameEn": "Chlorophyll",
+    "nameJa": "ようりょくそ"
+  },
+  {
+    "id": 35,
+    "slug": "illuminate",
+    "nameZhHant": "發光",
+    "nameEn": "Illuminate",
+    "nameJa": "はっこう"
+  },
+  {
+    "id": 36,
+    "slug": "trace",
+    "nameZhHant": "複製",
+    "nameEn": "Trace",
+    "nameJa": "トレース"
+  },
+  {
+    "id": 37,
+    "slug": "huge-power",
+    "nameZhHant": "大力士",
+    "nameEn": "Huge Power",
+    "nameJa": "ちからもち"
+  },
+  {
+    "id": 38,
+    "slug": "poison-point",
+    "nameZhHant": "毒刺",
+    "nameEn": "Poison Point",
+    "nameJa": "どくのトゲ"
+  },
+  {
+    "id": 39,
+    "slug": "inner-focus",
+    "nameZhHant": "精神力",
+    "nameEn": "Inner Focus",
+    "nameJa": "せいしんりょく"
+  },
+  {
+    "id": 40,
+    "slug": "magma-armor",
+    "nameZhHant": "熔岩鎧甲",
+    "nameEn": "Magma Armor",
+    "nameJa": "マグマのよろい"
+  },
+  {
+    "id": 41,
+    "slug": "water-veil",
+    "nameZhHant": "水幕",
+    "nameEn": "Water Veil",
+    "nameJa": "みずのベール"
+  },
+  {
+    "id": 42,
+    "slug": "magnet-pull",
+    "nameZhHant": "磁力",
+    "nameEn": "Magnet Pull",
+    "nameJa": "じりょく"
+  },
+  {
+    "id": 43,
+    "slug": "soundproof",
+    "nameZhHant": "隔音",
+    "nameEn": "Soundproof",
+    "nameJa": "ぼうおん"
+  },
+  {
+    "id": 44,
+    "slug": "rain-dish",
+    "nameZhHant": "雨盤",
+    "nameEn": "Rain Dish",
+    "nameJa": "あめうけざら"
+  },
+  {
+    "id": 45,
+    "slug": "sand-stream",
+    "nameZhHant": "揚沙",
+    "nameEn": "Sand Stream",
+    "nameJa": "すなおこし"
+  },
+  {
+    "id": 46,
+    "slug": "pressure",
+    "nameZhHant": "壓迫感",
+    "nameEn": "Pressure",
+    "nameJa": "プレッシャー"
+  },
+  {
+    "id": 47,
+    "slug": "thick-fat",
+    "nameZhHant": "厚脂肪",
+    "nameEn": "Thick Fat",
+    "nameJa": "あついしぼう"
+  },
+  {
+    "id": 48,
+    "slug": "early-bird",
+    "nameZhHant": "早起",
+    "nameEn": "Early Bird",
+    "nameJa": "はやおき"
+  },
+  {
+    "id": 49,
+    "slug": "flame-body",
+    "nameZhHant": "火焰之軀",
+    "nameEn": "Flame Body",
+    "nameJa": "ほのおのからだ"
+  },
+  {
+    "id": 50,
+    "slug": "run-away",
+    "nameZhHant": "逃跑",
+    "nameEn": "Run Away",
+    "nameJa": "にげあし"
+  },
+  {
+    "id": 51,
+    "slug": "keen-eye",
+    "nameZhHant": "銳利目光",
+    "nameEn": "Keen Eye",
+    "nameJa": "するどいめ"
+  },
+  {
+    "id": 52,
+    "slug": "hyper-cutter",
+    "nameZhHant": "怪力鉗",
+    "nameEn": "Hyper Cutter",
+    "nameJa": "かいりきバサミ"
+  },
+  {
+    "id": 53,
+    "slug": "pickup",
+    "nameZhHant": "撿拾",
+    "nameEn": "Pickup",
+    "nameJa": "ものひろい"
+  },
+  {
+    "id": 54,
+    "slug": "truant",
+    "nameZhHant": "懶惰",
+    "nameEn": "Truant",
+    "nameJa": "なまけ"
+  },
+  {
+    "id": 55,
+    "slug": "hustle",
+    "nameZhHant": "活力",
+    "nameEn": "Hustle",
+    "nameJa": "はりきり"
+  },
+  {
+    "id": 56,
+    "slug": "cute-charm",
+    "nameZhHant": "迷人之軀",
+    "nameEn": "Cute Charm",
+    "nameJa": "メロメロボディ"
+  },
+  {
+    "id": 57,
+    "slug": "plus",
+    "nameZhHant": "正電",
+    "nameEn": "Plus",
+    "nameJa": "プラス"
+  },
+  {
+    "id": 58,
+    "slug": "minus",
+    "nameZhHant": "負電",
+    "nameEn": "Minus",
+    "nameJa": "マイナス"
+  },
+  {
+    "id": 59,
+    "slug": "forecast",
+    "nameZhHant": "陰晴不定",
+    "nameEn": "Forecast",
+    "nameJa": "てんきや"
+  },
+  {
+    "id": 60,
+    "slug": "sticky-hold",
+    "nameZhHant": "黏著",
+    "nameEn": "Sticky Hold",
+    "nameJa": "ねんちゃく"
+  },
+  {
+    "id": 61,
+    "slug": "shed-skin",
+    "nameZhHant": "蛻皮",
+    "nameEn": "Shed Skin",
+    "nameJa": "だっぴ"
+  },
+  {
+    "id": 62,
+    "slug": "guts",
+    "nameZhHant": "毅力",
+    "nameEn": "Guts",
+    "nameJa": "こんじょう"
+  },
+  {
+    "id": 63,
+    "slug": "marvel-scale",
+    "nameZhHant": "神奇鱗片",
+    "nameEn": "Marvel Scale",
+    "nameJa": "ふしぎなうろこ"
+  },
+  {
+    "id": 64,
+    "slug": "liquid-ooze",
+    "nameZhHant": "污泥漿",
+    "nameEn": "Liquid Ooze",
+    "nameJa": "ヘドロえき"
+  },
+  {
+    "id": 65,
+    "slug": "overgrow",
+    "nameZhHant": "茂盛",
+    "nameEn": "Overgrow",
+    "nameJa": "しんりょく"
+  },
+  {
+    "id": 66,
+    "slug": "blaze",
+    "nameZhHant": "猛火",
+    "nameEn": "Blaze",
+    "nameJa": "もうか"
+  },
+  {
+    "id": 67,
+    "slug": "torrent",
+    "nameZhHant": "激流",
+    "nameEn": "Torrent",
+    "nameJa": "げきりゅう"
+  },
+  {
+    "id": 68,
+    "slug": "swarm",
+    "nameZhHant": "蟲之預感",
+    "nameEn": "Swarm",
+    "nameJa": "むしのしらせ"
+  },
+  {
+    "id": 69,
+    "slug": "rock-head",
+    "nameZhHant": "堅硬腦袋",
+    "nameEn": "Rock Head",
+    "nameJa": "いしあたま"
+  },
+  {
+    "id": 70,
+    "slug": "drought",
+    "nameZhHant": "日照",
+    "nameEn": "Drought",
+    "nameJa": "ひでり"
+  },
+  {
+    "id": 71,
+    "slug": "arena-trap",
+    "nameZhHant": "沙穴",
+    "nameEn": "Arena Trap",
+    "nameJa": "ありじごく"
+  },
+  {
+    "id": 72,
+    "slug": "vital-spirit",
+    "nameZhHant": "幹勁",
+    "nameEn": "Vital Spirit",
+    "nameJa": "やるき"
+  },
+  {
+    "id": 73,
+    "slug": "white-smoke",
+    "nameZhHant": "白色煙霧",
+    "nameEn": "White Smoke",
+    "nameJa": "しろいけむり"
+  },
+  {
+    "id": 74,
+    "slug": "pure-power",
+    "nameZhHant": "瑜伽之力",
+    "nameEn": "Pure Power",
+    "nameJa": "ヨガパワー"
+  },
+  {
+    "id": 75,
+    "slug": "shell-armor",
+    "nameZhHant": "硬殼盔甲",
+    "nameEn": "Shell Armor",
+    "nameJa": "シェルアーマー"
+  },
+  {
+    "id": 76,
+    "slug": "air-lock",
+    "nameZhHant": "氣閘",
+    "nameEn": "Air Lock",
+    "nameJa": "エアロック"
+  },
+  {
+    "id": 77,
+    "slug": "tangled-feet",
+    "nameZhHant": "蹣跚",
+    "nameEn": "Tangled Feet",
+    "nameJa": "ちどりあし"
+  },
+  {
+    "id": 78,
+    "slug": "motor-drive",
+    "nameZhHant": "電氣引擎",
+    "nameEn": "Motor Drive",
+    "nameJa": "でんきエンジン"
+  },
+  {
+    "id": 79,
+    "slug": "rivalry",
+    "nameZhHant": "鬥爭心",
+    "nameEn": "Rivalry",
+    "nameJa": "とうそうしん"
+  },
+  {
+    "id": 80,
+    "slug": "steadfast",
+    "nameZhHant": "不屈之心",
+    "nameEn": "Steadfast",
+    "nameJa": "ふくつのこころ"
+  },
+  {
+    "id": 81,
+    "slug": "snow-cloak",
+    "nameZhHant": "雪隱",
+    "nameEn": "Snow Cloak",
+    "nameJa": "ゆきがくれ"
+  },
+  {
+    "id": 82,
+    "slug": "gluttony",
+    "nameZhHant": "貪吃鬼",
+    "nameEn": "Gluttony",
+    "nameJa": "くいしんぼう"
+  },
+  {
+    "id": 83,
+    "slug": "anger-point",
+    "nameZhHant": "憤怒穴位",
+    "nameEn": "Anger Point",
+    "nameJa": "いかりのつぼ"
+  },
+  {
+    "id": 84,
+    "slug": "unburden",
+    "nameZhHant": "輕裝",
+    "nameEn": "Unburden",
+    "nameJa": "かるわざ"
+  },
+  {
+    "id": 85,
+    "slug": "heatproof",
+    "nameZhHant": "耐熱",
+    "nameEn": "Heatproof",
+    "nameJa": "たいねつ"
+  },
+  {
+    "id": 86,
+    "slug": "simple",
+    "nameZhHant": "單純",
+    "nameEn": "Simple",
+    "nameJa": "たんじゅん"
+  },
+  {
+    "id": 87,
+    "slug": "dry-skin",
+    "nameZhHant": "乾燥皮膚",
+    "nameEn": "Dry Skin",
+    "nameJa": "かんそうはだ"
+  },
+  {
+    "id": 88,
+    "slug": "download",
+    "nameZhHant": "下載",
+    "nameEn": "Download",
+    "nameJa": "ダウンロード"
+  },
+  {
+    "id": 89,
+    "slug": "iron-fist",
+    "nameZhHant": "鐵拳",
+    "nameEn": "Iron Fist",
+    "nameJa": "てつのこぶし"
+  },
+  {
+    "id": 90,
+    "slug": "poison-heal",
+    "nameZhHant": "毒療",
+    "nameEn": "Poison Heal",
+    "nameJa": "ポイズンヒール"
+  },
+  {
+    "id": 91,
+    "slug": "adaptability",
+    "nameZhHant": "適應力",
+    "nameEn": "Adaptability",
+    "nameJa": "てきおうりょく"
+  },
+  {
+    "id": 92,
+    "slug": "skill-link",
+    "nameZhHant": "連續攻擊",
+    "nameEn": "Skill Link",
+    "nameJa": "スキルリンク"
+  },
+  {
+    "id": 93,
+    "slug": "hydration",
+    "nameZhHant": "濕潤之軀",
+    "nameEn": "Hydration",
+    "nameJa": "うるおいボディ"
+  },
+  {
+    "id": 94,
+    "slug": "solar-power",
+    "nameZhHant": "太陽之力",
+    "nameEn": "Solar Power",
+    "nameJa": "サンパワー"
+  },
+  {
+    "id": 95,
+    "slug": "quick-feet",
+    "nameZhHant": "飛毛腿",
+    "nameEn": "Quick Feet",
+    "nameJa": "はやあし"
+  },
+  {
+    "id": 96,
+    "slug": "normalize",
+    "nameZhHant": "一般皮膚",
+    "nameEn": "Normalize",
+    "nameJa": "ノーマルスキン"
+  },
+  {
+    "id": 97,
+    "slug": "sniper",
+    "nameZhHant": "狙擊手",
+    "nameEn": "Sniper",
+    "nameJa": "スナイパー"
+  },
+  {
+    "id": 98,
+    "slug": "magic-guard",
+    "nameZhHant": "魔法防守",
+    "nameEn": "Magic Guard",
+    "nameJa": "マジックガード"
+  },
+  {
+    "id": 99,
+    "slug": "no-guard",
+    "nameZhHant": "無防守",
+    "nameEn": "No Guard",
+    "nameJa": "ノーガード"
+  },
+  {
+    "id": 100,
+    "slug": "stall",
+    "nameZhHant": "慢出",
+    "nameEn": "Stall",
+    "nameJa": "あとだし"
+  },
+  {
+    "id": 101,
+    "slug": "technician",
+    "nameZhHant": "技術高手",
+    "nameEn": "Technician",
+    "nameJa": "テクニシャン"
+  },
+  {
+    "id": 102,
+    "slug": "leaf-guard",
+    "nameZhHant": "葉子防守",
+    "nameEn": "Leaf Guard",
+    "nameJa": "リーフガード"
+  },
+  {
+    "id": 103,
+    "slug": "klutz",
+    "nameZhHant": "笨拙",
+    "nameEn": "Klutz",
+    "nameJa": "ぶきよう"
+  },
+  {
+    "id": 104,
+    "slug": "mold-breaker",
+    "nameZhHant": "破格",
+    "nameEn": "Mold Breaker",
+    "nameJa": "かたやぶり"
+  },
+  {
+    "id": 105,
+    "slug": "super-luck",
+    "nameZhHant": "超幸運",
+    "nameEn": "Super Luck",
+    "nameJa": "きょううん"
+  },
+  {
+    "id": 106,
+    "slug": "aftermath",
+    "nameZhHant": "引爆",
+    "nameEn": "Aftermath",
+    "nameJa": "ゆうばく"
+  },
+  {
+    "id": 107,
+    "slug": "anticipation",
+    "nameZhHant": "危險預知",
+    "nameEn": "Anticipation",
+    "nameJa": "きけんよち"
+  },
+  {
+    "id": 108,
+    "slug": "forewarn",
+    "nameZhHant": "預知夢",
+    "nameEn": "Forewarn",
+    "nameJa": "よちむ"
+  },
+  {
+    "id": 109,
+    "slug": "unaware",
+    "nameZhHant": "純樸",
+    "nameEn": "Unaware",
+    "nameJa": "てんねん"
+  },
+  {
+    "id": 110,
+    "slug": "tinted-lens",
+    "nameZhHant": "有色眼鏡",
+    "nameEn": "Tinted Lens",
+    "nameJa": "いろめがね"
+  },
+  {
+    "id": 111,
+    "slug": "filter",
+    "nameZhHant": "過濾",
+    "nameEn": "Filter",
+    "nameJa": "フィルター"
+  },
+  {
+    "id": 112,
+    "slug": "slow-start",
+    "nameZhHant": "慢啟動",
+    "nameEn": "Slow Start",
+    "nameJa": "スロースタート"
+  },
+  {
+    "id": 113,
+    "slug": "scrappy",
+    "nameZhHant": "膽量",
+    "nameEn": "Scrappy",
+    "nameJa": "きもったま"
+  },
+  {
+    "id": 114,
+    "slug": "storm-drain",
+    "nameZhHant": "引水",
+    "nameEn": "Storm Drain",
+    "nameJa": "よびみず"
+  },
+  {
+    "id": 115,
+    "slug": "ice-body",
+    "nameZhHant": "冰凍之軀",
+    "nameEn": "Ice Body",
+    "nameJa": "アイスボディ"
+  },
+  {
+    "id": 116,
+    "slug": "solid-rock",
+    "nameZhHant": "堅硬岩石",
+    "nameEn": "Solid Rock",
+    "nameJa": "ハードロック"
+  },
+  {
+    "id": 117,
+    "slug": "snow-warning",
+    "nameZhHant": "降雪",
+    "nameEn": "Snow Warning",
+    "nameJa": "ゆきふらし"
+  },
+  {
+    "id": 118,
+    "slug": "honey-gather",
+    "nameZhHant": "採蜜",
+    "nameEn": "Honey Gather",
+    "nameJa": "みつあつめ"
+  },
+  {
+    "id": 119,
+    "slug": "frisk",
+    "nameZhHant": "察覺",
+    "nameEn": "Frisk",
+    "nameJa": "おみとおし"
+  },
+  {
+    "id": 120,
+    "slug": "reckless",
+    "nameZhHant": "捨身",
+    "nameEn": "Reckless",
+    "nameJa": "すてみ"
+  },
+  {
+    "id": 121,
+    "slug": "multitype",
+    "nameZhHant": "多屬性",
+    "nameEn": "Multitype",
+    "nameJa": "マルチタイプ"
+  },
+  {
+    "id": 122,
+    "slug": "flower-gift",
+    "nameZhHant": "花之禮",
+    "nameEn": "Flower Gift",
+    "nameJa": "フラワーギフト"
+  },
+  {
+    "id": 123,
+    "slug": "bad-dreams",
+    "nameZhHant": "夢魘",
+    "nameEn": "Bad Dreams",
+    "nameJa": "ナイトメア"
+  },
+  {
+    "id": 124,
+    "slug": "pickpocket",
+    "nameZhHant": "順手牽羊",
+    "nameEn": "Pickpocket",
+    "nameJa": "わるいてぐせ"
+  },
+  {
+    "id": 125,
+    "slug": "sheer-force",
+    "nameZhHant": "強行",
+    "nameEn": "Sheer Force",
+    "nameJa": "ちからずく"
+  },
+  {
+    "id": 126,
+    "slug": "contrary",
+    "nameZhHant": "唱反調",
+    "nameEn": "Contrary",
+    "nameJa": "あまのじゃく"
+  },
+  {
+    "id": 127,
+    "slug": "unnerve",
+    "nameZhHant": "緊張感",
+    "nameEn": "Unnerve",
+    "nameJa": "きんちょうかん"
+  },
+  {
+    "id": 128,
+    "slug": "defiant",
+    "nameZhHant": "不服輸",
+    "nameEn": "Defiant",
+    "nameJa": "まけんき"
+  },
+  {
+    "id": 129,
+    "slug": "defeatist",
+    "nameZhHant": "軟弱",
+    "nameEn": "Defeatist",
+    "nameJa": "よわき"
+  },
+  {
+    "id": 130,
+    "slug": "cursed-body",
+    "nameZhHant": "詛咒之軀",
+    "nameEn": "Cursed Body",
+    "nameJa": "のろわれボディ"
+  },
+  {
+    "id": 131,
+    "slug": "healer",
+    "nameZhHant": "治癒之心",
+    "nameEn": "Healer",
+    "nameJa": "いやしのこころ"
+  },
+  {
+    "id": 132,
+    "slug": "friend-guard",
+    "nameZhHant": "友情防守",
+    "nameEn": "Friend Guard",
+    "nameJa": "フレンドガード"
+  },
+  {
+    "id": 133,
+    "slug": "weak-armor",
+    "nameZhHant": "碎裂鎧甲",
+    "nameEn": "Weak Armor",
+    "nameJa": "くだけるよろい"
+  },
+  {
+    "id": 134,
+    "slug": "heavy-metal",
+    "nameZhHant": "重金屬",
+    "nameEn": "Heavy Metal",
+    "nameJa": "ヘヴィメタル"
+  },
+  {
+    "id": 135,
+    "slug": "light-metal",
+    "nameZhHant": "輕金屬",
+    "nameEn": "Light Metal",
+    "nameJa": "ライトメタル"
+  },
+  {
+    "id": 136,
+    "slug": "multiscale",
+    "nameZhHant": "多重鱗片",
+    "nameEn": "Multiscale",
+    "nameJa": "マルチスケイル"
+  },
+  {
+    "id": 137,
+    "slug": "toxic-boost",
+    "nameZhHant": "中毒激升",
+    "nameEn": "Toxic Boost",
+    "nameJa": "どくぼうそう"
+  },
+  {
+    "id": 138,
+    "slug": "flare-boost",
+    "nameZhHant": "受熱激升",
+    "nameEn": "Flare Boost",
+    "nameJa": "ねつぼうそう"
+  },
+  {
+    "id": 139,
+    "slug": "harvest",
+    "nameZhHant": "收穫",
+    "nameEn": "Harvest",
+    "nameJa": "しゅうかく"
+  },
+  {
+    "id": 140,
+    "slug": "telepathy",
+    "nameZhHant": "心靈感應",
+    "nameEn": "Telepathy",
+    "nameJa": "テレパシー"
+  },
+  {
+    "id": 141,
+    "slug": "moody",
+    "nameZhHant": "心情不定",
+    "nameEn": "Moody",
+    "nameJa": "ムラっけ"
+  },
+  {
+    "id": 142,
+    "slug": "overcoat",
+    "nameZhHant": "防塵",
+    "nameEn": "Overcoat",
+    "nameJa": "ぼうじん"
+  },
+  {
+    "id": 143,
+    "slug": "poison-touch",
+    "nameZhHant": "毒手",
+    "nameEn": "Poison Touch",
+    "nameJa": "どくしゅ"
+  },
+  {
+    "id": 144,
+    "slug": "regenerator",
+    "nameZhHant": "再生力",
+    "nameEn": "Regenerator",
+    "nameJa": "さいせいりょく"
+  },
+  {
+    "id": 145,
+    "slug": "big-pecks",
+    "nameZhHant": "健壯胸肌",
+    "nameEn": "Big Pecks",
+    "nameJa": "はとむね"
+  },
+  {
+    "id": 146,
+    "slug": "sand-rush",
+    "nameZhHant": "撥沙",
+    "nameEn": "Sand Rush",
+    "nameJa": "すなかき"
+  },
+  {
+    "id": 147,
+    "slug": "wonder-skin",
+    "nameZhHant": "奇跡皮膚",
+    "nameEn": "Wonder Skin",
+    "nameJa": "ミラクルスキン"
+  },
+  {
+    "id": 148,
+    "slug": "analytic",
+    "nameZhHant": "分析",
+    "nameEn": "Analytic",
+    "nameJa": "アナライズ"
+  },
+  {
+    "id": 149,
+    "slug": "illusion",
+    "nameZhHant": "幻覺",
+    "nameEn": "Illusion",
+    "nameJa": "イリュージョン"
+  },
+  {
+    "id": 150,
+    "slug": "imposter",
+    "nameZhHant": "變身者",
+    "nameEn": "Imposter",
+    "nameJa": "かわりもの"
+  },
+  {
+    "id": 151,
+    "slug": "infiltrator",
+    "nameZhHant": "穿透",
+    "nameEn": "Infiltrator",
+    "nameJa": "すりぬけ"
+  },
+  {
+    "id": 152,
+    "slug": "mummy",
+    "nameZhHant": "木乃伊",
+    "nameEn": "Mummy",
+    "nameJa": "ミイラ"
+  },
+  {
+    "id": 153,
+    "slug": "moxie",
+    "nameZhHant": "自信過度",
+    "nameEn": "Moxie",
+    "nameJa": "じしんかじょう"
+  },
+  {
+    "id": 154,
+    "slug": "justified",
+    "nameZhHant": "正義之心",
+    "nameEn": "Justified",
+    "nameJa": "せいぎのこころ"
+  },
+  {
+    "id": 155,
+    "slug": "rattled",
+    "nameZhHant": "膽怯",
+    "nameEn": "Rattled",
+    "nameJa": "びびり"
+  },
+  {
+    "id": 156,
+    "slug": "magic-bounce",
+    "nameZhHant": "魔法鏡",
+    "nameEn": "Magic Bounce",
+    "nameJa": "マジックミラー"
+  },
+  {
+    "id": 157,
+    "slug": "sap-sipper",
+    "nameZhHant": "食草",
+    "nameEn": "Sap Sipper",
+    "nameJa": "そうしょく"
+  },
+  {
+    "id": 158,
+    "slug": "prankster",
+    "nameZhHant": "惡作劇之心",
+    "nameEn": "Prankster",
+    "nameJa": "いたずらごころ"
+  },
+  {
+    "id": 159,
+    "slug": "sand-force",
+    "nameZhHant": "沙之力",
+    "nameEn": "Sand Force",
+    "nameJa": "すなのちから"
+  },
+  {
+    "id": 160,
+    "slug": "iron-barbs",
+    "nameZhHant": "鐵刺",
+    "nameEn": "Iron Barbs",
+    "nameJa": "てつのトゲ"
+  },
+  {
+    "id": 161,
+    "slug": "zen-mode",
+    "nameZhHant": "達摩模式",
+    "nameEn": "Zen Mode",
+    "nameJa": "ダルマモード"
+  },
+  {
+    "id": 162,
+    "slug": "victory-star",
+    "nameZhHant": "勝利之星",
+    "nameEn": "Victory Star",
+    "nameJa": "しょうりのほし"
+  },
+  {
+    "id": 163,
+    "slug": "turboblaze",
+    "nameZhHant": "渦輪火焰",
+    "nameEn": "Turboblaze",
+    "nameJa": "ターボブレイズ"
+  },
+  {
+    "id": 164,
+    "slug": "teravolt",
+    "nameZhHant": "兆級電壓",
+    "nameEn": "Teravolt",
+    "nameJa": "テラボルテージ"
+  },
+  {
+    "id": 165,
+    "slug": "aroma-veil",
+    "nameZhHant": "芳香幕",
+    "nameEn": "Aroma Veil",
+    "nameJa": "アロマベール"
+  },
+  {
+    "id": 166,
+    "slug": "flower-veil",
+    "nameZhHant": "花幕",
+    "nameEn": "Flower Veil",
+    "nameJa": "フラワーベール"
+  },
+  {
+    "id": 167,
+    "slug": "cheek-pouch",
+    "nameZhHant": "頰囊",
+    "nameEn": "Cheek Pouch",
+    "nameJa": "ほおぶくろ"
+  },
+  {
+    "id": 168,
+    "slug": "protean",
+    "nameZhHant": "變幻自如",
+    "nameEn": "Protean",
+    "nameJa": "へんげんじざい"
+  },
+  {
+    "id": 169,
+    "slug": "fur-coat",
+    "nameZhHant": "毛皮大衣",
+    "nameEn": "Fur Coat",
+    "nameJa": "ファーコート"
+  },
+  {
+    "id": 170,
+    "slug": "magician",
+    "nameZhHant": "魔術師",
+    "nameEn": "Magician",
+    "nameJa": "マジシャン"
+  },
+  {
+    "id": 171,
+    "slug": "bulletproof",
+    "nameZhHant": "防彈",
+    "nameEn": "Bulletproof",
+    "nameJa": "ぼうだん"
+  },
+  {
+    "id": 172,
+    "slug": "competitive",
+    "nameZhHant": "好勝",
+    "nameEn": "Competitive",
+    "nameJa": "かちき"
+  },
+  {
+    "id": 173,
+    "slug": "strong-jaw",
+    "nameZhHant": "強壯之顎",
+    "nameEn": "Strong Jaw",
+    "nameJa": "がんじょうあご"
+  },
+  {
+    "id": 174,
+    "slug": "refrigerate",
+    "nameZhHant": "冰凍皮膚",
+    "nameEn": "Refrigerate",
+    "nameJa": "フリーズスキン"
+  },
+  {
+    "id": 175,
+    "slug": "sweet-veil",
+    "nameZhHant": "甜幕",
+    "nameEn": "Sweet Veil",
+    "nameJa": "スイートベール"
+  },
+  {
+    "id": 176,
+    "slug": "stance-change",
+    "nameZhHant": "戰鬥切換",
+    "nameEn": "Stance Change",
+    "nameJa": "バトルスイッチ"
+  },
+  {
+    "id": 177,
+    "slug": "gale-wings",
+    "nameZhHant": "疾風之翼",
+    "nameEn": "Gale Wings",
+    "nameJa": "はやてのつばさ"
+  },
+  {
+    "id": 178,
+    "slug": "mega-launcher",
+    "nameZhHant": "超級發射器",
+    "nameEn": "Mega Launcher",
+    "nameJa": "メガランチャー"
+  },
+  {
+    "id": 179,
+    "slug": "grass-pelt",
+    "nameZhHant": "草之毛皮",
+    "nameEn": "Grass Pelt",
+    "nameJa": "くさのけがわ"
+  },
+  {
+    "id": 180,
+    "slug": "symbiosis",
+    "nameZhHant": "共生",
+    "nameEn": "Symbiosis",
+    "nameJa": "きょうせい"
+  },
+  {
+    "id": 181,
+    "slug": "tough-claws",
+    "nameZhHant": "硬爪",
+    "nameEn": "Tough Claws",
+    "nameJa": "かたいツメ"
+  },
+  {
+    "id": 182,
+    "slug": "pixilate",
+    "nameZhHant": "妖精皮膚",
+    "nameEn": "Pixilate",
+    "nameJa": "フェアリースキン"
+  },
+  {
+    "id": 183,
+    "slug": "gooey",
+    "nameZhHant": "黏滑",
+    "nameEn": "Gooey",
+    "nameJa": "ぬめぬめ"
+  },
+  {
+    "id": 184,
+    "slug": "aerilate",
+    "nameZhHant": "飛行皮膚",
+    "nameEn": "Aerilate",
+    "nameJa": "スカイスキン"
+  },
+  {
+    "id": 185,
+    "slug": "parental-bond",
+    "nameZhHant": "親子愛",
+    "nameEn": "Parental Bond",
+    "nameJa": "おやこあい"
+  },
+  {
+    "id": 186,
+    "slug": "dark-aura",
+    "nameZhHant": "暗黑氣場",
+    "nameEn": "Dark Aura",
+    "nameJa": "ダークオーラ"
+  },
+  {
+    "id": 187,
+    "slug": "fairy-aura",
+    "nameZhHant": "妖精氣場",
+    "nameEn": "Fairy Aura",
+    "nameJa": "フェアリーオーラ"
+  },
+  {
+    "id": 188,
+    "slug": "aura-break",
+    "nameZhHant": "氣場破壞",
+    "nameEn": "Aura Break",
+    "nameJa": "オーラブレイク"
+  },
+  {
+    "id": 189,
+    "slug": "primordial-sea",
+    "nameZhHant": "始源之海",
+    "nameEn": "Primordial Sea",
+    "nameJa": "はじまりのうみ"
+  },
+  {
+    "id": 190,
+    "slug": "desolate-land",
+    "nameZhHant": "終結之地",
+    "nameEn": "Desolate Land",
+    "nameJa": "おわりのだいち"
+  },
+  {
+    "id": 191,
+    "slug": "delta-stream",
+    "nameZhHant": "德爾塔氣流",
+    "nameEn": "Delta Stream",
+    "nameJa": "デルタストリーム"
+  },
+  {
+    "id": 192,
+    "slug": "stamina",
+    "nameZhHant": "持久力",
+    "nameEn": "Stamina",
+    "nameJa": "じきゅうりょく"
+  },
+  {
+    "id": 193,
+    "slug": "wimp-out",
+    "nameZhHant": "躍躍欲逃",
+    "nameEn": "Wimp Out",
+    "nameJa": "にげごし"
+  },
+  {
+    "id": 194,
+    "slug": "emergency-exit",
+    "nameZhHant": "危險迴避",
+    "nameEn": "Emergency Exit",
+    "nameJa": "ききかいひ"
+  },
+  {
+    "id": 195,
+    "slug": "water-compaction",
+    "nameZhHant": "遇水凝固",
+    "nameEn": "Water Compaction",
+    "nameJa": "みずがため"
+  },
+  {
+    "id": 196,
+    "slug": "merciless",
+    "nameZhHant": "不仁不義",
+    "nameEn": "Merciless",
+    "nameJa": "ひとでなし"
+  },
+  {
+    "id": 197,
+    "slug": "shields-down",
+    "nameZhHant": "界限盾殼",
+    "nameEn": "Shields Down",
+    "nameJa": "リミットシールド"
+  },
+  {
+    "id": 198,
+    "slug": "stakeout",
+    "nameZhHant": "監視",
+    "nameEn": "Stakeout",
+    "nameJa": "はりこみ"
+  },
+  {
+    "id": 199,
+    "slug": "water-bubble",
+    "nameZhHant": "水泡",
+    "nameEn": "Water Bubble",
+    "nameJa": "すいほう"
+  },
+  {
+    "id": 200,
+    "slug": "steelworker",
+    "nameZhHant": "鋼能力者",
+    "nameEn": "Steelworker",
+    "nameJa": "はがねつかい"
+  },
+  {
+    "id": 201,
+    "slug": "berserk",
+    "nameZhHant": "怒火沖天",
+    "nameEn": "Berserk",
+    "nameJa": "ぎゃくじょう"
+  },
+  {
+    "id": 202,
+    "slug": "slush-rush",
+    "nameZhHant": "撥雪",
+    "nameEn": "Slush Rush",
+    "nameJa": "ゆきかき"
+  },
+  {
+    "id": 203,
+    "slug": "long-reach",
+    "nameZhHant": "遠隔",
+    "nameEn": "Long Reach",
+    "nameJa": "えんかく"
+  },
+  {
+    "id": 204,
+    "slug": "liquid-voice",
+    "nameZhHant": "濕潤之聲",
+    "nameEn": "Liquid Voice",
+    "nameJa": "うるおいボイス"
+  },
+  {
+    "id": 205,
+    "slug": "triage",
+    "nameZhHant": "先行治療",
+    "nameEn": "Triage",
+    "nameJa": "ヒーリングシフト"
+  },
+  {
+    "id": 206,
+    "slug": "galvanize",
+    "nameZhHant": "電氣皮膚",
+    "nameEn": "Galvanize",
+    "nameJa": "エレキスキン"
+  },
+  {
+    "id": 207,
+    "slug": "surge-surfer",
+    "nameZhHant": "衝浪之尾",
+    "nameEn": "Surge Surfer",
+    "nameJa": "サーフテール"
+  },
+  {
+    "id": 208,
+    "slug": "schooling",
+    "nameZhHant": "魚群",
+    "nameEn": "Schooling",
+    "nameJa": "ぎょぐん"
+  },
+  {
+    "id": 209,
+    "slug": "disguise",
+    "nameZhHant": "畫皮",
+    "nameEn": "Disguise",
+    "nameJa": "ばけのかわ"
+  },
+  {
+    "id": 210,
+    "slug": "battle-bond",
+    "nameZhHant": "牽絆變身",
+    "nameEn": "Battle Bond",
+    "nameJa": "きずなへんげ"
+  },
+  {
+    "id": 211,
+    "slug": "power-construct",
+    "nameZhHant": "群聚變形",
+    "nameEn": "Power Construct",
+    "nameJa": "スワームチェンジ"
+  },
+  {
+    "id": 212,
+    "slug": "corrosion",
+    "nameZhHant": "腐蝕",
+    "nameEn": "Corrosion",
+    "nameJa": "ふしょく"
+  },
+  {
+    "id": 213,
+    "slug": "comatose",
+    "nameZhHant": "絕對睡眠",
+    "nameEn": "Comatose",
+    "nameJa": "ぜったいねむり"
+  },
+  {
+    "id": 214,
+    "slug": "queenly-majesty",
+    "nameZhHant": "女王的威嚴",
+    "nameEn": "Queenly Majesty",
+    "nameJa": "じょおうのいげん"
+  },
+  {
+    "id": 215,
+    "slug": "innards-out",
+    "nameZhHant": "飛出的內在物",
+    "nameEn": "Innards Out",
+    "nameJa": "とびだすなかみ"
+  },
+  {
+    "id": 216,
+    "slug": "dancer",
+    "nameZhHant": "舞者",
+    "nameEn": "Dancer",
+    "nameJa": "おどりこ"
+  },
+  {
+    "id": 217,
+    "slug": "battery",
+    "nameZhHant": "蓄電池",
+    "nameEn": "Battery",
+    "nameJa": "バッテリー"
+  },
+  {
+    "id": 218,
+    "slug": "fluffy",
+    "nameZhHant": "毛茸茸",
+    "nameEn": "Fluffy",
+    "nameJa": "もふもふ"
+  },
+  {
+    "id": 219,
+    "slug": "dazzling",
+    "nameZhHant": "鮮艷之軀",
+    "nameEn": "Dazzling",
+    "nameJa": "ビビッドボディ"
+  },
+  {
+    "id": 220,
+    "slug": "soul-heart",
+    "nameZhHant": "魂心",
+    "nameEn": "Soul-Heart",
+    "nameJa": "ソウルハート"
+  },
+  {
+    "id": 221,
+    "slug": "tangling-hair",
+    "nameZhHant": "捲髮",
+    "nameEn": "Tangling Hair",
+    "nameJa": "カーリーヘアー"
+  },
+  {
+    "id": 222,
+    "slug": "receiver",
+    "nameZhHant": "接球手",
+    "nameEn": "Receiver",
+    "nameJa": "レシーバー"
+  },
+  {
+    "id": 223,
+    "slug": "power-of-alchemy",
+    "nameZhHant": "化學之力",
+    "nameEn": "Power of Alchemy",
+    "nameJa": "かがくのちから"
+  },
+  {
+    "id": 224,
+    "slug": "beast-boost",
+    "nameZhHant": "異獸提升",
+    "nameEn": "Beast Boost",
+    "nameJa": "ビーストブースト"
+  },
+  {
+    "id": 225,
+    "slug": "rks-system",
+    "nameZhHant": "ＡＲ系統",
+    "nameEn": "RKS System",
+    "nameJa": "ＡＲシステム"
+  },
+  {
+    "id": 226,
+    "slug": "electric-surge",
+    "nameZhHant": "電氣製造者",
+    "nameEn": "Electric Surge",
+    "nameJa": "エレキメイカー"
+  },
+  {
+    "id": 227,
+    "slug": "psychic-surge",
+    "nameZhHant": "精神製造者",
+    "nameEn": "Psychic Surge",
+    "nameJa": "サイコメイカー"
+  },
+  {
+    "id": 228,
+    "slug": "misty-surge",
+    "nameZhHant": "薄霧製造者",
+    "nameEn": "Misty Surge",
+    "nameJa": "ミストメイカー"
+  },
+  {
+    "id": 229,
+    "slug": "grassy-surge",
+    "nameZhHant": "青草製造者",
+    "nameEn": "Grassy Surge",
+    "nameJa": "グラスメイカー"
+  },
+  {
+    "id": 230,
+    "slug": "full-metal-body",
+    "nameZhHant": "金屬防護",
+    "nameEn": "Full Metal Body",
+    "nameJa": "メタルプロテクト"
+  },
+  {
+    "id": 231,
+    "slug": "shadow-shield",
+    "nameZhHant": "幻影防守",
+    "nameEn": "Shadow Shield",
+    "nameJa": "ファントムガード"
+  },
+  {
+    "id": 232,
+    "slug": "prism-armor",
+    "nameZhHant": "稜鏡裝甲",
+    "nameEn": "Prism Armor",
+    "nameJa": "プリズムアーマー"
+  },
+  {
+    "id": 233,
+    "slug": "neuroforce",
+    "nameZhHant": "腦核之力",
+    "nameEn": "Neuroforce",
+    "nameJa": "ブレインフォース"
+  },
+  {
+    "id": 234,
+    "slug": "intrepid-sword",
+    "nameZhHant": "不撓之劍",
+    "nameEn": "Intrepid Sword",
+    "nameJa": "ふとうのけん"
+  },
+  {
+    "id": 235,
+    "slug": "dauntless-shield",
+    "nameZhHant": "不屈之盾",
+    "nameEn": "Dauntless Shield",
+    "nameJa": "ふくつのたて"
+  },
+  {
+    "id": 236,
+    "slug": "libero",
+    "nameZhHant": "自由者",
+    "nameEn": "Libero",
+    "nameJa": "リベロ"
+  },
+  {
+    "id": 237,
+    "slug": "ball-fetch",
+    "nameZhHant": "撿球",
+    "nameEn": "Ball Fetch",
+    "nameJa": "たまひろい"
+  },
+  {
+    "id": 238,
+    "slug": "cotton-down",
+    "nameZhHant": "棉絮",
+    "nameEn": "Cotton Down",
+    "nameJa": "わたげ"
+  },
+  {
+    "id": 239,
+    "slug": "propeller-tail",
+    "nameZhHant": "螺旋尾鰭",
+    "nameEn": "Propeller Tail",
+    "nameJa": "スクリューおびれ"
+  },
+  {
+    "id": 240,
+    "slug": "mirror-armor",
+    "nameZhHant": "鏡甲",
+    "nameEn": "Mirror Armor",
+    "nameJa": "ミラーアーマー"
+  },
+  {
+    "id": 241,
+    "slug": "gulp-missile",
+    "nameZhHant": "一口飛彈",
+    "nameEn": "Gulp Missile",
+    "nameJa": "うのミサイル"
+  },
+  {
+    "id": 242,
+    "slug": "stalwart",
+    "nameZhHant": "堅毅",
+    "nameEn": "Stalwart",
+    "nameJa": "すじがねいり"
+  },
+  {
+    "id": 243,
+    "slug": "steam-engine",
+    "nameZhHant": "蒸汽機",
+    "nameEn": "Steam Engine",
+    "nameJa": "じょうききかん"
+  },
+  {
+    "id": 244,
+    "slug": "punk-rock",
+    "nameZhHant": "龐克搖滾",
+    "nameEn": "Punk Rock",
+    "nameJa": "パンクロック"
+  },
+  {
+    "id": 245,
+    "slug": "sand-spit",
+    "nameZhHant": "吐沙",
+    "nameEn": "Sand Spit",
+    "nameJa": "すなはき"
+  },
+  {
+    "id": 246,
+    "slug": "ice-scales",
+    "nameZhHant": "冰鱗粉",
+    "nameEn": "Ice Scales",
+    "nameJa": "こおりのりんぷん"
+  },
+  {
+    "id": 247,
+    "slug": "ripen",
+    "nameZhHant": "熟成",
+    "nameEn": "Ripen",
+    "nameJa": "じゅくせい"
+  },
+  {
+    "id": 248,
+    "slug": "ice-face",
+    "nameZhHant": "結凍頭",
+    "nameEn": "Ice Face",
+    "nameJa": "アイスフェイス"
+  },
+  {
+    "id": 249,
+    "slug": "power-spot",
+    "nameZhHant": "能量點",
+    "nameEn": "Power Spot",
+    "nameJa": "パワースポット"
+  },
+  {
+    "id": 250,
+    "slug": "mimicry",
+    "nameZhHant": "擬態",
+    "nameEn": "Mimicry",
+    "nameJa": "ぎたい"
+  },
+  {
+    "id": 251,
+    "slug": "screen-cleaner",
+    "nameZhHant": "除障",
+    "nameEn": "Screen Cleaner",
+    "nameJa": "バリアフリー"
+  },
+  {
+    "id": 252,
+    "slug": "steely-spirit",
+    "nameZhHant": "鋼之意志",
+    "nameEn": "Steely Spirit",
+    "nameJa": "はがねのせいしん"
+  },
+  {
+    "id": 253,
+    "slug": "perish-body",
+    "nameZhHant": "滅亡之軀",
+    "nameEn": "Perish Body",
+    "nameJa": "ほろびのボディ"
+  },
+  {
+    "id": 254,
+    "slug": "wandering-spirit",
+    "nameZhHant": "遊魂",
+    "nameEn": "Wandering Spirit",
+    "nameJa": "さまようたましい"
+  },
+  {
+    "id": 255,
+    "slug": "gorilla-tactics",
+    "nameZhHant": "一猩一意",
+    "nameEn": "Gorilla Tactics",
+    "nameJa": "ごりむちゅう"
+  },
+  {
+    "id": 256,
+    "slug": "neutralizing-gas",
+    "nameZhHant": "化學變化氣體",
+    "nameEn": "Neutralizing Gas",
+    "nameJa": "かがくへんかガス"
+  },
+  {
+    "id": 257,
+    "slug": "pastel-veil",
+    "nameZhHant": "粉彩護幕",
+    "nameEn": "Pastel Veil",
+    "nameJa": "パステルベール"
+  },
+  {
+    "id": 258,
+    "slug": "hunger-switch",
+    "nameZhHant": "飽了又餓",
+    "nameEn": "Hunger Switch",
+    "nameJa": "はらぺこスイッチ"
+  },
+  {
+    "id": 259,
+    "slug": "quick-draw",
+    "nameZhHant": "速擊",
+    "nameEn": "Quick Draw",
+    "nameJa": "クイックドロウ"
+  },
+  {
+    "id": 260,
+    "slug": "unseen-fist",
+    "nameZhHant": "無形拳",
+    "nameEn": "Unseen Fist",
+    "nameJa": "ふかしのこぶし"
+  },
+  {
+    "id": 261,
+    "slug": "curious-medicine",
+    "nameZhHant": "怪藥",
+    "nameEn": "Curious Medicine",
+    "nameJa": "きみょうなくすり"
+  },
+  {
+    "id": 262,
+    "slug": "transistor",
+    "nameZhHant": "電晶體",
+    "nameEn": "Transistor",
+    "nameJa": "トランジスタ"
+  },
+  {
+    "id": 263,
+    "slug": "dragons-maw",
+    "nameZhHant": "龍顎",
+    "nameEn": "Dragon’s Maw",
+    "nameJa": "りゅうのあぎと"
+  },
+  {
+    "id": 264,
+    "slug": "chilling-neigh",
+    "nameZhHant": "蒼白嘶鳴",
+    "nameEn": "Chilling Neigh",
+    "nameJa": "しろのいななき"
+  },
+  {
+    "id": 265,
+    "slug": "grim-neigh",
+    "nameZhHant": "漆黑嘶鳴",
+    "nameEn": "Grim Neigh",
+    "nameJa": "くろのいななき"
+  },
+  {
+    "id": 266,
+    "slug": "as-one-glastrier",
+    "nameZhHant": "人馬一體",
+    "nameEn": "As One",
+    "nameJa": "じんばいったい"
+  },
+  {
+    "id": 267,
+    "slug": "as-one-spectrier",
+    "nameZhHant": "人馬一體",
+    "nameEn": "As One",
+    "nameJa": "じんばいったい"
+  },
+  {
+    "id": 268,
+    "slug": "lingering-aroma",
+    "nameZhHant": "Lingering Aroma",
+    "nameEn": "Lingering Aroma",
+    "nameJa": "とれないにおい"
+  },
+  {
+    "id": 269,
+    "slug": "seed-sower",
+    "nameZhHant": "Seed Sower",
+    "nameEn": "Seed Sower",
+    "nameJa": "こぼれダネ"
+  },
+  {
+    "id": 270,
+    "slug": "thermal-exchange",
+    "nameZhHant": "Thermal Exchange",
+    "nameEn": "Thermal Exchange",
+    "nameJa": "ねつこうかん"
+  },
+  {
+    "id": 271,
+    "slug": "anger-shell",
+    "nameZhHant": "Anger Shell",
+    "nameEn": "Anger Shell",
+    "nameJa": "いかりのこうら"
+  },
+  {
+    "id": 272,
+    "slug": "purifying-salt",
+    "nameZhHant": "Purifying Salt",
+    "nameEn": "Purifying Salt",
+    "nameJa": "きよめのしお"
+  },
+  {
+    "id": 273,
+    "slug": "well-baked-body",
+    "nameZhHant": "Well Baked Body",
+    "nameEn": "Well-Baked Body",
+    "nameJa": "こんがりボディ"
+  },
+  {
+    "id": 274,
+    "slug": "wind-rider",
+    "nameZhHant": "Wind Rider",
+    "nameEn": "Wind Rider",
+    "nameJa": "かぜのり"
+  },
+  {
+    "id": 275,
+    "slug": "guard-dog",
+    "nameZhHant": "Guard Dog",
+    "nameEn": "Guard Dog",
+    "nameJa": "ばんけん"
+  },
+  {
+    "id": 276,
+    "slug": "rocky-payload",
+    "nameZhHant": "Rocky Payload",
+    "nameEn": "Rocky Payload",
+    "nameJa": "いわはこび"
+  },
+  {
+    "id": 277,
+    "slug": "wind-power",
+    "nameZhHant": "Wind Power",
+    "nameEn": "Wind Power",
+    "nameJa": "ふうりょくでんき"
+  },
+  {
+    "id": 278,
+    "slug": "zero-to-hero",
+    "nameZhHant": "Zero To Hero",
+    "nameEn": "Zero to Hero",
+    "nameJa": "マイティチェンジ"
+  },
+  {
+    "id": 279,
+    "slug": "commander",
+    "nameZhHant": "Commander",
+    "nameEn": "Commander",
+    "nameJa": "しれいとう"
+  },
+  {
+    "id": 280,
+    "slug": "electromorphosis",
+    "nameZhHant": "Electromorphosis",
+    "nameEn": "Electromorphosis",
+    "nameJa": "でんきにかえる"
+  },
+  {
+    "id": 281,
+    "slug": "protosynthesis",
+    "nameZhHant": "Protosynthesis",
+    "nameEn": "Protosynthesis",
+    "nameJa": "こだいかっせい"
+  },
+  {
+    "id": 282,
+    "slug": "quark-drive",
+    "nameZhHant": "Quark Drive",
+    "nameEn": "Quark Drive",
+    "nameJa": "クォークチャージ"
+  },
+  {
+    "id": 283,
+    "slug": "good-as-gold",
+    "nameZhHant": "Good As Gold",
+    "nameEn": "Good as Gold",
+    "nameJa": "おうごんのからだ"
+  },
+  {
+    "id": 284,
+    "slug": "vessel-of-ruin",
+    "nameZhHant": "Vessel Of Ruin",
+    "nameEn": "Vessel of Ruin",
+    "nameJa": "わざわいのうつわ"
+  },
+  {
+    "id": 285,
+    "slug": "sword-of-ruin",
+    "nameZhHant": "Sword Of Ruin",
+    "nameEn": "Sword of Ruin",
+    "nameJa": "わざわいのつるぎ"
+  },
+  {
+    "id": 286,
+    "slug": "tablets-of-ruin",
+    "nameZhHant": "Tablets Of Ruin",
+    "nameEn": "Tablets of Ruin",
+    "nameJa": "わざわいのおふだ"
+  },
+  {
+    "id": 287,
+    "slug": "beads-of-ruin",
+    "nameZhHant": "Beads Of Ruin",
+    "nameEn": "Beads of Ruin",
+    "nameJa": "わざわいのたま"
+  },
+  {
+    "id": 288,
+    "slug": "orichalcum-pulse",
+    "nameZhHant": "Orichalcum Pulse",
+    "nameEn": "Orichalcum Pulse",
+    "nameJa": "ひひいろのこどう"
+  },
+  {
+    "id": 289,
+    "slug": "hadron-engine",
+    "nameZhHant": "Hadron Engine",
+    "nameEn": "Hadron Engine",
+    "nameJa": "ハドロンエンジン"
+  },
+  {
+    "id": 290,
+    "slug": "opportunist",
+    "nameZhHant": "Opportunist",
+    "nameEn": "Opportunist",
+    "nameJa": "びんじょう"
+  },
+  {
+    "id": 291,
+    "slug": "cud-chew",
+    "nameZhHant": "Cud Chew",
+    "nameEn": "Cud Chew",
+    "nameJa": "はんすう"
+  },
+  {
+    "id": 292,
+    "slug": "sharpness",
+    "nameZhHant": "Sharpness",
+    "nameEn": "Sharpness",
+    "nameJa": "きれあじ"
+  },
+  {
+    "id": 293,
+    "slug": "supreme-overlord",
+    "nameZhHant": "Supreme Overlord",
+    "nameEn": "Supreme Overlord",
+    "nameJa": "そうだいしょう"
+  },
+  {
+    "id": 294,
+    "slug": "costar",
+    "nameZhHant": "Costar",
+    "nameEn": "Costar",
+    "nameJa": "きょうえん"
+  },
+  {
+    "id": 295,
+    "slug": "toxic-debris",
+    "nameZhHant": "Toxic Debris",
+    "nameEn": "Toxic Debris",
+    "nameJa": "どくげしょう"
+  },
+  {
+    "id": 296,
+    "slug": "armor-tail",
+    "nameZhHant": "Armor Tail",
+    "nameEn": "Armor Tail",
+    "nameJa": "テイルアーマー"
+  },
+  {
+    "id": 297,
+    "slug": "earth-eater",
+    "nameZhHant": "Earth Eater",
+    "nameEn": "Earth Eater",
+    "nameJa": "どしょく"
+  },
+  {
+    "id": 298,
+    "slug": "mycelium-might",
+    "nameZhHant": "Mycelium Might",
+    "nameEn": "Mycelium Might",
+    "nameJa": "きんしのちから"
+  },
+  {
+    "id": 299,
+    "slug": "minds-eye",
+    "nameZhHant": "心眼",
+    "nameEn": "Mind’s Eye",
+    "nameJa": "しんがん"
+  },
+  {
+    "id": 300,
+    "slug": "supersweet-syrup",
+    "nameZhHant": "甘露之蜜",
+    "nameEn": "Supersweet Syrup",
+    "nameJa": "かんろなミツ"
+  },
+  {
+    "id": 301,
+    "slug": "hospitality",
+    "nameZhHant": "款待",
+    "nameEn": "Hospitality",
+    "nameJa": "おもてなし"
+  },
+  {
+    "id": 302,
+    "slug": "toxic-chain",
+    "nameZhHant": "毒鎖鏈",
+    "nameEn": "Toxic Chain",
+    "nameJa": "どくのくさり"
+  },
+  {
+    "id": 303,
+    "slug": "embody-aspect",
+    "nameZhHant": "面影輝映",
+    "nameEn": "Embody Aspect",
+    "nameJa": "おもかげやどし"
+  },
+  {
+    "id": 304,
+    "slug": "tera-shift",
+    "nameZhHant": "太晶變形",
+    "nameEn": "Tera Shift",
+    "nameJa": "テラスチェンジ"
+  },
+  {
+    "id": 305,
+    "slug": "tera-shell",
+    "nameZhHant": "太晶甲殼",
+    "nameEn": "Tera Shell",
+    "nameJa": "テラスシェル"
+  },
+  {
+    "id": 306,
+    "slug": "teraform-zero",
+    "nameZhHant": "歸零化境",
+    "nameEn": "Teraform Zero",
+    "nameJa": "ゼロフォーミング"
+  },
+  {
+    "id": 307,
+    "slug": "poison-puppeteer",
+    "nameZhHant": "毒傀儡",
+    "nameEn": "Poison Puppeteer",
+    "nameJa": "どくくぐつ"
+  },
+  {
+    "id": 308,
+    "slug": "piercing-drill",
+    "nameZhHant": "Piercing Drill",
+    "nameEn": "Piercing Drill",
+    "nameJa": "Piercing Drill"
+  },
+  {
+    "id": 309,
+    "slug": "dragonize",
+    "nameZhHant": "Dragonize",
+    "nameEn": "Dragonize",
+    "nameJa": "Dragonize"
+  },
+  {
+    "id": 310,
+    "slug": "mega-sol",
+    "nameZhHant": "Mega Sol",
+    "nameEn": "Mega Sol",
+    "nameJa": "Mega Sol"
+  },
+  {
+    "id": 311,
+    "slug": "spicy-spray",
+    "nameZhHant": "Spicy Spray",
+    "nameEn": "Spicy Spray",
+    "nameJa": "Spicy Spray"
+  },
+  {
+    "id": 10001,
+    "slug": "mountaineer",
+    "nameZhHant": "Mountaineer",
+    "nameEn": "Mountaineer",
+    "nameJa": "Mountaineer"
+  },
+  {
+    "id": 10002,
+    "slug": "wave-rider",
+    "nameZhHant": "Wave Rider",
+    "nameEn": "Wave Rider",
+    "nameJa": "Wave Rider"
+  },
+  {
+    "id": 10003,
+    "slug": "skater",
+    "nameZhHant": "Skater",
+    "nameEn": "Skater",
+    "nameJa": "Skater"
+  },
+  {
+    "id": 10004,
+    "slug": "thrust",
+    "nameZhHant": "Thrust",
+    "nameEn": "Thrust",
+    "nameJa": "Thrust"
+  },
+  {
+    "id": 10005,
+    "slug": "perception",
+    "nameZhHant": "Perception",
+    "nameEn": "Perception",
+    "nameJa": "Perception"
+  },
+  {
+    "id": 10006,
+    "slug": "parry",
+    "nameZhHant": "Parry",
+    "nameEn": "Parry",
+    "nameJa": "Parry"
+  },
+  {
+    "id": 10007,
+    "slug": "instinct",
+    "nameZhHant": "Instinct",
+    "nameEn": "Instinct",
+    "nameJa": "Instinct"
+  },
+  {
+    "id": 10008,
+    "slug": "dodge",
+    "nameZhHant": "Dodge",
+    "nameEn": "Dodge",
+    "nameJa": "Dodge"
+  },
+  {
+    "id": 10009,
+    "slug": "jagged-edge",
+    "nameZhHant": "Jagged Edge",
+    "nameEn": "Jagged Edge",
+    "nameJa": "Jagged Edge"
+  },
+  {
+    "id": 10010,
+    "slug": "frostbite",
+    "nameZhHant": "Frostbite",
+    "nameEn": "Frostbite",
+    "nameJa": "Frostbite"
+  },
+  {
+    "id": 10011,
+    "slug": "tenacity",
+    "nameZhHant": "Tenacity",
+    "nameEn": "Tenacity",
+    "nameJa": "Tenacity"
+  },
+  {
+    "id": 10012,
+    "slug": "pride",
+    "nameZhHant": "Pride",
+    "nameEn": "Pride",
+    "nameJa": "Pride"
+  },
+  {
+    "id": 10013,
+    "slug": "deep-sleep",
+    "nameZhHant": "Deep Sleep",
+    "nameEn": "Deep Sleep",
+    "nameJa": "Deep Sleep"
+  },
+  {
+    "id": 10014,
+    "slug": "power-nap",
+    "nameZhHant": "Power Nap",
+    "nameEn": "Power Nap",
+    "nameJa": "Power Nap"
+  },
+  {
+    "id": 10015,
+    "slug": "spirit",
+    "nameZhHant": "Spirit",
+    "nameEn": "Spirit",
+    "nameJa": "Spirit"
+  },
+  {
+    "id": 10016,
+    "slug": "warm-blanket",
+    "nameZhHant": "Warm Blanket",
+    "nameEn": "Warm Blanket",
+    "nameJa": "Warm Blanket"
+  },
+  {
+    "id": 10017,
+    "slug": "gulp",
+    "nameZhHant": "Gulp",
+    "nameEn": "Gulp",
+    "nameJa": "Gulp"
+  },
+  {
+    "id": 10018,
+    "slug": "herbivore",
+    "nameZhHant": "Herbivore",
+    "nameEn": "Herbivore",
+    "nameJa": "Herbivore"
+  },
+  {
+    "id": 10019,
+    "slug": "sandpit",
+    "nameZhHant": "Sandpit",
+    "nameEn": "Sandpit",
+    "nameJa": "Sandpit"
+  },
+  {
+    "id": 10020,
+    "slug": "hot-blooded",
+    "nameZhHant": "Hot Blooded",
+    "nameEn": "Hot Blooded",
+    "nameJa": "Hot Blooded"
+  },
+  {
+    "id": 10021,
+    "slug": "medic",
+    "nameZhHant": "Medic",
+    "nameEn": "Medic",
+    "nameJa": "Medic"
+  },
+  {
+    "id": 10022,
+    "slug": "life-force",
+    "nameZhHant": "Life Force",
+    "nameEn": "Life Force",
+    "nameJa": "Life Force"
+  },
+  {
+    "id": 10023,
+    "slug": "lunchbox",
+    "nameZhHant": "Lunchbox",
+    "nameEn": "Lunchbox",
+    "nameJa": "Lunchbox"
+  },
+  {
+    "id": 10024,
+    "slug": "nurse",
+    "nameZhHant": "Nurse",
+    "nameEn": "Nurse",
+    "nameJa": "Nurse"
+  },
+  {
+    "id": 10025,
+    "slug": "melee",
+    "nameZhHant": "Melee",
+    "nameEn": "Melee",
+    "nameJa": "Melee"
+  },
+  {
+    "id": 10026,
+    "slug": "sponge",
+    "nameZhHant": "Sponge",
+    "nameEn": "Sponge",
+    "nameJa": "Sponge"
+  },
+  {
+    "id": 10027,
+    "slug": "bodyguard",
+    "nameZhHant": "Bodyguard",
+    "nameEn": "Bodyguard",
+    "nameJa": "Bodyguard"
+  },
+  {
+    "id": 10028,
+    "slug": "hero",
+    "nameZhHant": "Hero",
+    "nameEn": "Hero",
+    "nameJa": "Hero"
+  },
+  {
+    "id": 10029,
+    "slug": "last-bastion",
+    "nameZhHant": "Last Bastion",
+    "nameEn": "Last Bastion",
+    "nameJa": "Last Bastion"
+  },
+  {
+    "id": 10030,
+    "slug": "stealth",
+    "nameZhHant": "Stealth",
+    "nameEn": "Stealth",
+    "nameJa": "Stealth"
+  },
+  {
+    "id": 10031,
+    "slug": "vanguard",
+    "nameZhHant": "Vanguard",
+    "nameEn": "Vanguard",
+    "nameJa": "Vanguard"
+  },
+  {
+    "id": 10032,
+    "slug": "nomad",
+    "nameZhHant": "Nomad",
+    "nameEn": "Nomad",
+    "nameJa": "Nomad"
+  },
+  {
+    "id": 10033,
+    "slug": "sequence",
+    "nameZhHant": "Sequence",
+    "nameEn": "Sequence",
+    "nameJa": "Sequence"
+  },
+  {
+    "id": 10034,
+    "slug": "grass-cloak",
+    "nameZhHant": "Grass Cloak",
+    "nameEn": "Grass Cloak",
+    "nameJa": "Grass Cloak"
+  },
+  {
+    "id": 10035,
+    "slug": "celebrate",
+    "nameZhHant": "Celebrate",
+    "nameEn": "Celebrate",
+    "nameJa": "Celebrate"
+  },
+  {
+    "id": 10036,
+    "slug": "lullaby",
+    "nameZhHant": "Lullaby",
+    "nameEn": "Lullaby",
+    "nameJa": "Lullaby"
+  },
+  {
+    "id": 10037,
+    "slug": "calming",
+    "nameZhHant": "Calming",
+    "nameEn": "Calming",
+    "nameJa": "Calming"
+  },
+  {
+    "id": 10038,
+    "slug": "daze",
+    "nameZhHant": "Daze",
+    "nameEn": "Daze",
+    "nameJa": "Daze"
+  },
+  {
+    "id": 10039,
+    "slug": "frighten",
+    "nameZhHant": "Frighten",
+    "nameEn": "Frighten",
+    "nameJa": "Frighten"
+  },
+  {
+    "id": 10040,
+    "slug": "interference",
+    "nameZhHant": "Interference",
+    "nameEn": "Interference",
+    "nameJa": "Interference"
+  },
+  {
+    "id": 10041,
+    "slug": "mood-maker",
+    "nameZhHant": "Mood Maker",
+    "nameEn": "Mood Maker",
+    "nameJa": "Mood Maker"
+  },
+  {
+    "id": 10042,
+    "slug": "confidence",
+    "nameZhHant": "Confidence",
+    "nameEn": "Confidence",
+    "nameJa": "Confidence"
+  },
+  {
+    "id": 10043,
+    "slug": "fortune",
+    "nameZhHant": "Fortune",
+    "nameEn": "Fortune",
+    "nameJa": "Fortune"
+  },
+  {
+    "id": 10044,
+    "slug": "bonanza",
+    "nameZhHant": "Bonanza",
+    "nameEn": "Bonanza",
+    "nameJa": "Bonanza"
+  },
+  {
+    "id": 10045,
+    "slug": "explode",
+    "nameZhHant": "Explode",
+    "nameEn": "Explode",
+    "nameJa": "Explode"
+  },
+  {
+    "id": 10046,
+    "slug": "omnipotent",
+    "nameZhHant": "Omnipotent",
+    "nameEn": "Omnipotent",
+    "nameJa": "Omnipotent"
+  },
+  {
+    "id": 10047,
+    "slug": "share",
+    "nameZhHant": "Share",
+    "nameEn": "Share",
+    "nameJa": "Share"
+  },
+  {
+    "id": 10048,
+    "slug": "black-hole",
+    "nameZhHant": "Black Hole",
+    "nameEn": "Black Hole",
+    "nameJa": "Black Hole"
+  },
+  {
+    "id": 10049,
+    "slug": "shadow-dash",
+    "nameZhHant": "Shadow Dash",
+    "nameEn": "Shadow Dash",
+    "nameJa": "Shadow Dash"
+  },
+  {
+    "id": 10050,
+    "slug": "sprint",
+    "nameZhHant": "Sprint",
+    "nameEn": "Sprint",
+    "nameJa": "Sprint"
+  },
+  {
+    "id": 10051,
+    "slug": "disgust",
+    "nameZhHant": "Disgust",
+    "nameEn": "Disgust",
+    "nameJa": "Disgust"
+  },
+  {
+    "id": 10052,
+    "slug": "high-rise",
+    "nameZhHant": "High Rise",
+    "nameEn": "High-rise",
+    "nameJa": "High-rise"
+  },
+  {
+    "id": 10053,
+    "slug": "climber",
+    "nameZhHant": "Climber",
+    "nameEn": "Climber",
+    "nameJa": "Climber"
+  },
+  {
+    "id": 10054,
+    "slug": "flame-boost",
+    "nameZhHant": "Flame Boost",
+    "nameEn": "Flame Boost",
+    "nameJa": "Flame Boost"
+  },
+  {
+    "id": 10055,
+    "slug": "aqua-boost",
+    "nameZhHant": "Aqua Boost",
+    "nameEn": "Aqua Boost",
+    "nameJa": "Aqua Boost"
+  },
+  {
+    "id": 10056,
+    "slug": "run-up",
+    "nameZhHant": "Run Up",
+    "nameEn": "Run Up",
+    "nameJa": "Run Up"
+  },
+  {
+    "id": 10057,
+    "slug": "conqueror",
+    "nameZhHant": "Conqueror",
+    "nameEn": "Conqueror",
+    "nameJa": "Conqueror"
+  },
+  {
+    "id": 10058,
+    "slug": "shackle",
+    "nameZhHant": "Shackle",
+    "nameEn": "Shackle",
+    "nameJa": "Shackle"
+  },
+  {
+    "id": 10059,
+    "slug": "decoy",
+    "nameZhHant": "Decoy",
+    "nameEn": "Decoy",
+    "nameJa": "Decoy"
+  },
+  {
+    "id": 10060,
+    "slug": "shield",
+    "nameZhHant": "Shield",
+    "nameEn": "Shield",
+    "nameJa": "Shield"
+  }
+]
