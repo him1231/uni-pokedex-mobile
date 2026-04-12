@@ -24,6 +24,21 @@ const damageClassLabels = {
   special: '特殊',
 }
 
+const moveSectionMeta = {
+  levelUp: { label: '升級招式' },
+  egg: { label: '蛋招式' },
+  machine: { label: '招式機' },
+  tutor: { label: '教學招式' },
+  other: { label: '其他來源' },
+}
+
+const moveMethodToSection = {
+  'level-up': 'levelUp',
+  egg: 'egg',
+  machine: 'machine',
+  tutor: 'tutor',
+}
+
 function formatGenerationSlug(slug = '') {
   return slug.replace('generation-', 'Generation ').replace(/-/g, ' ')
 }
@@ -50,7 +65,67 @@ const collectEvolutionSpeciesIds = (chain) => {
   return [...new Set(ids)]
 }
 
-export async function fetchPokemonDetail(pokemonId, abilityMap = new Map()) {
+const buildMoveSections = (moves = [], moveMap = new Map()) => {
+  const sections = {
+    levelUp: [],
+    egg: [],
+    machine: [],
+    tutor: [],
+    other: [],
+  }
+
+  moves.forEach((entry) => {
+    const versionDetails = (entry.version_group_details ?? []).filter(
+      (detail) => detail.version_group?.name === 'scarlet-violet',
+    )
+
+    versionDetails.forEach((detail) => {
+      const moveMeta = moveMap.get(entry.move?.name)
+      const sectionKey = moveMethodToSection[detail.move_learn_method?.name] ?? 'other'
+      const moveId = moveMeta?.id ?? getResourceIdFromUrl(entry.move?.url) ?? entry.move?.name
+      sections[sectionKey].push({
+        id: `${moveId}-${sectionKey}-${detail.level_learned_at}`,
+        moveId,
+        slug: entry.move?.name ?? '',
+        nameZhHant: moveMeta?.nameZhHant ?? entry.move?.name ?? '',
+        nameEn: moveMeta?.nameEn ?? entry.move?.name ?? '',
+        type: moveMeta?.type ?? null,
+        damageClass: moveMeta?.damageClass ?? null,
+        power: moveMeta?.power ?? null,
+        pp: moveMeta?.pp ?? null,
+        accuracy: moveMeta?.accuracy ?? null,
+        level: detail.level_learned_at ?? 0,
+      })
+    })
+  })
+
+  const dedupe = (items) => {
+    const seen = new Set()
+    return items.filter((item) => {
+      const key = `${item.moveId}-${item.level}`
+      if (seen.has(key)) return false
+      seen.add(key)
+      return true
+    })
+  }
+
+  const order = ['levelUp', 'egg', 'machine', 'tutor', 'other']
+  return order
+    .map((key) => {
+      const items = dedupe(sections[key]).sort((a, b) => {
+        if (key === 'levelUp' && a.level !== b.level) return a.level - b.level
+        return a.moveId - b.moveId
+      })
+      return {
+        key,
+        label: moveSectionMeta[key].label,
+        items,
+      }
+    })
+    .filter((section) => section.items.length > 0)
+}
+
+export async function fetchPokemonDetail(pokemonId, abilityMap = new Map(), moveMap = new Map()) {
   const [pokemonRes, speciesRes] = await Promise.all([
     fetch(`${API_BASE}/pokemon/${pokemonId}`),
     fetch(`${API_BASE}/pokemon-species/${pokemonId}`),
@@ -106,6 +181,7 @@ export async function fetchPokemonDetail(pokemonId, abilityMap = new Map()) {
     legendary: species.is_legendary,
     mythical: species.is_mythical,
     evolutionSpeciesIds: collectEvolutionSpeciesIds(evolutionChain?.chain),
+    moveSections: buildMoveSections(pokemon.moves, moveMap),
   }
 }
 

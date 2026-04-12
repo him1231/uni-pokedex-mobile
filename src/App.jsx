@@ -7,6 +7,7 @@ import { VERSION_FILTER_OPTIONS, getVersionTags, isChampionAvailable, matchesVer
 function App() {
   const [list, setList] = useState([])
   const [abilitiesMap, setAbilitiesMap] = useState(new Map())
+  const [movesMap, setMovesMap] = useState(new Map())
   const [query, setQuery] = useState('')
   const [versionFilter, setVersionFilter] = useState('all')
   const [selected, setSelected] = useState(null)
@@ -38,6 +39,11 @@ function App() {
     fetch(dataUrl('data/abilities-summary.json'))
       .then((r) => r.json())
       .then((arr) => setAbilitiesMap(new Map(arr.map((a) => [a.id, a]))))
+      .catch(() => {})
+
+    fetch(dataUrl('data/moves-summary.json'))
+      .then((r) => r.json())
+      .then((arr) => setMovesMap(new Map(arr.map((m) => [m.slug, m]))))
       .catch(() => {})
   }, [])
 
@@ -75,7 +81,7 @@ function App() {
     setDetail(null)
     setLoadingDetail(true)
     try {
-      const d = await fetchPokemonDetail(p.id, abilitiesMap)
+      const d = await fetchPokemonDetail(p.id, abilitiesMap, movesMap)
       setDetail(d)
     } catch (e) {
       setDetail({ error: true })
@@ -214,7 +220,7 @@ function App() {
                       </div>
                     </section>
 
-                    <section className="abilities">
+                    <section className="detail-section abilities">
                       <h3>特性</h3>
                       <ul>
                         {detail.abilities.map((a) => (
@@ -223,6 +229,50 @@ function App() {
                           </li>
                         ))}
                       </ul>
+                    </section>
+
+                    <section className="detail-section move-sections">
+                      <h3>招式學習表</h3>
+                      {detail.moveSections?.length ? (
+                        detail.moveSections.map((section) => (
+                          <div key={section.key} className="move-section-card">
+                            <div className="move-section-card__header">
+                              <strong>{section.label}</strong>
+                              <span>{section.items.length} 招</span>
+                            </div>
+                            <div className="move-list">
+                              {section.items.map((move) => (
+                                <div key={move.id} className="move-row">
+                                  <div className="move-row__main">
+                                    <div className="move-row__titleline">
+                                      {section.key === 'levelUp' && (
+                                        <span className="move-row__level">Lv.{move.level}</span>
+                                      )}
+                                      <strong>{move.nameZhHant}</strong>
+                                      <span className="move-row__subname">{move.nameEn}</span>
+                                    </div>
+                                    <div className="move-row__meta">
+                                      {move.type && (
+                                        <span className={`type-pill type-${move.type.slug}`}>
+                                          {move.type.nameZhHant}
+                                        </span>
+                                      )}
+                                      {move.damageClass && (
+                                        <span className="move-meta-pill">{move.damageClass.labelZhHant}</span>
+                                      )}
+                                      {move.power !== null && <span className="move-meta-pill">威力 {move.power}</span>}
+                                      {move.accuracy !== null && <span className="move-meta-pill">命中 {move.accuracy}</span>}
+                                      {move.pp !== null && <span className="move-meta-pill">PP {move.pp}</span>}
+                                    </div>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        ))
+                      ) : (
+                        <div className="empty-subsection">暫時未有可顯示招式資料</div>
+                      )}
                     </section>
                   </>
                 )
