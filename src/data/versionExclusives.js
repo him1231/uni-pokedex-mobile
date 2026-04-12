@@ -7,6 +7,8 @@ const VERSION_GROUPS = {
   'violet-indigo': { key: 'violet-indigo', side: 'violet', label: '藍之圓盤・紫版限定', shortLabel: '藍紫' },
 }
 
+const CHAMPION_MAX_SPECIES_ID = 1025
+
 const speciesToKeys = {
   207: ['scarlet-teal'],
   190: ['violet-teal'],
@@ -66,6 +68,7 @@ const speciesToKeys = {
 
 export const VERSION_FILTER_OPTIONS = [
   { value: 'all', label: '全部版本' },
+  { value: 'champion', label: '寶可夢冠軍' },
   { value: 'scarlet-any', label: '朱版限定（全部）' },
   { value: 'violet-any', label: '紫版限定（全部）' },
   { value: 'scarlet-base', label: VERSION_GROUPS['scarlet-base'].label },
@@ -81,8 +84,13 @@ export function getVersionTags(speciesId) {
   return keys.map((key) => VERSION_GROUPS[key]).filter(Boolean)
 }
 
-export function matchesVersionFilter(tags, filterValue) {
+export function isChampionAvailable(speciesId) {
+  return speciesId >= 1 && speciesId <= CHAMPION_MAX_SPECIES_ID
+}
+
+export function matchesVersionFilter(tags, filterValue, championAvailable = false) {
   if (filterValue === 'all') return true
+  if (filterValue === 'champion') return championAvailable
   if (filterValue === 'scarlet-any') return tags.some((tag) => tag.side === 'scarlet')
   if (filterValue === 'violet-any') return tags.some((tag) => tag.side === 'violet')
   return tags.some((tag) => tag.key === filterValue)

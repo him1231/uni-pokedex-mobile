@@ -33,6 +33,23 @@ export const getAbilityIdFromUrl = (url = '') => {
   return match ? Number(match[1]) : null
 }
 
+const getResourceIdFromUrl = (url = '') => {
+  const match = url.match(/\/(\d+)\/?$/)
+  return match ? Number(match[1]) : null
+}
+
+const collectEvolutionSpeciesIds = (chain) => {
+  const ids = []
+  const walk = (node) => {
+    if (!node) return
+    const speciesId = getResourceIdFromUrl(node.species?.url)
+    if (speciesId) ids.push(speciesId)
+    ;(node.evolves_to ?? []).forEach(walk)
+  }
+  walk(chain)
+  return [...new Set(ids)]
+}
+
 export async function fetchPokemonDetail(pokemonId, abilityMap = new Map()) {
   const [pokemonRes, speciesRes] = await Promise.all([
     fetch(`${API_BASE}/pokemon/${pokemonId}`),
@@ -44,6 +61,12 @@ export async function fetchPokemonDetail(pokemonId, abilityMap = new Map()) {
   }
 
   const [pokemon, species] = await Promise.all([pokemonRes.json(), speciesRes.json()])
+
+  const evolutionChain = species.evolution_chain?.url
+    ? await fetch(species.evolution_chain.url)
+        .then((response) => (response.ok ? response.json() : null))
+        .catch(() => null)
+    : null
 
   const flavorText = pickLocalizedText(species.flavor_text_entries, 'zh-Hant')
     ?? pickLocalizedText(species.flavor_text_entries, 'en')
@@ -82,6 +105,7 @@ export async function fetchPokemonDetail(pokemonId, abilityMap = new Map()) {
     habitat: species.habitat?.name ?? null,
     legendary: species.is_legendary,
     mythical: species.is_mythical,
+    evolutionSpeciesIds: collectEvolutionSpeciesIds(evolutionChain?.chain),
   }
 }
 

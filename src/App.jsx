@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import './App.css'
 import PokemonCard from './components/PokemonCard'
 import { fetchPokemonDetail } from './lib/pokeapi'
-import { VERSION_FILTER_OPTIONS, getVersionTags, matchesVersionFilter } from './data/versionExclusives'
+import { VERSION_FILTER_OPTIONS, getVersionTags, isChampionAvailable, matchesVersionFilter } from './data/versionExclusives'
 
 function App() {
   const [list, setList] = useState([])
@@ -26,7 +26,11 @@ function App() {
       .then((r) => r.json())
       .then((data) => {
         // enrich with version tags for filtering/UI
-        const enriched = data.map((p) => ({ ...p, versionTags: getVersionTags(p.speciesId || p.id) }))
+        const enriched = data.map((p) => ({
+          ...p,
+          versionTags: getVersionTags(p.speciesId || p.id),
+          championAvailable: isChampionAvailable(p.speciesId || p.id),
+        }))
         setList(enriched)
       })
       .catch(() => setList([]))
@@ -50,10 +54,15 @@ function App() {
       }
       // version filter
       const tags = p.versionTags || []
-      if (!matchesVersionFilter(tags, versionFilter)) return false
+      if (!matchesVersionFilter(tags, versionFilter, p.championAvailable)) return false
       return true
     })
   }, [list, query, versionFilter])
+
+  const summaryBySpeciesId = useMemo(
+    () => new Map(list.map((pokemon) => [pokemon.speciesId, pokemon])),
+    [list],
+  )
 
   function toggleFav(id) {
     const next = favorites.includes(id) ? favorites.filter((x) => x !== id) : [...favorites, id]
@@ -162,7 +171,38 @@ function App() {
                   <>
                     <p className="flavor">{detail.flavorText}</p>
 
-                    <section className="stats">
+                    {detail.evolutionSpeciesIds?.length > 0 && (
+                      <section className="detail-section">
+                        <h3>進化鏈</h3>
+                        <div className="evolution-family">
+                          {detail.evolutionSpeciesIds.map((speciesId) => {
+                            const familyPokemon = summaryBySpeciesId.get(speciesId)
+                            if (!familyPokemon) {
+                              return (
+                                <span key={speciesId} className="evolution-chip evolution-chip--ghost">
+                                  #{String(speciesId).padStart(4, '0')}
+                                </span>
+                              )
+                            }
+                            const isCurrent = familyPokemon.speciesId === selected.speciesId
+                            return (
+                              <button
+                                key={speciesId}
+                                type="button"
+                                className={`evolution-chip ${isCurrent ? 'is-current' : ''}`}
+                                onClick={() => openDetail(familyPokemon)}
+                              >
+                                <img src={familyPokemon.sprite} alt={familyPokemon.nameZhHant} />
+                                <span>#{String(familyPokemon.speciesId).padStart(4, '0')}</span>
+                                <strong>{familyPokemon.nameZhHant}</strong>
+                              </button>
+                            )
+                          })}
+                        </div>
+                      </section>
+                    )}
+
+                    <section className="detail-section stats">
                       <h3>種族值</h3>
                       <div className="stat-list">
                         {detail.stats.map((s) => (
