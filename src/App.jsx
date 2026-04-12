@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import './App.css'
 import PokemonCard from './components/PokemonCard'
-import { fetchMoveDetail, fetchPokemonDetail, fetchTypeEffectiveness } from './lib/pokeapi'
+import { fetchMoveDetail, fetchPokemonDetail, fetchAbilityDetail, fetchTypeEffectiveness } from './lib/pokeapi'
 import { VERSION_FILTER_OPTIONS, getVersionTags, isChampionAvailable, matchesVersionFilter } from './data/versionExclusives'
 
 function App() {
@@ -18,6 +18,14 @@ function App() {
   const [loadingMoveDetail, setLoadingMoveDetail] = useState(false)
   const [typeChart, setTypeChart] = useState(null)
   const [loadingTypeChart, setLoadingTypeChart] = useState(false)
+
+  // Global ability dex panel states
+  const [showAbilityDex, setShowAbilityDex] = useState(false)
+  const [abilityQuery, setAbilityQuery] = useState('')
+  const [abilityFilterGen, setAbilityFilterGen] = useState('all')
+  const [selectedAbility, setSelectedAbility] = useState(null)
+  const [abilityDetail, setAbilityDetail] = useState(null)
+  const [loadingAbilityDetail, setLoadingAbilityDetail] = useState(false)
 
   // Global move dex panel states
   const [showMoveDex, setShowMoveDex] = useState(false)
@@ -142,6 +150,33 @@ function App() {
     [list],
   )
 
+  // global abilities list and filters
+  const abilitiesList = useMemo(() => Array.from(abilitiesMap.values()), [abilitiesMap])
+
+  const abilityGenerationOptions = useMemo(() => {
+    const set = new Set()
+    abilitiesList.forEach((a) => {
+      if (a.generationLabel) set.add(a.generationLabel)
+    })
+    return Array.from(set)
+  }, [abilitiesList])
+
+  const filteredAbilities = useMemo(() => {
+    const q = abilityQuery.trim().toLowerCase()
+    return abilitiesList.filter((a) => {
+      if (q) {
+        const matchQuery =
+          String(a.id) === q ||
+          (a.nameZhHant && a.nameZhHant.toLowerCase().includes(q)) ||
+          (a.nameEn && a.nameEn.toLowerCase().includes(q)) ||
+          (a.slug && a.slug.toLowerCase().includes(q))
+        if (!matchQuery) return false
+      }
+      if (abilityFilterGen !== 'all' && a.generationLabel !== abilityFilterGen) return false
+      return true
+    })
+  }, [abilitiesList, abilityQuery, abilityFilterGen])
+
   // global moves list and filters
   const movesList = useMemo(() => Array.from(movesMap.values()), [movesMap])
 
@@ -207,6 +242,20 @@ function App() {
     }
   }
 
+  async function openAbilityDetail(ability) {
+    setSelectedAbility(ability)
+    setAbilityDetail(null)
+    setLoadingAbilityDetail(true)
+    try {
+      const data = await fetchAbilityDetail(ability.id)
+      setAbilityDetail(data)
+    } catch (e) {
+      setAbilityDetail({ error: true })
+    } finally {
+      setLoadingAbilityDetail(false)
+    }
+  }
+
   function closeDetail() {
     setSelected(null)
     setDetail(null)
@@ -238,6 +287,9 @@ function App() {
               </option>
             ))}
           </select>
+          <button type="button" className="search" onClick={() => setShowAbilityDex(true)} aria-label="特性搜尋">
+            特性
+          </button>
           <button type="button" className="search" onClick={() => setShowMoveDex(true)} aria-label="招式搜尋">
             招式
           </button>
@@ -503,6 +555,80 @@ function App() {
                   </>
                 )
               )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showAbilityDex && (
+        <div className="detail-overlay" onClick={() => setShowAbilityDex(false)}>
+          <div className="detail" onClick={(e) => e.stopPropagation()}>
+            <button className="close" onClick={() => setShowAbilityDex(false)} aria-label="close">✕</button>
+            <div className="detail-top">
+              <h2 style={{margin:0}}>全域特性搜尋</h2>
+            </div>
+
+            <div className="detail-body">
+              <div style={{display:'flex',flexDirection:'column',gap:8}}>
+                <input
+                  placeholder="搜尋特性或編號 (例：威嚇 / intimidate)"
+                  value={abilityQuery}
+                  onChange={(e) => setAbilityQuery(e.target.value)}
+                  className="search"
+                />
+                <div style={{display:'flex',gap:8}}>
+                  <select value={abilityFilterGen} onChange={(e) => setAbilityFilterGen(e.target.value)} className="search" aria-label="世代">
+                    <option value="all">全部世代</option>
+                    {abilityGenerationOptions.map((g) => (
+                      <option key={g} value={g}>{g}</option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
+              <div className="move-list" style={{marginTop:12,maxHeight:'50vh',overflowY:'auto'}}>
+                {filteredAbilities.length === 0 ? (
+                  <div className="empty-subsection">找不到特性</div>
+                ) : (
+                  filteredAbilities.map((ability) => (
+                    <button key={ability.id} type="button" className={`move-row ${selectedAbility?.id === ability.id ? 'is-active' : ''}`} onClick={() => openAbilityDetail(ability)}>
+                      <div className="move-row__main">
+                        <div className="move-row__titleline">
+                          <strong>{ability.nameZhHant}</strong>
+                          <span className="move-row__subname">{ability.nameEn}</span>
+                        </div>
+                      </div>
+                    </button>
+                  ))
+                )}
+              </div>
+
+              <div className="move-detail-panel" style={{marginTop:12}}>
+                <div className="move-detail-panel__header">
+                  <h4>特性詳情</h4>
+                  <span>{selectedAbility ? '點選其他特性可切換' : '點選上面任一特性查看'}</span>
+                </div>
+
+                {!selectedAbility ? (
+                  <div className="empty-subsection">請先點選一個特性</div>
+                ) : loadingAbilityDetail ? (
+                  <div className="empty-subsection">載入特性詳情中…</div>
+                ) : abilityDetail?.error ? (
+                  <div className="empty-subsection">無法取得特性詳情</div>
+                ) : (
+                  <div className="move-detail-card">
+                    <div className="move-detail-card__titleline">
+                      <strong>{selectedAbility.nameZhHant}</strong>
+                      <span>{selectedAbility.nameEn}</span>
+                    </div>
+                    <p className="move-detail-card__effect">{abilityDetail?.effect || abilityDetail?.flavorText || '暫時未有簡述。'}</p>
+                    <div className="move-detail-grid">
+                      <div className="move-detail-item"><span>世代</span><strong>{abilityDetail?.generationLabel || '—'}</strong></div>
+                      <div className="move-detail-item"><span>影響寶可夢數</span><strong>{abilityDetail?.pokemonCount ?? '—'}</strong></div>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
