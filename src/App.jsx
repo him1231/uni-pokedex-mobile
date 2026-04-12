@@ -12,6 +12,7 @@ function App() {
   const [selected, setSelected] = useState(null)
   const [detail, setDetail] = useState(null)
   const [loadingDetail, setLoadingDetail] = useState(false)
+  const dataUrl = (path) => `${import.meta.env.BASE_URL}${path}`
   const [favorites, setFavorites] = useState(() => {
     try {
       return JSON.parse(localStorage.getItem('ufavs') || '[]')
@@ -21,7 +22,7 @@ function App() {
   })
 
   useEffect(() => {
-    fetch('/data/pokedex-summary.json')
+    fetch(dataUrl('data/pokedex-summary.json'))
       .then((r) => r.json())
       .then((data) => {
         // enrich with version tags for filtering/UI
@@ -30,7 +31,7 @@ function App() {
       })
       .catch(() => setList([]))
 
-    fetch('/data/abilities-summary.json')
+    fetch(dataUrl('data/abilities-summary.json'))
       .then((r) => r.json())
       .then((arr) => setAbilitiesMap(new Map(arr.map((a) => [a.id, a]))))
       .catch(() => {})
