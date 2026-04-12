@@ -10,6 +10,7 @@ function App() {
   const [movesMap, setMovesMap] = useState(new Map())
   const [query, setQuery] = useState('')
   const [versionFilter, setVersionFilter] = useState('all')
+  const [generationFilter, setGenerationFilter] = useState('all')
   const [selected, setSelected] = useState(null)
   const [detail, setDetail] = useState(null)
   const [loadingDetail, setLoadingDetail] = useState(false)
@@ -87,6 +88,8 @@ function App() {
       // version filter
       const tags = p.versionTags || []
       if (!matchesVersionFilter(tags, versionFilter, p.championAvailable)) return false
+      // generation filter
+      if (generationFilter !== 'all' && p.generationLabel !== generationFilter) return false
       // type filter (from FAB)
       if (typeFilter !== 'all') {
         const types = p.types || []
@@ -110,7 +113,7 @@ function App() {
     })
 
     return res
-  }, [list, query, versionFilter, typeFilter, sortOption])
+  }, [list, query, versionFilter, generationFilter, typeFilter, sortOption])
 
   // Type labels (zh / en) for display in the chart
   const TYPE_LABELS = {
@@ -188,6 +191,14 @@ function App() {
     return Array.from(set)
   }, [abilitiesList])
 
+  const pokedexGenerationOptions = useMemo(() => {
+    const set = new Set()
+    list.forEach((p) => {
+      if (p.generationLabel) set.add(p.generationLabel)
+    })
+    return Array.from(set)
+  }, [list])
+
   const filteredAbilities = useMemo(() => {
     const q = abilityQuery.trim().toLowerCase()
     return abilitiesList.filter((a) => {
@@ -207,7 +218,7 @@ function App() {
   // global moves list and filters
   const movesList = useMemo(() => Array.from(movesMap.values()), [movesMap])
 
-  const generationOptions = useMemo(() => {
+  const moveGenerationOptions = useMemo(() => {
     const set = new Set()
     movesList.forEach((m) => {
       if (m.generationLabel) set.add(m.generationLabel)
@@ -314,6 +325,19 @@ function App() {
               </option>
             ))}
           </select>
+
+          <select
+            value={generationFilter}
+            onChange={(e) => setGenerationFilter(e.target.value)}
+            className="search"
+            aria-label="世代篩選"
+          >
+            <option value="all">所有世代</option>
+            {pokedexGenerationOptions.map((g) => (
+              <option key={g} value={g}>{g}</option>
+            ))}
+          </select>
+
           <button type="button" className="search" onClick={() => setShowAbilityDex(true)} aria-label="特性搜尋">
             特性
           </button>
@@ -696,7 +720,7 @@ function App() {
 
                   <select value={moveFilterGen} onChange={(e) => setMoveFilterGen(e.target.value)} className="search" aria-label="世代">
                     <option value="all">全部世代</option>
-                    {generationOptions.map((g) => (
+                    {moveGenerationOptions.map((g) => (
                       <option key={g} value={g}>{g}</option>
                     ))}
                   </select>
