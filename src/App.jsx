@@ -42,6 +42,12 @@ function App() {
     }
   })
 
+  // Floating buttons: type filter + sort
+  const [typeFilter, setTypeFilter] = useState('all')
+  const [sortOption, setSortOption] = useState('id')
+  const [showTypePanel, setShowTypePanel] = useState(false)
+  const [showSortPanel, setShowSortPanel] = useState(false)
+
   useEffect(() => {
     fetch(dataUrl('data/pokedex-summary.json'))
       .then((r) => r.json())
@@ -69,7 +75,7 @@ function App() {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
-    return list.filter((p) => {
+    let res = list.filter((p) => {
       if (q) {
         const matchQuery =
           String(p.id) === q ||
@@ -81,9 +87,30 @@ function App() {
       // version filter
       const tags = p.versionTags || []
       if (!matchesVersionFilter(tags, versionFilter, p.championAvailable)) return false
+      // type filter (from FAB)
+      if (typeFilter !== 'all') {
+        const types = p.types || []
+        if (!types.some((t) => t.slug === typeFilter)) return false
+      }
       return true
     })
-  }, [list, query, versionFilter])
+
+    // sorting
+    res.sort((a, b) => {
+      if (sortOption === 'id') {
+        return (a.speciesId || a.id) - (b.speciesId || b.id)
+      }
+      if (sortOption === 'name') {
+        return String(a.nameZhHant || '').localeCompare(String(b.nameZhHant || ''))
+      }
+      if (sortOption === 'generation') {
+        return String(a.generationLabel || '').localeCompare(String(b.generationLabel || ''))
+      }
+      return 0
+    })
+
+    return res
+  }, [list, query, versionFilter, typeFilter, sortOption])
 
   // Type labels (zh / en) for display in the chart
   const TYPE_LABELS = {
@@ -746,6 +773,37 @@ function App() {
                 )}
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Floating action buttons */}
+      <div className="fab-container" aria-hidden={false}>
+        <button className="fab fab--filter" onClick={() => setShowTypePanel(!showTypePanel)} aria-label="屬性篩選">★</button>
+        <button className="fab fab--sort" onClick={() => setShowSortPanel(!showSortPanel)} aria-label="排序">⇅</button>
+      </div>
+
+      {showTypePanel && (
+        <div className="fab-panel" role="dialog" aria-label="屬性篩選面板">
+          <h4>屬性篩選</h4>
+          <div className="chips">
+            <button className={`chip ${typeFilter === 'all' ? 'is-on' : ''}`} onClick={() => { setTypeFilter('all'); setShowTypePanel(false); }}>全部</button>
+            {Object.keys(TYPE_LABELS).map((k) => (
+              <button key={k} className={`chip ${typeFilter === k ? 'is-on' : ''}`} onClick={() => { setTypeFilter(typeFilter === k ? 'all' : k); setShowTypePanel(false); }}>
+                {TYPE_LABELS[k].zh}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {showSortPanel && (
+        <div className="fab-panel" role="dialog" aria-label="排序面板">
+          <h4>排序</h4>
+          <div className="chips">
+            <button className={`chip ${sortOption === 'id' ? 'is-on' : ''}`} onClick={() => { setSortOption('id'); setShowSortPanel(false); }}>編號</button>
+            <button className={`chip ${sortOption === 'name' ? 'is-on' : ''}`} onClick={() => { setSortOption('name'); setShowSortPanel(false); }}>中文名</button>
+            <button className={`chip ${sortOption === 'generation' ? 'is-on' : ''}`} onClick={() => { setSortOption('generation'); setShowSortPanel(false); }}>世代</button>
           </div>
         </div>
       )}
