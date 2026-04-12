@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import './App.css'
 import PokemonCard from './components/PokemonCard'
-import { fetchMoveDetail, fetchPokemonDetail } from './lib/pokeapi'
+import { fetchMoveDetail, fetchPokemonDetail, fetchTypeEffectiveness } from './lib/pokeapi'
 import { VERSION_FILTER_OPTIONS, getVersionTags, isChampionAvailable, matchesVersionFilter } from './data/versionExclusives'
 
 function App() {
@@ -16,6 +16,8 @@ function App() {
   const [selectedMove, setSelectedMove] = useState(null)
   const [moveDetail, setMoveDetail] = useState(null)
   const [loadingMoveDetail, setLoadingMoveDetail] = useState(false)
+  const [typeChart, setTypeChart] = useState(null)
+  const [loadingTypeChart, setLoadingTypeChart] = useState(false)
   const dataUrl = (path) => `${import.meta.env.BASE_URL}${path}`
   const [favorites, setFavorites] = useState(() => {
     try {
@@ -67,6 +69,66 @@ function App() {
       return true
     })
   }, [list, query, versionFilter])
+
+  // Type labels (zh / en) for display in the chart
+  const TYPE_LABELS = {
+    normal: { zh: '一般', en: 'Normal' },
+    fire: { zh: '火', en: 'Fire' },
+    water: { zh: '水', en: 'Water' },
+    electric: { zh: '電', en: 'Electric' },
+    grass: { zh: '草', en: 'Grass' },
+    ice: { zh: '冰', en: 'Ice' },
+    fighting: { zh: '格鬥', en: 'Fighting' },
+    poison: { zh: '毒', en: 'Poison' },
+    ground: { zh: '地面', en: 'Ground' },
+    flying: { zh: '飛行', en: 'Flying' },
+    psychic: { zh: '超能力', en: 'Psychic' },
+    bug: { zh: '蟲', en: 'Bug' },
+    rock: { zh: '岩石', en: 'Rock' },
+    ghost: { zh: '幽靈', en: 'Ghost' },
+    dragon: { zh: '龍', en: 'Dragon' },
+    dark: { zh: '惡', en: 'Dark' },
+    steel: { zh: '鋼', en: 'Steel' },
+    fairy: { zh: '妖精', en: 'Fairy' },
+  }
+
+  useEffect(() => {
+    // When a new Pokémon is selected, fetch its type effectiveness chart
+    if (!selected) {
+      setTypeChart(null)
+      setLoadingTypeChart(false)
+      return
+    }
+
+    const slugs = (selected.types || []).map((t) => t.slug)
+    if (slugs.length === 0) {
+      setTypeChart(null)
+      setLoadingTypeChart(false)
+      return
+    }
+
+    let cancelled = false
+    setLoadingTypeChart(true)
+    setTypeChart(null)
+    fetchTypeEffectiveness(slugs)
+      .then((chart) => {
+        if (cancelled) return
+        setTypeChart(chart)
+      })
+      .catch(() => {
+        if (cancelled) return
+        setTypeChart(null)
+      })
+      .finally(() => {
+        if (cancelled) return
+        setLoadingTypeChart(false)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [selected])
+
 
   const summaryBySpeciesId = useMemo(
     () => new Map(list.map((pokemon) => [pokemon.speciesId, pokemon])),
@@ -250,6 +312,49 @@ function App() {
                           </li>
                         ))}
                       </ul>
+                    </section>
+
+                    <section className="detail-section type-effectiveness">
+                      <h3>屬性相剋</h3>
+                      {loadingTypeChart ? (
+                        <div className="empty-subsection">載入屬性相剋中…</div>
+                      ) : !typeChart ? (
+                        <div className="empty-subsection">暫無屬性資料</div>
+                      ) : (
+                        <div className="type-chart-grid">
+                          {['4','2','1','0.5','0.25','0'].map((label) => {
+                            const bucket = typeChart.filter((t) => String(t.multiplier) === (label === '1' ? '1' : label === '0' ? '0' : label)).filter(Boolean)
+                            // Note: multiplier may be 4,2,1,0.5,0.25,0
+                            const items = typeChart.filter((t) => {
+                              if (label === '4') return t.multiplier === 4
+                              if (label === '2') return t.multiplier === 2
+                              if (label === '1') return t.multiplier === 1
+                              if (label === '0.5') return t.multiplier === 0.5
+                              if (label === '0.25') return t.multiplier === 0.25
+                              if (label === '0') return t.multiplier === 0
+                              return false
+                            })
+
+                            return (
+                              <div key={label} className="type-chart-bucket">
+                                <div className="type-chart-bucket__label">{label}{label === '0' ? '×' : '×'}</div>
+                                <div className="type-chart-bucket__items">
+                                  {items.length === 0 ? (
+                                    <span className="empty-subsection" style={{display:'inline-block',padding:'6px 8px'}}>—</span>
+                                  ) : (
+                                    items.map((t) => (
+                                      <span key={t.slug} className={`type-pill type-${t.slug}`} style={{marginRight:8}}>
+                                        {TYPE_LABELS[t.slug]?.zh ?? (t.slug.charAt(0).toUpperCase() + t.slug.slice(1))}
+                                        <small style={{marginLeft:6,color:'#6b7280'}}>×{t.multiplier}</small>
+                                      </span>
+                                    ))
+                                  )}
+                                </div>
+                              </div>
+                            )
+                          })}
+                        </div>
+                      )}
                     </section>
 
                     <section className="detail-section move-sections">

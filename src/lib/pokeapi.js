@@ -231,3 +231,53 @@ export async function fetchAbilityDetail(abilityId) {
     pokemonCount: ability.pokemon?.length ?? 0,
   }
 }
+
+// Compute defensive type effectiveness for a Pokémon given its type slugs.
+// Returns an array of { slug, multiplier } for the standard 18 types.
+export async function fetchTypeEffectiveness(defendingTypeSlugs = []) {
+  if (!Array.isArray(defendingTypeSlugs) || defendingTypeSlugs.length === 0) {
+    // default: all types x1
+    return ['normal','fire','water','electric','grass','ice','fighting','poison','ground','flying','psychic','bug','rock','ghost','dragon','dark','steel','fairy'].map((slug) => ({ slug, multiplier: 1 }))
+  }
+
+  // Normalize unique slugs
+  const defs = Array.from(new Set(defendingTypeSlugs.map((s) => String(s).toLowerCase())))
+
+  // Fetch type data from PokeAPI in parallel
+  const promises = defs.map((slug) =>
+    fetch(`${API_BASE}/type/${slug}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null),
+  )
+
+  const results = await Promise.all(promises)
+
+  const defendingMaps = results.map((res) => {
+    if (!res || !res.damage_relations) return {
+      double_damage_from: new Set(),
+      half_damage_from: new Set(),
+      no_damage_from: new Set(),
+    }
+    const dr = res.damage_relations
+    return {
+      double_damage_from: new Set((dr.double_damage_from || []).map((t) => t.name)),
+      half_damage_from: new Set((dr.half_damage_from || []).map((t) => t.name)),
+      no_damage_from: new Set((dr.no_damage_from || []).map((t) => t.name)),
+    }
+  })
+
+  const allAttackTypes = ['normal','fire','water','electric','grass','ice','fighting','poison','ground','flying','psychic','bug','rock','ghost','dragon','dark','steel','fairy']
+
+  const computeMultiplier = (attack) => {
+    let mul = 1
+    for (const dm of defendingMaps) {
+      if (dm.no_damage_from && dm.no_damage_from.has(attack)) return 0
+      if (dm.double_damage_from && dm.double_damage_from.has(attack)) mul *= 2
+      if (dm.half_damage_from && dm.half_damage_from.has(attack)) mul *= 0.5
+    }
+    return mul
+  }
+
+  return allAttackTypes.map((attack) => ({ slug: attack, multiplier: computeMultiplier(attack) }))
+}
+
