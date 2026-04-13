@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import type { PokemonSummary } from '@/types/pokemon'
+import type { PokemonSummary, HomeTransferData } from '@/types/pokemon'
 import type { MoveSummary } from '@/types/moves'
 import type { AbilitySummary } from '@/types/abilities'
 import { getVersionTags, isChampionAvailable } from '@/data/versionExclusives'
@@ -49,6 +49,20 @@ export function useMovesList() {
   return useQuery<MoveSummary[]>({
     queryKey: ['movesList'],
     queryFn: loadMovesList,
+    staleTime: Infinity,
+  })
+}
+
+async function loadHomeTransferData(): Promise<HomeTransferData> {
+  const res = await fetch(`${BASE_URL}data/home-transfer-routes.json`)
+  if (!res.ok) throw new Error('HOME轉移資料載入失敗')
+  return res.json()
+}
+
+export function useHomeTransferData() {
+  return useQuery<HomeTransferData>({
+    queryKey: ['homeTransferData'],
+    queryFn: loadHomeTransferData,
     staleTime: Infinity,
   })
 }

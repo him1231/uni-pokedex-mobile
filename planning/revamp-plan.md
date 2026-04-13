@@ -106,24 +106,24 @@
 ## Milestone 3 — Core Lookup Pages
 
 ### Step 11: Pokémon detail page with form/Mega tabs
-- [ ] `src/pages/PokemonDetailPage.tsx` fully built (replaces M1 placeholder)
-- [ ] `src/components/pokemon/FormTabStrip.tsx` — tabs for regional forms + Megas from Champions data
-- [ ] `src/components/pokemon/StatBars.tsx`
-- [ ] `src/components/pokemon/EvolutionChain.tsx` — chips navigate via `<Link>`
-- [ ] `src/components/pokemon/MoveTable.tsx` + inline move detail
-- [ ] `src/components/pokemon/TypeEffectivenessChart.tsx`
-- [ ] HOME Transfer section in detail page using `home-transfer-routes.json`
-- [ ] Champions legal badge in sticky header
+- [x] `src/pages/PokemonDetailPage.tsx` fully built (replaces M1 placeholder)
+- [x] `src/components/pokemon/FormTabStrip.tsx` — tabs for regional forms + Megas from Champions data
+- [x] `src/components/pokemon/StatBars.tsx`
+- [x] `src/components/pokemon/EvolutionChain.tsx` — chips navigate via `<Link>`
+- [x] `src/components/pokemon/MoveTable.tsx` + inline move detail
+- [x] `src/components/pokemon/TypeEffectivenessChart.tsx`
+- [x] HOME Transfer section in detail page using `home-transfer-routes.json`
+- [x] Champions legal badge in sticky header
 
 ### Step 12: MoveDex standalone page
-- [ ] `src/pages/MoveDexPage.tsx` fully built
-- [ ] Filters: name, type, damage class, generation (gen filter now works after Step 8)
-- [ ] Virtualized list + inline move detail panel
+- [x] `src/pages/MoveDexPage.tsx` fully built
+- [x] Filters: name, type, damage class, generation (gen filter now works after Step 8)
+- [x] Virtualized list + inline move detail panel
 
 ### Step 13: AbilityDex standalone page
-- [ ] `src/pages/AbilityDexPage.tsx` fully built
-- [ ] Filters: name, generation
-- [ ] Inline ability detail; "擁有此特性的寶可夢" count with filtered Dex link
+- [x] `src/pages/AbilityDexPage.tsx` fully built
+- [x] Filters: name, generation
+- [x] Inline ability detail; "擁有此特性的寶可夢" count with filtered Dex link
 
 ---
 

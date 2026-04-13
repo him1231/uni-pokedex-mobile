@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useAbilitiesList } from '@/hooks/usePokemonList'
 import { useAbilityDetail } from '@/hooks/useAbilityDetail'
 import type { AbilitySummary } from '@/types/abilities'
@@ -134,7 +135,16 @@ export default function AbilityDexPage() {
                 </div>
                 <div className="move-detail-item">
                   <span>影響寶可夢數</span>
-                  <strong>{abilityDetail?.pokemonCount ?? '—'}</strong>
+                  <strong>
+                    {abilityDetail?.pokemonCount != null ? (
+                      <Link
+                        to={`/?ability=${encodeURIComponent(selectedAbility.slug)}`}
+                        className="ability-pokemon-link"
+                      >
+                        {abilityDetail.pokemonCount} 隻
+                      </Link>
+                    ) : '—'}
+                  </strong>
                 </div>
               </div>
             </div>
