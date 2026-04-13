@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Uni 圖鑑</title>
+  <!-- Single Page Apps for GitHub Pages — redirect path via query string -->
+  <script type="text/javascript">
+    // pathSegmentsToKeep = 1 for Project Pages (keeps /uni-pokedex-mobile/ segment)
+    var pathSegmentsToKeep = 1;
+    var l = window.location;
+    l.replace(
+      l.protocol + '//' + l.host + '/' +
+      l.pathname.slice(1).split('/').slice(0, pathSegmentsToKeep).join('/') + '/?/' +
+      l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
+    );
+  </script>
+</head>
+<body></body>
+</html>

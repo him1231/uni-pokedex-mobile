@@ -3,10 +3,21 @@
   --card-bg: #fff;
   --muted: #6b7280;
   --accent: #ef4444;
+  --nav-height: 60px;
 }
 *{box-sizing:border-box}
 body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#111}
 .app-root{min-height:100vh;display:flex;flex-direction:column}
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}.skip-link:focus{position:fixed;top:0;left:0;width:auto;height:auto;padding:8px 16px;background:#111;color:#fff;z-index:9999;border-radius:0 0 8px 0}
+.main-content{flex:1;padding-bottom:var(--nav-height)}
+
+/* Bottom navigation */
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;height:var(--nav-height);background:#fff;border-top:1px solid #e5e7eb;display:flex;align-items:stretch;z-index:20;box-shadow:0 -2px 8px rgba(0,0,0,0.06)}
+.bottom-nav__item{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none;color:var(--muted);font-size:10px;font-weight:600;transition:color 0.15s;min-width:0;padding:4px 0}
+.bottom-nav__item:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.bottom-nav__item.is-active{color:var(--accent)}
+.bottom-nav__icon{font-size:20px;line-height:1}
+.bottom-nav__label{white-space:nowrap}
 .top{padding:14px 12px;background:#fff;border-bottom:1px solid #eef2f7;display:flex;flex-direction:column;gap:8px}
 .top h1{margin:0;font-size:18px}
 .controls{display:flex;gap:8px}
