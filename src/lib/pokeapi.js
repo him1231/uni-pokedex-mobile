@@ -126,16 +126,16 @@ const buildMoveSections = (moves = [], moveMap = new Map()) => {
 }
 
 export async function fetchPokemonDetail(pokemonId, abilityMap = new Map(), moveMap = new Map()) {
-  const [pokemonRes, speciesRes] = await Promise.all([
-    fetch(`${API_BASE}/pokemon/${pokemonId}`),
-    fetch(`${API_BASE}/pokemon-species/${pokemonId}`),
-  ])
+  // Fetch pokemon first so we can use its species URL.
+  // Alternate form slugs (e.g. venusaur-mega) don't have their own pokemon-species endpoint,
+  // but pokemon.species.url always points to the correct base species.
+  const pokemonRes = await fetch(`${API_BASE}/pokemon/${pokemonId}`)
+  if (!pokemonRes.ok) throw new Error('無法載入寶可夢詳情')
+  const pokemon = await pokemonRes.json()
 
-  if (!pokemonRes.ok || !speciesRes.ok) {
-    throw new Error('無法載入寶可夢詳情')
-  }
-
-  const [pokemon, species] = await Promise.all([pokemonRes.json(), speciesRes.json()])
+  const speciesRes = await fetch(pokemon.species.url)
+  if (!speciesRes.ok) throw new Error('無法載入寶可夢詳情')
+  const species = await speciesRes.json()
 
   const evolutionChain = species.evolution_chain?.url
     ? await fetch(species.evolution_chain.url)

@@ -134,6 +134,8 @@ export default function DexPage() {
   const [versionFilter, setVersionFilter] = useState('all')
   const [generationFilter, setGenerationFilter] = useState('all')
   const [typeFilter, setTypeFilter] = useState('all')
+  const [typeMatchMode, setTypeMatchMode] = useState<'any' | 'exact'>('any')
+  const [typeFilter2, setTypeFilter2] = useState('all')
   const [sortOption, setSortOption] = useState<'id' | 'name' | 'generation'>('id')
   const [showChampionsOnly, setShowChampionsOnly] = useState(false)
   const [showTypePanel, setShowTypePanel] = useState(false)
@@ -196,7 +198,20 @@ export default function DexPage() {
       if (!matchesVersionFilter(tags, versionFilter, p.championAvailable)) return false
       if (generationFilter !== 'all' && p.generationLabel !== generationFilter) return false
       if (typeFilter !== 'all') {
-        if (!p.types.some((t) => t.slug === typeFilter)) return false
+        if (typeMatchMode === 'exact') {
+          const typeSlugs = p.types.map((t) => t.slug)
+          if (typeFilter2 !== 'all') {
+            // both slots filled — require exactly these two types (order-independent)
+            if (typeSlugs.length !== 2) return false
+            if (!typeSlugs.includes(typeFilter) || !typeSlugs.includes(typeFilter2)) return false
+          } else {
+            // only first slot — require exactly this single type
+            if (typeSlugs.length !== 1 || typeSlugs[0] !== typeFilter) return false
+          }
+        } else {
+          // any mode — at least one type must match
+          if (!p.types.some((t) => t.slug === typeFilter)) return false
+        }
       }
       return true
     })
@@ -209,7 +224,7 @@ export default function DexPage() {
     })
 
     return res
-  }, [list, query, versionFilter, generationFilter, typeFilter, sortOption, showChampionsOnly])
+  }, [list, query, versionFilter, generationFilter, typeFilter, typeMatchMode, typeFilter2, sortOption, showChampionsOnly])
 
   const handleCardClick = useCallback((p: PokemonSummary) => {
     navigate(`/pokemon/${p.speciesId || p.id}`)
@@ -371,29 +386,101 @@ export default function DexPage() {
             aria-expanded={showTypePanel}
             aria-label="屬性篩選"
           >
-            {typeFilter !== 'all' ? TYPE_LABELS[typeFilter]?.zh ?? typeFilter : '🔖'}
+            {typeFilter !== 'all'
+              ? typeMatchMode === 'exact' && typeFilter2 !== 'all'
+                ? `${TYPE_LABELS[typeFilter]?.zh ?? typeFilter}/${TYPE_LABELS[typeFilter2]?.zh ?? typeFilter2}`
+                : TYPE_LABELS[typeFilter]?.zh ?? typeFilter
+              : '🔖'}
           </button>
           {showTypePanel && (
             <div className="fab-panel" role="dialog" aria-label="選擇屬性">
-              <div className="fab-panel__grid">
+              {/* Mode toggle */}
+              <div className="fab-panel__mode-toggle" role="group" aria-label="篩選模式">
                 <button
                   type="button"
-                  className={`fab-type-btn${typeFilter === 'all' ? ' is-active' : ''}`}
-                  onClick={() => { setTypeFilter('all'); setShowTypePanel(false) }}
+                  className={`fab-panel__mode-btn${typeMatchMode === 'any' ? ' fab-panel__mode-btn--active' : ''}`}
+                  onClick={() => { setTypeMatchMode('any'); setTypeFilter2('all') }}
+                  aria-pressed={typeMatchMode === 'any'}
                 >
-                  全部
+                  任一屬性
                 </button>
+                <button
+                  type="button"
+                  className={`fab-panel__mode-btn${typeMatchMode === 'exact' ? ' fab-panel__mode-btn--active' : ''}`}
+                  onClick={() => setTypeMatchMode('exact')}
+                  aria-pressed={typeMatchMode === 'exact'}
+                >
+                  完全符合
+                </button>
+              </div>
+
+              {/* Reset all */}
+              <button
+                type="button"
+                className={`fab-type-btn${typeFilter === 'all' ? ' is-active' : ''}`}
+                onClick={() => { setTypeFilter('all'); setTypeFilter2('all'); setTypeMatchMode('any'); setShowTypePanel(false) }}
+                style={{ marginBottom: 6, width: '100%' }}
+              >
+                全部（重設）
+              </button>
+
+              {/* Slot 1 */}
+              {typeMatchMode === 'exact' && (
+                <div className="fab-panel__type-label">屬性 1</div>
+              )}
+              <div className="fab-panel__grid">
                 {Object.entries(TYPE_LABELS).map(([slug, { zh }]) => (
                   <button
                     key={slug}
                     type="button"
                     className={`fab-type-btn type-pill type-${slug}${typeFilter === slug ? ' is-active' : ''}`}
-                    onClick={() => { setTypeFilter(slug); setShowTypePanel(false) }}
+                    onClick={() => {
+                      setTypeFilter(slug)
+                      if (typeMatchMode === 'any') setShowTypePanel(false)
+                      // if newly selected slot1 == slot2, clear slot2
+                      if (slug === typeFilter2) setTypeFilter2('all')
+                    }}
                   >
                     {zh}
                   </button>
                 ))}
               </div>
+
+              {/* Slot 2 — only in exact mode */}
+              {typeMatchMode === 'exact' && (
+                <>
+                  <div className="fab-panel__type-label" style={{ marginTop: 8 }}>屬性 2（選填）</div>
+                  <div className="fab-panel__grid">
+                    <button
+                      type="button"
+                      className={`fab-type-btn${typeFilter2 === 'all' ? ' is-active' : ''}`}
+                      onClick={() => setTypeFilter2('all')}
+                    >
+                      （無）
+                    </button>
+                    {Object.entries(TYPE_LABELS).map(([slug, { zh }]) => (
+                      <button
+                        key={slug}
+                        type="button"
+                        className={`fab-type-btn type-pill type-${slug}${typeFilter2 === slug ? ' is-active' : ''}${slug === typeFilter ? ' fab-type-btn--muted' : ''}`}
+                        disabled={slug === typeFilter}
+                        onClick={() => setTypeFilter2(slug)}
+                      >
+                        {zh}
+                      </button>
+                    ))}
+                  </div>
+                  <div className="fab-panel__confirm-row">
+                    <button
+                      type="button"
+                      className="fab-panel__confirm-btn"
+                      onClick={() => setShowTypePanel(false)}
+                    >
+                      確認
+                    </button>
+                  </div>
+                </>
+              )}
             </div>
           )}
         </div>

@@ -368,3 +368,13 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 .vp-name-link{color:#4f46e5;font-weight:600;text-decoration:none}
 .vp-name-link:hover{text-decoration:underline}
 .vp-last-updated{font-size:11px;color:#9ca3af;margin-top:8px}
+
+/* Type filter panel — exact match mode */
+.fab-panel__mode-toggle{display:flex;gap:4px;margin-bottom:8px}
+.fab-panel__mode-btn{flex:1;padding:5px 0;border-radius:7px;border:1px solid #e5e7eb;background:#f9fafb;font-size:12px;cursor:pointer;font-weight:600;color:#6b7280}
+.fab-panel__mode-btn--active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.fab-panel__type-label{font-size:11px;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+.fab-type-btn--muted{opacity:.35;pointer-events:none}
+.fab-panel__confirm-row{display:flex;justify-content:flex-end;margin-top:10px}
+.fab-panel__confirm-btn{padding:6px 18px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-size:13px;font-weight:700;cursor:pointer}
+.fab-panel__confirm-btn:hover{filter:brightness(1.1)}

@@ -31,6 +31,11 @@ export default function PokemonDetailPage() {
     if (pokemonId) addRecent(pokemonId)
   }, [pokemonId, addRecent])
 
+  const summary = useMemo(
+    () => list.find((p) => (p.speciesId || p.id) === pokemonId),
+    [list, pokemonId],
+  )
+
   // Per-route page title
   useEffect(() => {
     if (summary) {
@@ -39,11 +44,6 @@ export default function PokemonDetailPage() {
       document.title = 'Uni 圖鑑'
     }
   }, [summary])
-
-  const summary = useMemo(
-    () => list.find((p) => (p.speciesId || p.id) === pokemonId),
-    [list, pokemonId],
-  )
   const summaryBySpeciesId = useMemo(
     () => new Map(list.map((p) => [p.speciesId, p])),
     [list],
