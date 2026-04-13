@@ -79,3 +79,19 @@
   gap: 6px;
   margin-top: 8px;
 }
+
+.pokemon-card--not-legal {
+  opacity: 0.45;
+  filter: grayscale(0.7);
+}
+
+.pokemon-card__topline-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pokemon-card__champions-badge {
+  font-size: 14px;
+  line-height: 1;
+}

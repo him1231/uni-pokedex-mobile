@@ -76,6 +76,7 @@ export default function DexPage() {
   const [generationFilter, setGenerationFilter] = useState('all')
   const [typeFilter, setTypeFilter] = useState('all')
   const [sortOption, setSortOption] = useState<'id' | 'name' | 'generation'>('id')
+  const [showChampionsOnly, setShowChampionsOnly] = useState(false)
   const [showTypePanel, setShowTypePanel] = useState(false)
   const [showSortPanel, setShowSortPanel] = useState(false)
   const [favorites, setFavorites] = useState<number[]>(() => {
@@ -104,6 +105,7 @@ export default function DexPage() {
         if (!matchQuery) return false
       }
       const tags = p.versionTags ?? []
+      if (showChampionsOnly && !p.isChampionsLegal) return false
       if (!matchesVersionFilter(tags, versionFilter, p.championAvailable)) return false
       if (generationFilter !== 'all' && p.generationLabel !== generationFilter) return false
       if (typeFilter !== 'all') {
@@ -120,7 +122,7 @@ export default function DexPage() {
     })
 
     return res
-  }, [list, query, versionFilter, generationFilter, typeFilter, sortOption])
+  }, [list, query, versionFilter, generationFilter, typeFilter, sortOption, showChampionsOnly])
 
   const toggleFav = useCallback((id: number) => {
     setFavorites((prev) => {
@@ -172,6 +174,15 @@ export default function DexPage() {
             className="search"
             aria-label="搜尋寶可夢"
           />
+          <button
+            type="button"
+            className={`search champions-toggle${showChampionsOnly ? ' champions-toggle--on' : ''}`}
+            onClick={() => setShowChampionsOnly((v) => !v)}
+            aria-pressed={showChampionsOnly}
+            aria-label="僅顯示Champions寶可夢"
+          >
+            ⚔️ 僅Champions
+          </button>
           <select
             value={versionFilter}
             onChange={(e) => setVersionFilter(e.target.value)}

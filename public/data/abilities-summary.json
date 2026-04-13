@@ -4,2596 +4,3338 @@
     "slug": "stench",
     "nameZhHant": "惡臭",
     "nameEn": "Stench",
-    "nameJa": "あくしゅう"
+    "nameJa": "あくしゅう",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 2,
     "slug": "drizzle",
     "nameZhHant": "降雨",
     "nameEn": "Drizzle",
-    "nameJa": "あめふらし"
+    "nameJa": "あめふらし",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 3,
     "slug": "speed-boost",
     "nameZhHant": "加速",
     "nameEn": "Speed Boost",
-    "nameJa": "かそく"
+    "nameJa": "かそく",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 4,
     "slug": "battle-armor",
     "nameZhHant": "戰鬥盔甲",
     "nameEn": "Battle Armor",
-    "nameJa": "カブトアーマー"
+    "nameJa": "カブトアーマー",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 5,
     "slug": "sturdy",
     "nameZhHant": "結實",
     "nameEn": "Sturdy",
-    "nameJa": "がんじょう"
+    "nameJa": "がんじょう",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 6,
     "slug": "damp",
     "nameZhHant": "濕氣",
     "nameEn": "Damp",
-    "nameJa": "しめりけ"
+    "nameJa": "しめりけ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 7,
     "slug": "limber",
     "nameZhHant": "柔軟",
     "nameEn": "Limber",
-    "nameJa": "じゅうなん"
+    "nameJa": "じゅうなん",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 8,
     "slug": "sand-veil",
     "nameZhHant": "沙隱",
     "nameEn": "Sand Veil",
-    "nameJa": "すながくれ"
+    "nameJa": "すながくれ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 9,
     "slug": "static",
     "nameZhHant": "靜電",
     "nameEn": "Static",
-    "nameJa": "せいでんき"
+    "nameJa": "せいでんき",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 10,
     "slug": "volt-absorb",
     "nameZhHant": "蓄電",
     "nameEn": "Volt Absorb",
-    "nameJa": "ちくでん"
+    "nameJa": "ちくでん",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 11,
     "slug": "water-absorb",
     "nameZhHant": "儲水",
     "nameEn": "Water Absorb",
-    "nameJa": "ちょすい"
+    "nameJa": "ちょすい",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 12,
     "slug": "oblivious",
     "nameZhHant": "遲鈍",
     "nameEn": "Oblivious",
-    "nameJa": "どんかん"
+    "nameJa": "どんかん",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 13,
     "slug": "cloud-nine",
     "nameZhHant": "無關天氣",
     "nameEn": "Cloud Nine",
-    "nameJa": "ノーてんき"
+    "nameJa": "ノーてんき",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 14,
     "slug": "compound-eyes",
     "nameZhHant": "複眼",
     "nameEn": "Compound Eyes",
-    "nameJa": "ふくがん"
+    "nameJa": "ふくがん",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 15,
     "slug": "insomnia",
     "nameZhHant": "不眠",
     "nameEn": "Insomnia",
-    "nameJa": "ふみん"
+    "nameJa": "ふみん",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 16,
     "slug": "color-change",
     "nameZhHant": "變色",
     "nameEn": "Color Change",
-    "nameJa": "へんしょく"
+    "nameJa": "へんしょく",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 17,
     "slug": "immunity",
     "nameZhHant": "免疫",
     "nameEn": "Immunity",
-    "nameJa": "めんえき"
+    "nameJa": "めんえき",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 18,
     "slug": "flash-fire",
     "nameZhHant": "引火",
     "nameEn": "Flash Fire",
-    "nameJa": "もらいび"
+    "nameJa": "もらいび",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 19,
     "slug": "shield-dust",
     "nameZhHant": "鱗粉",
     "nameEn": "Shield Dust",
-    "nameJa": "りんぷん"
+    "nameJa": "りんぷん",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 20,
     "slug": "own-tempo",
     "nameZhHant": "我行我素",
     "nameEn": "Own Tempo",
-    "nameJa": "マイペース"
+    "nameJa": "マイペース",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 21,
     "slug": "suction-cups",
     "nameZhHant": "吸盤",
     "nameEn": "Suction Cups",
-    "nameJa": "きゅうばん"
+    "nameJa": "きゅうばん",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 22,
     "slug": "intimidate",
     "nameZhHant": "威嚇",
     "nameEn": "Intimidate",
-    "nameJa": "いかく"
+    "nameJa": "いかく",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 23,
     "slug": "shadow-tag",
     "nameZhHant": "踩影",
     "nameEn": "Shadow Tag",
-    "nameJa": "かげふみ"
+    "nameJa": "かげふみ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 24,
     "slug": "rough-skin",
     "nameZhHant": "粗糙皮膚",
     "nameEn": "Rough Skin",
-    "nameJa": "さめはだ"
+    "nameJa": "さめはだ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 25,
     "slug": "wonder-guard",
     "nameZhHant": "神奇守護",
     "nameEn": "Wonder Guard",
-    "nameJa": "ふしぎなまもり"
+    "nameJa": "ふしぎなまもり",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 26,
     "slug": "levitate",
     "nameZhHant": "飄浮",
     "nameEn": "Levitate",
-    "nameJa": "ふゆう"
+    "nameJa": "ふゆう",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 27,
     "slug": "effect-spore",
     "nameZhHant": "孢子",
     "nameEn": "Effect Spore",
-    "nameJa": "ほうし"
+    "nameJa": "ほうし",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 28,
     "slug": "synchronize",
     "nameZhHant": "同步",
     "nameEn": "Synchronize",
-    "nameJa": "シンクロ"
+    "nameJa": "シンクロ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 29,
     "slug": "clear-body",
     "nameZhHant": "恆淨之軀",
     "nameEn": "Clear Body",
-    "nameJa": "クリアボディ"
+    "nameJa": "クリアボディ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 30,
     "slug": "natural-cure",
     "nameZhHant": "自然回復",
     "nameEn": "Natural Cure",
-    "nameJa": "しぜんかいふく"
+    "nameJa": "しぜんかいふく",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 31,
     "slug": "lightning-rod",
     "nameZhHant": "避雷針",
     "nameEn": "Lightning Rod",
-    "nameJa": "ひらいしん"
+    "nameJa": "ひらいしん",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 32,
     "slug": "serene-grace",
     "nameZhHant": "天恩",
     "nameEn": "Serene Grace",
-    "nameJa": "てんのめぐみ"
+    "nameJa": "てんのめぐみ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 33,
     "slug": "swift-swim",
     "nameZhHant": "悠游自如",
     "nameEn": "Swift Swim",
-    "nameJa": "すいすい"
+    "nameJa": "すいすい",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 34,
     "slug": "chlorophyll",
     "nameZhHant": "葉綠素",
     "nameEn": "Chlorophyll",
-    "nameJa": "ようりょくそ"
+    "nameJa": "ようりょくそ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 35,
     "slug": "illuminate",
     "nameZhHant": "發光",
     "nameEn": "Illuminate",
-    "nameJa": "はっこう"
+    "nameJa": "はっこう",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 36,
     "slug": "trace",
     "nameZhHant": "複製",
     "nameEn": "Trace",
-    "nameJa": "トレース"
+    "nameJa": "トレース",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 37,
     "slug": "huge-power",
     "nameZhHant": "大力士",
     "nameEn": "Huge Power",
-    "nameJa": "ちからもち"
+    "nameJa": "ちからもち",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 38,
     "slug": "poison-point",
     "nameZhHant": "毒刺",
     "nameEn": "Poison Point",
-    "nameJa": "どくのトゲ"
+    "nameJa": "どくのトゲ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 39,
     "slug": "inner-focus",
     "nameZhHant": "精神力",
     "nameEn": "Inner Focus",
-    "nameJa": "せいしんりょく"
+    "nameJa": "せいしんりょく",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 40,
     "slug": "magma-armor",
     "nameZhHant": "熔岩鎧甲",
     "nameEn": "Magma Armor",
-    "nameJa": "マグマのよろい"
+    "nameJa": "マグマのよろい",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 41,
     "slug": "water-veil",
     "nameZhHant": "水幕",
     "nameEn": "Water Veil",
-    "nameJa": "みずのベール"
+    "nameJa": "みずのベール",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 42,
     "slug": "magnet-pull",
     "nameZhHant": "磁力",
     "nameEn": "Magnet Pull",
-    "nameJa": "じりょく"
+    "nameJa": "じりょく",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 43,
     "slug": "soundproof",
     "nameZhHant": "隔音",
     "nameEn": "Soundproof",
-    "nameJa": "ぼうおん"
+    "nameJa": "ぼうおん",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 44,
     "slug": "rain-dish",
     "nameZhHant": "雨盤",
     "nameEn": "Rain Dish",
-    "nameJa": "あめうけざら"
+    "nameJa": "あめうけざら",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 45,
     "slug": "sand-stream",
     "nameZhHant": "揚沙",
     "nameEn": "Sand Stream",
-    "nameJa": "すなおこし"
+    "nameJa": "すなおこし",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 46,
     "slug": "pressure",
     "nameZhHant": "壓迫感",
     "nameEn": "Pressure",
-    "nameJa": "プレッシャー"
+    "nameJa": "プレッシャー",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 47,
     "slug": "thick-fat",
     "nameZhHant": "厚脂肪",
     "nameEn": "Thick Fat",
-    "nameJa": "あついしぼう"
+    "nameJa": "あついしぼう",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 48,
     "slug": "early-bird",
     "nameZhHant": "早起",
     "nameEn": "Early Bird",
-    "nameJa": "はやおき"
+    "nameJa": "はやおき",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 49,
     "slug": "flame-body",
     "nameZhHant": "火焰之軀",
     "nameEn": "Flame Body",
-    "nameJa": "ほのおのからだ"
+    "nameJa": "ほのおのからだ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 50,
     "slug": "run-away",
     "nameZhHant": "逃跑",
     "nameEn": "Run Away",
-    "nameJa": "にげあし"
+    "nameJa": "にげあし",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 51,
     "slug": "keen-eye",
     "nameZhHant": "銳利目光",
     "nameEn": "Keen Eye",
-    "nameJa": "するどいめ"
+    "nameJa": "するどいめ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 52,
     "slug": "hyper-cutter",
     "nameZhHant": "怪力鉗",
     "nameEn": "Hyper Cutter",
-    "nameJa": "かいりきバサミ"
+    "nameJa": "かいりきバサミ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 53,
     "slug": "pickup",
     "nameZhHant": "撿拾",
     "nameEn": "Pickup",
-    "nameJa": "ものひろい"
+    "nameJa": "ものひろい",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 54,
     "slug": "truant",
     "nameZhHant": "懶惰",
     "nameEn": "Truant",
-    "nameJa": "なまけ"
+    "nameJa": "なまけ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 55,
     "slug": "hustle",
     "nameZhHant": "活力",
     "nameEn": "Hustle",
-    "nameJa": "はりきり"
+    "nameJa": "はりきり",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 56,
     "slug": "cute-charm",
     "nameZhHant": "迷人之軀",
     "nameEn": "Cute Charm",
-    "nameJa": "メロメロボディ"
+    "nameJa": "メロメロボディ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 57,
     "slug": "plus",
     "nameZhHant": "正電",
     "nameEn": "Plus",
-    "nameJa": "プラス"
+    "nameJa": "プラス",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 58,
     "slug": "minus",
     "nameZhHant": "負電",
     "nameEn": "Minus",
-    "nameJa": "マイナス"
+    "nameJa": "マイナス",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 59,
     "slug": "forecast",
     "nameZhHant": "陰晴不定",
     "nameEn": "Forecast",
-    "nameJa": "てんきや"
+    "nameJa": "てんきや",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 60,
     "slug": "sticky-hold",
     "nameZhHant": "黏著",
     "nameEn": "Sticky Hold",
-    "nameJa": "ねんちゃく"
+    "nameJa": "ねんちゃく",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 61,
     "slug": "shed-skin",
     "nameZhHant": "蛻皮",
     "nameEn": "Shed Skin",
-    "nameJa": "だっぴ"
+    "nameJa": "だっぴ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 62,
     "slug": "guts",
     "nameZhHant": "毅力",
     "nameEn": "Guts",
-    "nameJa": "こんじょう"
+    "nameJa": "こんじょう",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 63,
     "slug": "marvel-scale",
     "nameZhHant": "神奇鱗片",
     "nameEn": "Marvel Scale",
-    "nameJa": "ふしぎなうろこ"
+    "nameJa": "ふしぎなうろこ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 64,
     "slug": "liquid-ooze",
     "nameZhHant": "污泥漿",
     "nameEn": "Liquid Ooze",
-    "nameJa": "ヘドロえき"
+    "nameJa": "ヘドロえき",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 65,
     "slug": "overgrow",
     "nameZhHant": "茂盛",
     "nameEn": "Overgrow",
-    "nameJa": "しんりょく"
+    "nameJa": "しんりょく",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 66,
     "slug": "blaze",
     "nameZhHant": "猛火",
     "nameEn": "Blaze",
-    "nameJa": "もうか"
+    "nameJa": "もうか",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 67,
     "slug": "torrent",
     "nameZhHant": "激流",
     "nameEn": "Torrent",
-    "nameJa": "げきりゅう"
+    "nameJa": "げきりゅう",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 68,
     "slug": "swarm",
     "nameZhHant": "蟲之預感",
     "nameEn": "Swarm",
-    "nameJa": "むしのしらせ"
+    "nameJa": "むしのしらせ",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 69,
     "slug": "rock-head",
     "nameZhHant": "堅硬腦袋",
     "nameEn": "Rock Head",
-    "nameJa": "いしあたま"
+    "nameJa": "いしあたま",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 70,
     "slug": "drought",
     "nameZhHant": "日照",
     "nameEn": "Drought",
-    "nameJa": "ひでり"
+    "nameJa": "ひでり",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 71,
     "slug": "arena-trap",
     "nameZhHant": "沙穴",
     "nameEn": "Arena Trap",
-    "nameJa": "ありじごく"
+    "nameJa": "ありじごく",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 72,
     "slug": "vital-spirit",
     "nameZhHant": "幹勁",
     "nameEn": "Vital Spirit",
-    "nameJa": "やるき"
+    "nameJa": "やるき",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 73,
     "slug": "white-smoke",
     "nameZhHant": "白色煙霧",
     "nameEn": "White Smoke",
-    "nameJa": "しろいけむり"
+    "nameJa": "しろいけむり",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 74,
     "slug": "pure-power",
     "nameZhHant": "瑜伽之力",
     "nameEn": "Pure Power",
-    "nameJa": "ヨガパワー"
+    "nameJa": "ヨガパワー",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 75,
     "slug": "shell-armor",
     "nameZhHant": "硬殼盔甲",
     "nameEn": "Shell Armor",
-    "nameJa": "シェルアーマー"
+    "nameJa": "シェルアーマー",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 76,
     "slug": "air-lock",
     "nameZhHant": "氣閘",
     "nameEn": "Air Lock",
-    "nameJa": "エアロック"
+    "nameJa": "エアロック",
+    "generationId": 3,
+    "generationLabel": "Gen 3 · 豐緣"
   },
   {
     "id": 77,
     "slug": "tangled-feet",
     "nameZhHant": "蹣跚",
     "nameEn": "Tangled Feet",
-    "nameJa": "ちどりあし"
+    "nameJa": "ちどりあし",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 78,
     "slug": "motor-drive",
     "nameZhHant": "電氣引擎",
     "nameEn": "Motor Drive",
-    "nameJa": "でんきエンジン"
+    "nameJa": "でんきエンジン",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 79,
     "slug": "rivalry",
     "nameZhHant": "鬥爭心",
     "nameEn": "Rivalry",
-    "nameJa": "とうそうしん"
+    "nameJa": "とうそうしん",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 80,
     "slug": "steadfast",
     "nameZhHant": "不屈之心",
     "nameEn": "Steadfast",
-    "nameJa": "ふくつのこころ"
+    "nameJa": "ふくつのこころ",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 81,
     "slug": "snow-cloak",
     "nameZhHant": "雪隱",
     "nameEn": "Snow Cloak",
-    "nameJa": "ゆきがくれ"
+    "nameJa": "ゆきがくれ",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 82,
     "slug": "gluttony",
     "nameZhHant": "貪吃鬼",
     "nameEn": "Gluttony",
-    "nameJa": "くいしんぼう"
+    "nameJa": "くいしんぼう",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 83,
     "slug": "anger-point",
     "nameZhHant": "憤怒穴位",
     "nameEn": "Anger Point",
-    "nameJa": "いかりのつぼ"
+    "nameJa": "いかりのつぼ",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 84,
     "slug": "unburden",
     "nameZhHant": "輕裝",
     "nameEn": "Unburden",
-    "nameJa": "かるわざ"
+    "nameJa": "かるわざ",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 85,
     "slug": "heatproof",
     "nameZhHant": "耐熱",
     "nameEn": "Heatproof",
-    "nameJa": "たいねつ"
+    "nameJa": "たいねつ",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 86,
     "slug": "simple",
     "nameZhHant": "單純",
     "nameEn": "Simple",
-    "nameJa": "たんじゅん"
+    "nameJa": "たんじゅん",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 87,
     "slug": "dry-skin",
     "nameZhHant": "乾燥皮膚",
     "nameEn": "Dry Skin",
-    "nameJa": "かんそうはだ"
+    "nameJa": "かんそうはだ",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 88,
     "slug": "download",
     "nameZhHant": "下載",
     "nameEn": "Download",
-    "nameJa": "ダウンロード"
+    "nameJa": "ダウンロード",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 89,
     "slug": "iron-fist",
     "nameZhHant": "鐵拳",
     "nameEn": "Iron Fist",
-    "nameJa": "てつのこぶし"
+    "nameJa": "てつのこぶし",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 90,
     "slug": "poison-heal",
     "nameZhHant": "毒療",
     "nameEn": "Poison Heal",
-    "nameJa": "ポイズンヒール"
+    "nameJa": "ポイズンヒール",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 91,
     "slug": "adaptability",
     "nameZhHant": "適應力",
     "nameEn": "Adaptability",
-    "nameJa": "てきおうりょく"
+    "nameJa": "てきおうりょく",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 92,
     "slug": "skill-link",
     "nameZhHant": "連續攻擊",
     "nameEn": "Skill Link",
-    "nameJa": "スキルリンク"
+    "nameJa": "スキルリンク",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 93,
     "slug": "hydration",
     "nameZhHant": "濕潤之軀",
     "nameEn": "Hydration",
-    "nameJa": "うるおいボディ"
+    "nameJa": "うるおいボディ",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 94,
     "slug": "solar-power",
     "nameZhHant": "太陽之力",
     "nameEn": "Solar Power",
-    "nameJa": "サンパワー"
+    "nameJa": "サンパワー",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 95,
     "slug": "quick-feet",
     "nameZhHant": "飛毛腿",
     "nameEn": "Quick Feet",
-    "nameJa": "はやあし"
+    "nameJa": "はやあし",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 96,
     "slug": "normalize",
     "nameZhHant": "一般皮膚",
     "nameEn": "Normalize",
-    "nameJa": "ノーマルスキン"
+    "nameJa": "ノーマルスキン",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 97,
     "slug": "sniper",
     "nameZhHant": "狙擊手",
     "nameEn": "Sniper",
-    "nameJa": "スナイパー"
+    "nameJa": "スナイパー",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 98,
     "slug": "magic-guard",
     "nameZhHant": "魔法防守",
     "nameEn": "Magic Guard",
-    "nameJa": "マジックガード"
+    "nameJa": "マジックガード",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 99,
     "slug": "no-guard",
     "nameZhHant": "無防守",
     "nameEn": "No Guard",
-    "nameJa": "ノーガード"
+    "nameJa": "ノーガード",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 100,
     "slug": "stall",
     "nameZhHant": "慢出",
     "nameEn": "Stall",
-    "nameJa": "あとだし"
+    "nameJa": "あとだし",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 101,
     "slug": "technician",
     "nameZhHant": "技術高手",
     "nameEn": "Technician",
-    "nameJa": "テクニシャン"
+    "nameJa": "テクニシャン",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 102,
     "slug": "leaf-guard",
     "nameZhHant": "葉子防守",
     "nameEn": "Leaf Guard",
-    "nameJa": "リーフガード"
+    "nameJa": "リーフガード",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 103,
     "slug": "klutz",
     "nameZhHant": "笨拙",
     "nameEn": "Klutz",
-    "nameJa": "ぶきよう"
+    "nameJa": "ぶきよう",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 104,
     "slug": "mold-breaker",
     "nameZhHant": "破格",
     "nameEn": "Mold Breaker",
-    "nameJa": "かたやぶり"
+    "nameJa": "かたやぶり",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 105,
     "slug": "super-luck",
     "nameZhHant": "超幸運",
     "nameEn": "Super Luck",
-    "nameJa": "きょううん"
+    "nameJa": "きょううん",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 106,
     "slug": "aftermath",
     "nameZhHant": "引爆",
     "nameEn": "Aftermath",
-    "nameJa": "ゆうばく"
+    "nameJa": "ゆうばく",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 107,
     "slug": "anticipation",
     "nameZhHant": "危險預知",
     "nameEn": "Anticipation",
-    "nameJa": "きけんよち"
+    "nameJa": "きけんよち",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 108,
     "slug": "forewarn",
     "nameZhHant": "預知夢",
     "nameEn": "Forewarn",
-    "nameJa": "よちむ"
+    "nameJa": "よちむ",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 109,
     "slug": "unaware",
     "nameZhHant": "純樸",
     "nameEn": "Unaware",
-    "nameJa": "てんねん"
+    "nameJa": "てんねん",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 110,
     "slug": "tinted-lens",
     "nameZhHant": "有色眼鏡",
     "nameEn": "Tinted Lens",
-    "nameJa": "いろめがね"
+    "nameJa": "いろめがね",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 111,
     "slug": "filter",
     "nameZhHant": "過濾",
     "nameEn": "Filter",
-    "nameJa": "フィルター"
+    "nameJa": "フィルター",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 112,
     "slug": "slow-start",
     "nameZhHant": "慢啟動",
     "nameEn": "Slow Start",
-    "nameJa": "スロースタート"
+    "nameJa": "スロースタート",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 113,
     "slug": "scrappy",
     "nameZhHant": "膽量",
     "nameEn": "Scrappy",
-    "nameJa": "きもったま"
+    "nameJa": "きもったま",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 114,
     "slug": "storm-drain",
     "nameZhHant": "引水",
     "nameEn": "Storm Drain",
-    "nameJa": "よびみず"
+    "nameJa": "よびみず",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 115,
     "slug": "ice-body",
     "nameZhHant": "冰凍之軀",
     "nameEn": "Ice Body",
-    "nameJa": "アイスボディ"
+    "nameJa": "アイスボディ",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 116,
     "slug": "solid-rock",
     "nameZhHant": "堅硬岩石",
     "nameEn": "Solid Rock",
-    "nameJa": "ハードロック"
+    "nameJa": "ハードロック",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 117,
     "slug": "snow-warning",
     "nameZhHant": "降雪",
     "nameEn": "Snow Warning",
-    "nameJa": "ゆきふらし"
+    "nameJa": "ゆきふらし",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 118,
     "slug": "honey-gather",
     "nameZhHant": "採蜜",
     "nameEn": "Honey Gather",
-    "nameJa": "みつあつめ"
+    "nameJa": "みつあつめ",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 119,
     "slug": "frisk",
     "nameZhHant": "察覺",
     "nameEn": "Frisk",
-    "nameJa": "おみとおし"
+    "nameJa": "おみとおし",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 120,
     "slug": "reckless",
     "nameZhHant": "捨身",
     "nameEn": "Reckless",
-    "nameJa": "すてみ"
+    "nameJa": "すてみ",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 121,
     "slug": "multitype",
     "nameZhHant": "多屬性",
     "nameEn": "Multitype",
-    "nameJa": "マルチタイプ"
+    "nameJa": "マルチタイプ",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 122,
     "slug": "flower-gift",
     "nameZhHant": "花之禮",
     "nameEn": "Flower Gift",
-    "nameJa": "フラワーギフト"
+    "nameJa": "フラワーギフト",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 123,
     "slug": "bad-dreams",
     "nameZhHant": "夢魘",
     "nameEn": "Bad Dreams",
-    "nameJa": "ナイトメア"
+    "nameJa": "ナイトメア",
+    "generationId": 4,
+    "generationLabel": "Gen 4 · 神奧"
   },
   {
     "id": 124,
     "slug": "pickpocket",
     "nameZhHant": "順手牽羊",
     "nameEn": "Pickpocket",
-    "nameJa": "わるいてぐせ"
+    "nameJa": "わるいてぐせ",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 125,
     "slug": "sheer-force",
     "nameZhHant": "強行",
     "nameEn": "Sheer Force",
-    "nameJa": "ちからずく"
+    "nameJa": "ちからずく",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 126,
     "slug": "contrary",
     "nameZhHant": "唱反調",
     "nameEn": "Contrary",
-    "nameJa": "あまのじゃく"
+    "nameJa": "あまのじゃく",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 127,
     "slug": "unnerve",
     "nameZhHant": "緊張感",
     "nameEn": "Unnerve",
-    "nameJa": "きんちょうかん"
+    "nameJa": "きんちょうかん",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 128,
     "slug": "defiant",
     "nameZhHant": "不服輸",
     "nameEn": "Defiant",
-    "nameJa": "まけんき"
+    "nameJa": "まけんき",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 129,
     "slug": "defeatist",
     "nameZhHant": "軟弱",
     "nameEn": "Defeatist",
-    "nameJa": "よわき"
+    "nameJa": "よわき",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 130,
     "slug": "cursed-body",
     "nameZhHant": "詛咒之軀",
     "nameEn": "Cursed Body",
-    "nameJa": "のろわれボディ"
+    "nameJa": "のろわれボディ",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 131,
     "slug": "healer",
     "nameZhHant": "治癒之心",
     "nameEn": "Healer",
-    "nameJa": "いやしのこころ"
+    "nameJa": "いやしのこころ",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 132,
     "slug": "friend-guard",
     "nameZhHant": "友情防守",
     "nameEn": "Friend Guard",
-    "nameJa": "フレンドガード"
+    "nameJa": "フレンドガード",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 133,
     "slug": "weak-armor",
     "nameZhHant": "碎裂鎧甲",
     "nameEn": "Weak Armor",
-    "nameJa": "くだけるよろい"
+    "nameJa": "くだけるよろい",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 134,
     "slug": "heavy-metal",
     "nameZhHant": "重金屬",
     "nameEn": "Heavy Metal",
-    "nameJa": "ヘヴィメタル"
+    "nameJa": "ヘヴィメタル",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 135,
     "slug": "light-metal",
     "nameZhHant": "輕金屬",
     "nameEn": "Light Metal",
-    "nameJa": "ライトメタル"
+    "nameJa": "ライトメタル",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 136,
     "slug": "multiscale",
     "nameZhHant": "多重鱗片",
     "nameEn": "Multiscale",
-    "nameJa": "マルチスケイル"
+    "nameJa": "マルチスケイル",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 137,
     "slug": "toxic-boost",
     "nameZhHant": "中毒激升",
     "nameEn": "Toxic Boost",
-    "nameJa": "どくぼうそう"
+    "nameJa": "どくぼうそう",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 138,
     "slug": "flare-boost",
     "nameZhHant": "受熱激升",
     "nameEn": "Flare Boost",
-    "nameJa": "ねつぼうそう"
+    "nameJa": "ねつぼうそう",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 139,
     "slug": "harvest",
     "nameZhHant": "收穫",
     "nameEn": "Harvest",
-    "nameJa": "しゅうかく"
+    "nameJa": "しゅうかく",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 140,
     "slug": "telepathy",
     "nameZhHant": "心靈感應",
     "nameEn": "Telepathy",
-    "nameJa": "テレパシー"
+    "nameJa": "テレパシー",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 141,
     "slug": "moody",
     "nameZhHant": "心情不定",
     "nameEn": "Moody",
-    "nameJa": "ムラっけ"
+    "nameJa": "ムラっけ",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 142,
     "slug": "overcoat",
     "nameZhHant": "防塵",
     "nameEn": "Overcoat",
-    "nameJa": "ぼうじん"
+    "nameJa": "ぼうじん",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 143,
     "slug": "poison-touch",
     "nameZhHant": "毒手",
     "nameEn": "Poison Touch",
-    "nameJa": "どくしゅ"
+    "nameJa": "どくしゅ",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 144,
     "slug": "regenerator",
     "nameZhHant": "再生力",
     "nameEn": "Regenerator",
-    "nameJa": "さいせいりょく"
+    "nameJa": "さいせいりょく",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 145,
     "slug": "big-pecks",
     "nameZhHant": "健壯胸肌",
     "nameEn": "Big Pecks",
-    "nameJa": "はとむね"
+    "nameJa": "はとむね",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 146,
     "slug": "sand-rush",
     "nameZhHant": "撥沙",
     "nameEn": "Sand Rush",
-    "nameJa": "すなかき"
+    "nameJa": "すなかき",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 147,
     "slug": "wonder-skin",
     "nameZhHant": "奇跡皮膚",
     "nameEn": "Wonder Skin",
-    "nameJa": "ミラクルスキン"
+    "nameJa": "ミラクルスキン",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 148,
     "slug": "analytic",
     "nameZhHant": "分析",
     "nameEn": "Analytic",
-    "nameJa": "アナライズ"
+    "nameJa": "アナライズ",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 149,
     "slug": "illusion",
     "nameZhHant": "幻覺",
     "nameEn": "Illusion",
-    "nameJa": "イリュージョン"
+    "nameJa": "イリュージョン",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 150,
     "slug": "imposter",
     "nameZhHant": "變身者",
     "nameEn": "Imposter",
-    "nameJa": "かわりもの"
+    "nameJa": "かわりもの",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 151,
     "slug": "infiltrator",
     "nameZhHant": "穿透",
     "nameEn": "Infiltrator",
-    "nameJa": "すりぬけ"
+    "nameJa": "すりぬけ",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 152,
     "slug": "mummy",
     "nameZhHant": "木乃伊",
     "nameEn": "Mummy",
-    "nameJa": "ミイラ"
+    "nameJa": "ミイラ",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 153,
     "slug": "moxie",
     "nameZhHant": "自信過度",
     "nameEn": "Moxie",
-    "nameJa": "じしんかじょう"
+    "nameJa": "じしんかじょう",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 154,
     "slug": "justified",
     "nameZhHant": "正義之心",
     "nameEn": "Justified",
-    "nameJa": "せいぎのこころ"
+    "nameJa": "せいぎのこころ",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 155,
     "slug": "rattled",
     "nameZhHant": "膽怯",
     "nameEn": "Rattled",
-    "nameJa": "びびり"
+    "nameJa": "びびり",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 156,
     "slug": "magic-bounce",
     "nameZhHant": "魔法鏡",
     "nameEn": "Magic Bounce",
-    "nameJa": "マジックミラー"
+    "nameJa": "マジックミラー",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 157,
     "slug": "sap-sipper",
     "nameZhHant": "食草",
     "nameEn": "Sap Sipper",
-    "nameJa": "そうしょく"
+    "nameJa": "そうしょく",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 158,
     "slug": "prankster",
     "nameZhHant": "惡作劇之心",
     "nameEn": "Prankster",
-    "nameJa": "いたずらごころ"
+    "nameJa": "いたずらごころ",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 159,
     "slug": "sand-force",
     "nameZhHant": "沙之力",
     "nameEn": "Sand Force",
-    "nameJa": "すなのちから"
+    "nameJa": "すなのちから",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 160,
     "slug": "iron-barbs",
     "nameZhHant": "鐵刺",
     "nameEn": "Iron Barbs",
-    "nameJa": "てつのトゲ"
+    "nameJa": "てつのトゲ",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 161,
     "slug": "zen-mode",
     "nameZhHant": "達摩模式",
     "nameEn": "Zen Mode",
-    "nameJa": "ダルマモード"
+    "nameJa": "ダルマモード",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 162,
     "slug": "victory-star",
     "nameZhHant": "勝利之星",
     "nameEn": "Victory Star",
-    "nameJa": "しょうりのほし"
+    "nameJa": "しょうりのほし",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 163,
     "slug": "turboblaze",
     "nameZhHant": "渦輪火焰",
     "nameEn": "Turboblaze",
-    "nameJa": "ターボブレイズ"
+    "nameJa": "ターボブレイズ",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 164,
     "slug": "teravolt",
     "nameZhHant": "兆級電壓",
     "nameEn": "Teravolt",
-    "nameJa": "テラボルテージ"
+    "nameJa": "テラボルテージ",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 165,
     "slug": "aroma-veil",
     "nameZhHant": "芳香幕",
     "nameEn": "Aroma Veil",
-    "nameJa": "アロマベール"
+    "nameJa": "アロマベール",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 166,
     "slug": "flower-veil",
     "nameZhHant": "花幕",
     "nameEn": "Flower Veil",
-    "nameJa": "フラワーベール"
+    "nameJa": "フラワーベール",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 167,
     "slug": "cheek-pouch",
     "nameZhHant": "頰囊",
     "nameEn": "Cheek Pouch",
-    "nameJa": "ほおぶくろ"
+    "nameJa": "ほおぶくろ",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 168,
     "slug": "protean",
     "nameZhHant": "變幻自如",
     "nameEn": "Protean",
-    "nameJa": "へんげんじざい"
+    "nameJa": "へんげんじざい",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 169,
     "slug": "fur-coat",
     "nameZhHant": "毛皮大衣",
     "nameEn": "Fur Coat",
-    "nameJa": "ファーコート"
+    "nameJa": "ファーコート",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 170,
     "slug": "magician",
     "nameZhHant": "魔術師",
     "nameEn": "Magician",
-    "nameJa": "マジシャン"
+    "nameJa": "マジシャン",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 171,
     "slug": "bulletproof",
     "nameZhHant": "防彈",
     "nameEn": "Bulletproof",
-    "nameJa": "ぼうだん"
+    "nameJa": "ぼうだん",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 172,
     "slug": "competitive",
     "nameZhHant": "好勝",
     "nameEn": "Competitive",
-    "nameJa": "かちき"
+    "nameJa": "かちき",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 173,
     "slug": "strong-jaw",
     "nameZhHant": "強壯之顎",
     "nameEn": "Strong Jaw",
-    "nameJa": "がんじょうあご"
+    "nameJa": "がんじょうあご",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 174,
     "slug": "refrigerate",
     "nameZhHant": "冰凍皮膚",
     "nameEn": "Refrigerate",
-    "nameJa": "フリーズスキン"
+    "nameJa": "フリーズスキン",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 175,
     "slug": "sweet-veil",
     "nameZhHant": "甜幕",
     "nameEn": "Sweet Veil",
-    "nameJa": "スイートベール"
+    "nameJa": "スイートベール",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 176,
     "slug": "stance-change",
     "nameZhHant": "戰鬥切換",
     "nameEn": "Stance Change",
-    "nameJa": "バトルスイッチ"
+    "nameJa": "バトルスイッチ",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 177,
     "slug": "gale-wings",
     "nameZhHant": "疾風之翼",
     "nameEn": "Gale Wings",
-    "nameJa": "はやてのつばさ"
+    "nameJa": "はやてのつばさ",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 178,
     "slug": "mega-launcher",
     "nameZhHant": "超級發射器",
     "nameEn": "Mega Launcher",
-    "nameJa": "メガランチャー"
+    "nameJa": "メガランチャー",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 179,
     "slug": "grass-pelt",
     "nameZhHant": "草之毛皮",
     "nameEn": "Grass Pelt",
-    "nameJa": "くさのけがわ"
+    "nameJa": "くさのけがわ",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 180,
     "slug": "symbiosis",
     "nameZhHant": "共生",
     "nameEn": "Symbiosis",
-    "nameJa": "きょうせい"
+    "nameJa": "きょうせい",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 181,
     "slug": "tough-claws",
     "nameZhHant": "硬爪",
     "nameEn": "Tough Claws",
-    "nameJa": "かたいツメ"
+    "nameJa": "かたいツメ",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 182,
     "slug": "pixilate",
     "nameZhHant": "妖精皮膚",
     "nameEn": "Pixilate",
-    "nameJa": "フェアリースキン"
+    "nameJa": "フェアリースキン",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 183,
     "slug": "gooey",
     "nameZhHant": "黏滑",
     "nameEn": "Gooey",
-    "nameJa": "ぬめぬめ"
+    "nameJa": "ぬめぬめ",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 184,
     "slug": "aerilate",
     "nameZhHant": "飛行皮膚",
     "nameEn": "Aerilate",
-    "nameJa": "スカイスキン"
+    "nameJa": "スカイスキン",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 185,
     "slug": "parental-bond",
     "nameZhHant": "親子愛",
     "nameEn": "Parental Bond",
-    "nameJa": "おやこあい"
+    "nameJa": "おやこあい",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 186,
     "slug": "dark-aura",
     "nameZhHant": "暗黑氣場",
     "nameEn": "Dark Aura",
-    "nameJa": "ダークオーラ"
+    "nameJa": "ダークオーラ",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 187,
     "slug": "fairy-aura",
     "nameZhHant": "妖精氣場",
     "nameEn": "Fairy Aura",
-    "nameJa": "フェアリーオーラ"
+    "nameJa": "フェアリーオーラ",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 188,
     "slug": "aura-break",
     "nameZhHant": "氣場破壞",
     "nameEn": "Aura Break",
-    "nameJa": "オーラブレイク"
+    "nameJa": "オーラブレイク",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 189,
     "slug": "primordial-sea",
     "nameZhHant": "始源之海",
     "nameEn": "Primordial Sea",
-    "nameJa": "はじまりのうみ"
+    "nameJa": "はじまりのうみ",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 190,
     "slug": "desolate-land",
     "nameZhHant": "終結之地",
     "nameEn": "Desolate Land",
-    "nameJa": "おわりのだいち"
+    "nameJa": "おわりのだいち",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 191,
     "slug": "delta-stream",
     "nameZhHant": "德爾塔氣流",
     "nameEn": "Delta Stream",
-    "nameJa": "デルタストリーム"
+    "nameJa": "デルタストリーム",
+    "generationId": 6,
+    "generationLabel": "Gen 6 · 卡洛斯"
   },
   {
     "id": 192,
     "slug": "stamina",
     "nameZhHant": "持久力",
     "nameEn": "Stamina",
-    "nameJa": "じきゅうりょく"
+    "nameJa": "じきゅうりょく",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 193,
     "slug": "wimp-out",
     "nameZhHant": "躍躍欲逃",
     "nameEn": "Wimp Out",
-    "nameJa": "にげごし"
+    "nameJa": "にげごし",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 194,
     "slug": "emergency-exit",
     "nameZhHant": "危險迴避",
     "nameEn": "Emergency Exit",
-    "nameJa": "ききかいひ"
+    "nameJa": "ききかいひ",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 195,
     "slug": "water-compaction",
     "nameZhHant": "遇水凝固",
     "nameEn": "Water Compaction",
-    "nameJa": "みずがため"
+    "nameJa": "みずがため",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 196,
     "slug": "merciless",
     "nameZhHant": "不仁不義",
     "nameEn": "Merciless",
-    "nameJa": "ひとでなし"
+    "nameJa": "ひとでなし",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 197,
     "slug": "shields-down",
     "nameZhHant": "界限盾殼",
     "nameEn": "Shields Down",
-    "nameJa": "リミットシールド"
+    "nameJa": "リミットシールド",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 198,
     "slug": "stakeout",
     "nameZhHant": "監視",
     "nameEn": "Stakeout",
-    "nameJa": "はりこみ"
+    "nameJa": "はりこみ",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 199,
     "slug": "water-bubble",
     "nameZhHant": "水泡",
     "nameEn": "Water Bubble",
-    "nameJa": "すいほう"
+    "nameJa": "すいほう",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 200,
     "slug": "steelworker",
     "nameZhHant": "鋼能力者",
     "nameEn": "Steelworker",
-    "nameJa": "はがねつかい"
+    "nameJa": "はがねつかい",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 201,
     "slug": "berserk",
     "nameZhHant": "怒火沖天",
     "nameEn": "Berserk",
-    "nameJa": "ぎゃくじょう"
+    "nameJa": "ぎゃくじょう",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 202,
     "slug": "slush-rush",
     "nameZhHant": "撥雪",
     "nameEn": "Slush Rush",
-    "nameJa": "ゆきかき"
+    "nameJa": "ゆきかき",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 203,
     "slug": "long-reach",
     "nameZhHant": "遠隔",
     "nameEn": "Long Reach",
-    "nameJa": "えんかく"
+    "nameJa": "えんかく",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 204,
     "slug": "liquid-voice",
     "nameZhHant": "濕潤之聲",
     "nameEn": "Liquid Voice",
-    "nameJa": "うるおいボイス"
+    "nameJa": "うるおいボイス",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 205,
     "slug": "triage",
     "nameZhHant": "先行治療",
     "nameEn": "Triage",
-    "nameJa": "ヒーリングシフト"
+    "nameJa": "ヒーリングシフト",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 206,
     "slug": "galvanize",
     "nameZhHant": "電氣皮膚",
     "nameEn": "Galvanize",
-    "nameJa": "エレキスキン"
+    "nameJa": "エレキスキン",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 207,
     "slug": "surge-surfer",
     "nameZhHant": "衝浪之尾",
     "nameEn": "Surge Surfer",
-    "nameJa": "サーフテール"
+    "nameJa": "サーフテール",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 208,
     "slug": "schooling",
     "nameZhHant": "魚群",
     "nameEn": "Schooling",
-    "nameJa": "ぎょぐん"
+    "nameJa": "ぎょぐん",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 209,
     "slug": "disguise",
     "nameZhHant": "畫皮",
     "nameEn": "Disguise",
-    "nameJa": "ばけのかわ"
+    "nameJa": "ばけのかわ",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 210,
     "slug": "battle-bond",
     "nameZhHant": "牽絆變身",
     "nameEn": "Battle Bond",
-    "nameJa": "きずなへんげ"
+    "nameJa": "きずなへんげ",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 211,
     "slug": "power-construct",
     "nameZhHant": "群聚變形",
     "nameEn": "Power Construct",
-    "nameJa": "スワームチェンジ"
+    "nameJa": "スワームチェンジ",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 212,
     "slug": "corrosion",
     "nameZhHant": "腐蝕",
     "nameEn": "Corrosion",
-    "nameJa": "ふしょく"
+    "nameJa": "ふしょく",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 213,
     "slug": "comatose",
     "nameZhHant": "絕對睡眠",
     "nameEn": "Comatose",
-    "nameJa": "ぜったいねむり"
+    "nameJa": "ぜったいねむり",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 214,
     "slug": "queenly-majesty",
     "nameZhHant": "女王的威嚴",
     "nameEn": "Queenly Majesty",
-    "nameJa": "じょおうのいげん"
+    "nameJa": "じょおうのいげん",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 215,
     "slug": "innards-out",
     "nameZhHant": "飛出的內在物",
     "nameEn": "Innards Out",
-    "nameJa": "とびだすなかみ"
+    "nameJa": "とびだすなかみ",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 216,
     "slug": "dancer",
     "nameZhHant": "舞者",
     "nameEn": "Dancer",
-    "nameJa": "おどりこ"
+    "nameJa": "おどりこ",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 217,
     "slug": "battery",
     "nameZhHant": "蓄電池",
     "nameEn": "Battery",
-    "nameJa": "バッテリー"
+    "nameJa": "バッテリー",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 218,
     "slug": "fluffy",
     "nameZhHant": "毛茸茸",
     "nameEn": "Fluffy",
-    "nameJa": "もふもふ"
+    "nameJa": "もふもふ",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 219,
     "slug": "dazzling",
     "nameZhHant": "鮮艷之軀",
     "nameEn": "Dazzling",
-    "nameJa": "ビビッドボディ"
+    "nameJa": "ビビッドボディ",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 220,
     "slug": "soul-heart",
     "nameZhHant": "魂心",
     "nameEn": "Soul-Heart",
-    "nameJa": "ソウルハート"
+    "nameJa": "ソウルハート",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 221,
     "slug": "tangling-hair",
     "nameZhHant": "捲髮",
     "nameEn": "Tangling Hair",
-    "nameJa": "カーリーヘアー"
+    "nameJa": "カーリーヘアー",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 222,
     "slug": "receiver",
     "nameZhHant": "接球手",
     "nameEn": "Receiver",
-    "nameJa": "レシーバー"
+    "nameJa": "レシーバー",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 223,
     "slug": "power-of-alchemy",
     "nameZhHant": "化學之力",
     "nameEn": "Power of Alchemy",
-    "nameJa": "かがくのちから"
+    "nameJa": "かがくのちから",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 224,
     "slug": "beast-boost",
     "nameZhHant": "異獸提升",
     "nameEn": "Beast Boost",
-    "nameJa": "ビーストブースト"
+    "nameJa": "ビーストブースト",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 225,
     "slug": "rks-system",
     "nameZhHant": "ＡＲ系統",
     "nameEn": "RKS System",
-    "nameJa": "ＡＲシステム"
+    "nameJa": "ＡＲシステム",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 226,
     "slug": "electric-surge",
     "nameZhHant": "電氣製造者",
     "nameEn": "Electric Surge",
-    "nameJa": "エレキメイカー"
+    "nameJa": "エレキメイカー",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 227,
     "slug": "psychic-surge",
     "nameZhHant": "精神製造者",
     "nameEn": "Psychic Surge",
-    "nameJa": "サイコメイカー"
+    "nameJa": "サイコメイカー",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 228,
     "slug": "misty-surge",
     "nameZhHant": "薄霧製造者",
     "nameEn": "Misty Surge",
-    "nameJa": "ミストメイカー"
+    "nameJa": "ミストメイカー",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 229,
     "slug": "grassy-surge",
     "nameZhHant": "青草製造者",
     "nameEn": "Grassy Surge",
-    "nameJa": "グラスメイカー"
+    "nameJa": "グラスメイカー",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 230,
     "slug": "full-metal-body",
     "nameZhHant": "金屬防護",
     "nameEn": "Full Metal Body",
-    "nameJa": "メタルプロテクト"
+    "nameJa": "メタルプロテクト",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 231,
     "slug": "shadow-shield",
     "nameZhHant": "幻影防守",
     "nameEn": "Shadow Shield",
-    "nameJa": "ファントムガード"
+    "nameJa": "ファントムガード",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 232,
     "slug": "prism-armor",
     "nameZhHant": "稜鏡裝甲",
     "nameEn": "Prism Armor",
-    "nameJa": "プリズムアーマー"
+    "nameJa": "プリズムアーマー",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 233,
     "slug": "neuroforce",
     "nameZhHant": "腦核之力",
     "nameEn": "Neuroforce",
-    "nameJa": "ブレインフォース"
+    "nameJa": "ブレインフォース",
+    "generationId": 7,
+    "generationLabel": "Gen 7 · 阿羅拉"
   },
   {
     "id": 234,
     "slug": "intrepid-sword",
     "nameZhHant": "不撓之劍",
     "nameEn": "Intrepid Sword",
-    "nameJa": "ふとうのけん"
+    "nameJa": "ふとうのけん",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 235,
     "slug": "dauntless-shield",
     "nameZhHant": "不屈之盾",
     "nameEn": "Dauntless Shield",
-    "nameJa": "ふくつのたて"
+    "nameJa": "ふくつのたて",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 236,
     "slug": "libero",
     "nameZhHant": "自由者",
     "nameEn": "Libero",
-    "nameJa": "リベロ"
+    "nameJa": "リベロ",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 237,
     "slug": "ball-fetch",
     "nameZhHant": "撿球",
     "nameEn": "Ball Fetch",
-    "nameJa": "たまひろい"
+    "nameJa": "たまひろい",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 238,
     "slug": "cotton-down",
     "nameZhHant": "棉絮",
     "nameEn": "Cotton Down",
-    "nameJa": "わたげ"
+    "nameJa": "わたげ",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 239,
     "slug": "propeller-tail",
     "nameZhHant": "螺旋尾鰭",
     "nameEn": "Propeller Tail",
-    "nameJa": "スクリューおびれ"
+    "nameJa": "スクリューおびれ",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 240,
     "slug": "mirror-armor",
     "nameZhHant": "鏡甲",
     "nameEn": "Mirror Armor",
-    "nameJa": "ミラーアーマー"
+    "nameJa": "ミラーアーマー",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 241,
     "slug": "gulp-missile",
     "nameZhHant": "一口飛彈",
     "nameEn": "Gulp Missile",
-    "nameJa": "うのミサイル"
+    "nameJa": "うのミサイル",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 242,
     "slug": "stalwart",
     "nameZhHant": "堅毅",
     "nameEn": "Stalwart",
-    "nameJa": "すじがねいり"
+    "nameJa": "すじがねいり",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 243,
     "slug": "steam-engine",
     "nameZhHant": "蒸汽機",
     "nameEn": "Steam Engine",
-    "nameJa": "じょうききかん"
+    "nameJa": "じょうききかん",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 244,
     "slug": "punk-rock",
     "nameZhHant": "龐克搖滾",
     "nameEn": "Punk Rock",
-    "nameJa": "パンクロック"
+    "nameJa": "パンクロック",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 245,
     "slug": "sand-spit",
     "nameZhHant": "吐沙",
     "nameEn": "Sand Spit",
-    "nameJa": "すなはき"
+    "nameJa": "すなはき",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 246,
     "slug": "ice-scales",
     "nameZhHant": "冰鱗粉",
     "nameEn": "Ice Scales",
-    "nameJa": "こおりのりんぷん"
+    "nameJa": "こおりのりんぷん",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 247,
     "slug": "ripen",
     "nameZhHant": "熟成",
     "nameEn": "Ripen",
-    "nameJa": "じゅくせい"
+    "nameJa": "じゅくせい",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 248,
     "slug": "ice-face",
     "nameZhHant": "結凍頭",
     "nameEn": "Ice Face",
-    "nameJa": "アイスフェイス"
+    "nameJa": "アイスフェイス",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 249,
     "slug": "power-spot",
     "nameZhHant": "能量點",
     "nameEn": "Power Spot",
-    "nameJa": "パワースポット"
+    "nameJa": "パワースポット",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 250,
     "slug": "mimicry",
     "nameZhHant": "擬態",
     "nameEn": "Mimicry",
-    "nameJa": "ぎたい"
+    "nameJa": "ぎたい",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 251,
     "slug": "screen-cleaner",
     "nameZhHant": "除障",
     "nameEn": "Screen Cleaner",
-    "nameJa": "バリアフリー"
+    "nameJa": "バリアフリー",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 252,
     "slug": "steely-spirit",
     "nameZhHant": "鋼之意志",
     "nameEn": "Steely Spirit",
-    "nameJa": "はがねのせいしん"
+    "nameJa": "はがねのせいしん",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 253,
     "slug": "perish-body",
     "nameZhHant": "滅亡之軀",
     "nameEn": "Perish Body",
-    "nameJa": "ほろびのボディ"
+    "nameJa": "ほろびのボディ",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 254,
     "slug": "wandering-spirit",
     "nameZhHant": "遊魂",
     "nameEn": "Wandering Spirit",
-    "nameJa": "さまようたましい"
+    "nameJa": "さまようたましい",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 255,
     "slug": "gorilla-tactics",
     "nameZhHant": "一猩一意",
     "nameEn": "Gorilla Tactics",
-    "nameJa": "ごりむちゅう"
+    "nameJa": "ごりむちゅう",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 256,
     "slug": "neutralizing-gas",
     "nameZhHant": "化學變化氣體",
     "nameEn": "Neutralizing Gas",
-    "nameJa": "かがくへんかガス"
+    "nameJa": "かがくへんかガス",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 257,
     "slug": "pastel-veil",
     "nameZhHant": "粉彩護幕",
     "nameEn": "Pastel Veil",
-    "nameJa": "パステルベール"
+    "nameJa": "パステルベール",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 258,
     "slug": "hunger-switch",
     "nameZhHant": "飽了又餓",
     "nameEn": "Hunger Switch",
-    "nameJa": "はらぺこスイッチ"
+    "nameJa": "はらぺこスイッチ",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 259,
     "slug": "quick-draw",
     "nameZhHant": "速擊",
     "nameEn": "Quick Draw",
-    "nameJa": "クイックドロウ"
+    "nameJa": "クイックドロウ",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 260,
     "slug": "unseen-fist",
     "nameZhHant": "無形拳",
     "nameEn": "Unseen Fist",
-    "nameJa": "ふかしのこぶし"
+    "nameJa": "ふかしのこぶし",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 261,
     "slug": "curious-medicine",
     "nameZhHant": "怪藥",
     "nameEn": "Curious Medicine",
-    "nameJa": "きみょうなくすり"
+    "nameJa": "きみょうなくすり",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 262,
     "slug": "transistor",
     "nameZhHant": "電晶體",
     "nameEn": "Transistor",
-    "nameJa": "トランジスタ"
+    "nameJa": "トランジスタ",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 263,
     "slug": "dragons-maw",
     "nameZhHant": "龍顎",
     "nameEn": "Dragon’s Maw",
-    "nameJa": "りゅうのあぎと"
+    "nameJa": "りゅうのあぎと",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 264,
     "slug": "chilling-neigh",
     "nameZhHant": "蒼白嘶鳴",
     "nameEn": "Chilling Neigh",
-    "nameJa": "しろのいななき"
+    "nameJa": "しろのいななき",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 265,
     "slug": "grim-neigh",
     "nameZhHant": "漆黑嘶鳴",
     "nameEn": "Grim Neigh",
-    "nameJa": "くろのいななき"
+    "nameJa": "くろのいななき",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 266,
     "slug": "as-one-glastrier",
     "nameZhHant": "人馬一體",
     "nameEn": "As One",
-    "nameJa": "じんばいったい"
+    "nameJa": "じんばいったい",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 267,
     "slug": "as-one-spectrier",
     "nameZhHant": "人馬一體",
     "nameEn": "As One",
-    "nameJa": "じんばいったい"
+    "nameJa": "じんばいったい",
+    "generationId": 8,
+    "generationLabel": "Gen 8 · 伽勒爾 / 洗翠"
   },
   {
     "id": 268,
     "slug": "lingering-aroma",
     "nameZhHant": "Lingering Aroma",
     "nameEn": "Lingering Aroma",
-    "nameJa": "とれないにおい"
+    "nameJa": "とれないにおい",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 269,
     "slug": "seed-sower",
     "nameZhHant": "Seed Sower",
     "nameEn": "Seed Sower",
-    "nameJa": "こぼれダネ"
+    "nameJa": "こぼれダネ",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 270,
     "slug": "thermal-exchange",
     "nameZhHant": "Thermal Exchange",
     "nameEn": "Thermal Exchange",
-    "nameJa": "ねつこうかん"
+    "nameJa": "ねつこうかん",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 271,
     "slug": "anger-shell",
     "nameZhHant": "Anger Shell",
     "nameEn": "Anger Shell",
-    "nameJa": "いかりのこうら"
+    "nameJa": "いかりのこうら",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 272,
     "slug": "purifying-salt",
     "nameZhHant": "Purifying Salt",
     "nameEn": "Purifying Salt",
-    "nameJa": "きよめのしお"
+    "nameJa": "きよめのしお",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 273,
     "slug": "well-baked-body",
     "nameZhHant": "Well Baked Body",
     "nameEn": "Well-Baked Body",
-    "nameJa": "こんがりボディ"
+    "nameJa": "こんがりボディ",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 274,
     "slug": "wind-rider",
     "nameZhHant": "Wind Rider",
     "nameEn": "Wind Rider",
-    "nameJa": "かぜのり"
+    "nameJa": "かぜのり",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 275,
     "slug": "guard-dog",
     "nameZhHant": "Guard Dog",
     "nameEn": "Guard Dog",
-    "nameJa": "ばんけん"
+    "nameJa": "ばんけん",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 276,
     "slug": "rocky-payload",
     "nameZhHant": "Rocky Payload",
     "nameEn": "Rocky Payload",
-    "nameJa": "いわはこび"
+    "nameJa": "いわはこび",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 277,
     "slug": "wind-power",
     "nameZhHant": "Wind Power",
     "nameEn": "Wind Power",
-    "nameJa": "ふうりょくでんき"
+    "nameJa": "ふうりょくでんき",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 278,
     "slug": "zero-to-hero",
     "nameZhHant": "Zero To Hero",
     "nameEn": "Zero to Hero",
-    "nameJa": "マイティチェンジ"
+    "nameJa": "マイティチェンジ",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 279,
     "slug": "commander",
     "nameZhHant": "Commander",
     "nameEn": "Commander",
-    "nameJa": "しれいとう"
+    "nameJa": "しれいとう",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 280,
     "slug": "electromorphosis",
     "nameZhHant": "Electromorphosis",
     "nameEn": "Electromorphosis",
-    "nameJa": "でんきにかえる"
+    "nameJa": "でんきにかえる",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 281,
     "slug": "protosynthesis",
     "nameZhHant": "Protosynthesis",
     "nameEn": "Protosynthesis",
-    "nameJa": "こだいかっせい"
+    "nameJa": "こだいかっせい",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 282,
     "slug": "quark-drive",
     "nameZhHant": "Quark Drive",
     "nameEn": "Quark Drive",
-    "nameJa": "クォークチャージ"
+    "nameJa": "クォークチャージ",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 283,
     "slug": "good-as-gold",
     "nameZhHant": "Good As Gold",
     "nameEn": "Good as Gold",
-    "nameJa": "おうごんのからだ"
+    "nameJa": "おうごんのからだ",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 284,
     "slug": "vessel-of-ruin",
     "nameZhHant": "Vessel Of Ruin",
     "nameEn": "Vessel of Ruin",
-    "nameJa": "わざわいのうつわ"
+    "nameJa": "わざわいのうつわ",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 285,
     "slug": "sword-of-ruin",
     "nameZhHant": "Sword Of Ruin",
     "nameEn": "Sword of Ruin",
-    "nameJa": "わざわいのつるぎ"
+    "nameJa": "わざわいのつるぎ",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 286,
     "slug": "tablets-of-ruin",
     "nameZhHant": "Tablets Of Ruin",
     "nameEn": "Tablets of Ruin",
-    "nameJa": "わざわいのおふだ"
+    "nameJa": "わざわいのおふだ",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 287,
     "slug": "beads-of-ruin",
     "nameZhHant": "Beads Of Ruin",
     "nameEn": "Beads of Ruin",
-    "nameJa": "わざわいのたま"
+    "nameJa": "わざわいのたま",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 288,
     "slug": "orichalcum-pulse",
     "nameZhHant": "Orichalcum Pulse",
     "nameEn": "Orichalcum Pulse",
-    "nameJa": "ひひいろのこどう"
+    "nameJa": "ひひいろのこどう",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 289,
     "slug": "hadron-engine",
     "nameZhHant": "Hadron Engine",
     "nameEn": "Hadron Engine",
-    "nameJa": "ハドロンエンジン"
+    "nameJa": "ハドロンエンジン",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 290,
     "slug": "opportunist",
     "nameZhHant": "Opportunist",
     "nameEn": "Opportunist",
-    "nameJa": "びんじょう"
+    "nameJa": "びんじょう",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 291,
     "slug": "cud-chew",
     "nameZhHant": "Cud Chew",
     "nameEn": "Cud Chew",
-    "nameJa": "はんすう"
+    "nameJa": "はんすう",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 292,
     "slug": "sharpness",
     "nameZhHant": "Sharpness",
     "nameEn": "Sharpness",
-    "nameJa": "きれあじ"
+    "nameJa": "きれあじ",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 293,
     "slug": "supreme-overlord",
     "nameZhHant": "Supreme Overlord",
     "nameEn": "Supreme Overlord",
-    "nameJa": "そうだいしょう"
+    "nameJa": "そうだいしょう",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 294,
     "slug": "costar",
     "nameZhHant": "Costar",
     "nameEn": "Costar",
-    "nameJa": "きょうえん"
+    "nameJa": "きょうえん",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 295,
     "slug": "toxic-debris",
     "nameZhHant": "Toxic Debris",
     "nameEn": "Toxic Debris",
-    "nameJa": "どくげしょう"
+    "nameJa": "どくげしょう",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 296,
     "slug": "armor-tail",
     "nameZhHant": "Armor Tail",
     "nameEn": "Armor Tail",
-    "nameJa": "テイルアーマー"
+    "nameJa": "テイルアーマー",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 297,
     "slug": "earth-eater",
     "nameZhHant": "Earth Eater",
     "nameEn": "Earth Eater",
-    "nameJa": "どしょく"
+    "nameJa": "どしょく",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 298,
     "slug": "mycelium-might",
     "nameZhHant": "Mycelium Might",
     "nameEn": "Mycelium Might",
-    "nameJa": "きんしのちから"
+    "nameJa": "きんしのちから",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 299,
     "slug": "minds-eye",
     "nameZhHant": "心眼",
     "nameEn": "Mind’s Eye",
-    "nameJa": "しんがん"
+    "nameJa": "しんがん",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 300,
     "slug": "supersweet-syrup",
     "nameZhHant": "甘露之蜜",
     "nameEn": "Supersweet Syrup",
-    "nameJa": "かんろなミツ"
+    "nameJa": "かんろなミツ",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 301,
     "slug": "hospitality",
     "nameZhHant": "款待",
     "nameEn": "Hospitality",
-    "nameJa": "おもてなし"
+    "nameJa": "おもてなし",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 302,
     "slug": "toxic-chain",
     "nameZhHant": "毒鎖鏈",
     "nameEn": "Toxic Chain",
-    "nameJa": "どくのくさり"
+    "nameJa": "どくのくさり",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 303,
     "slug": "embody-aspect",
     "nameZhHant": "面影輝映",
     "nameEn": "Embody Aspect",
-    "nameJa": "おもかげやどし"
+    "nameJa": "おもかげやどし",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 304,
     "slug": "tera-shift",
     "nameZhHant": "太晶變形",
     "nameEn": "Tera Shift",
-    "nameJa": "テラスチェンジ"
+    "nameJa": "テラスチェンジ",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 305,
     "slug": "tera-shell",
     "nameZhHant": "太晶甲殼",
     "nameEn": "Tera Shell",
-    "nameJa": "テラスシェル"
+    "nameJa": "テラスシェル",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 306,
     "slug": "teraform-zero",
     "nameZhHant": "歸零化境",
     "nameEn": "Teraform Zero",
-    "nameJa": "ゼロフォーミング"
+    "nameJa": "ゼロフォーミング",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 307,
     "slug": "poison-puppeteer",
     "nameZhHant": "毒傀儡",
     "nameEn": "Poison Puppeteer",
-    "nameJa": "どくくぐつ"
+    "nameJa": "どくくぐつ",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 308,
     "slug": "piercing-drill",
     "nameZhHant": "Piercing Drill",
     "nameEn": "Piercing Drill",
-    "nameJa": "Piercing Drill"
+    "nameJa": "Piercing Drill",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 309,
     "slug": "dragonize",
     "nameZhHant": "Dragonize",
     "nameEn": "Dragonize",
-    "nameJa": "Dragonize"
+    "nameJa": "Dragonize",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 310,
     "slug": "mega-sol",
     "nameZhHant": "Mega Sol",
     "nameEn": "Mega Sol",
-    "nameJa": "Mega Sol"
+    "nameJa": "Mega Sol",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 311,
     "slug": "spicy-spray",
     "nameZhHant": "Spicy Spray",
     "nameEn": "Spicy Spray",
-    "nameJa": "Spicy Spray"
+    "nameJa": "Spicy Spray",
+    "generationId": 9,
+    "generationLabel": "Gen 9 · 帕底亞"
   },
   {
     "id": 10001,
     "slug": "mountaineer",
     "nameZhHant": "Mountaineer",
     "nameEn": "Mountaineer",
-    "nameJa": "Mountaineer"
+    "nameJa": "Mountaineer",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10002,
     "slug": "wave-rider",
     "nameZhHant": "Wave Rider",
     "nameEn": "Wave Rider",
-    "nameJa": "Wave Rider"
+    "nameJa": "Wave Rider",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10003,
     "slug": "skater",
     "nameZhHant": "Skater",
     "nameEn": "Skater",
-    "nameJa": "Skater"
+    "nameJa": "Skater",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10004,
     "slug": "thrust",
     "nameZhHant": "Thrust",
     "nameEn": "Thrust",
-    "nameJa": "Thrust"
+    "nameJa": "Thrust",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10005,
     "slug": "perception",
     "nameZhHant": "Perception",
     "nameEn": "Perception",
-    "nameJa": "Perception"
+    "nameJa": "Perception",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10006,
     "slug": "parry",
     "nameZhHant": "Parry",
     "nameEn": "Parry",
-    "nameJa": "Parry"
+    "nameJa": "Parry",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10007,
     "slug": "instinct",
     "nameZhHant": "Instinct",
     "nameEn": "Instinct",
-    "nameJa": "Instinct"
+    "nameJa": "Instinct",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10008,
     "slug": "dodge",
     "nameZhHant": "Dodge",
     "nameEn": "Dodge",
-    "nameJa": "Dodge"
+    "nameJa": "Dodge",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10009,
     "slug": "jagged-edge",
     "nameZhHant": "Jagged Edge",
     "nameEn": "Jagged Edge",
-    "nameJa": "Jagged Edge"
+    "nameJa": "Jagged Edge",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10010,
     "slug": "frostbite",
     "nameZhHant": "Frostbite",
     "nameEn": "Frostbite",
-    "nameJa": "Frostbite"
+    "nameJa": "Frostbite",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10011,
     "slug": "tenacity",
     "nameZhHant": "Tenacity",
     "nameEn": "Tenacity",
-    "nameJa": "Tenacity"
+    "nameJa": "Tenacity",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10012,
     "slug": "pride",
     "nameZhHant": "Pride",
     "nameEn": "Pride",
-    "nameJa": "Pride"
+    "nameJa": "Pride",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10013,
     "slug": "deep-sleep",
     "nameZhHant": "Deep Sleep",
     "nameEn": "Deep Sleep",
-    "nameJa": "Deep Sleep"
+    "nameJa": "Deep Sleep",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10014,
     "slug": "power-nap",
     "nameZhHant": "Power Nap",
     "nameEn": "Power Nap",
-    "nameJa": "Power Nap"
+    "nameJa": "Power Nap",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10015,
     "slug": "spirit",
     "nameZhHant": "Spirit",
     "nameEn": "Spirit",
-    "nameJa": "Spirit"
+    "nameJa": "Spirit",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10016,
     "slug": "warm-blanket",
     "nameZhHant": "Warm Blanket",
     "nameEn": "Warm Blanket",
-    "nameJa": "Warm Blanket"
+    "nameJa": "Warm Blanket",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10017,
     "slug": "gulp",
     "nameZhHant": "Gulp",
     "nameEn": "Gulp",
-    "nameJa": "Gulp"
+    "nameJa": "Gulp",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10018,
     "slug": "herbivore",
     "nameZhHant": "Herbivore",
     "nameEn": "Herbivore",
-    "nameJa": "Herbivore"
+    "nameJa": "Herbivore",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10019,
     "slug": "sandpit",
     "nameZhHant": "Sandpit",
     "nameEn": "Sandpit",
-    "nameJa": "Sandpit"
+    "nameJa": "Sandpit",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10020,
     "slug": "hot-blooded",
     "nameZhHant": "Hot Blooded",
     "nameEn": "Hot Blooded",
-    "nameJa": "Hot Blooded"
+    "nameJa": "Hot Blooded",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10021,
     "slug": "medic",
     "nameZhHant": "Medic",
     "nameEn": "Medic",
-    "nameJa": "Medic"
+    "nameJa": "Medic",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10022,
     "slug": "life-force",
     "nameZhHant": "Life Force",
     "nameEn": "Life Force",
-    "nameJa": "Life Force"
+    "nameJa": "Life Force",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10023,
     "slug": "lunchbox",
     "nameZhHant": "Lunchbox",
     "nameEn": "Lunchbox",
-    "nameJa": "Lunchbox"
+    "nameJa": "Lunchbox",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10024,
     "slug": "nurse",
     "nameZhHant": "Nurse",
     "nameEn": "Nurse",
-    "nameJa": "Nurse"
+    "nameJa": "Nurse",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10025,
     "slug": "melee",
     "nameZhHant": "Melee",
     "nameEn": "Melee",
-    "nameJa": "Melee"
+    "nameJa": "Melee",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10026,
     "slug": "sponge",
     "nameZhHant": "Sponge",
     "nameEn": "Sponge",
-    "nameJa": "Sponge"
+    "nameJa": "Sponge",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10027,
     "slug": "bodyguard",
     "nameZhHant": "Bodyguard",
     "nameEn": "Bodyguard",
-    "nameJa": "Bodyguard"
+    "nameJa": "Bodyguard",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10028,
     "slug": "hero",
     "nameZhHant": "Hero",
     "nameEn": "Hero",
-    "nameJa": "Hero"
+    "nameJa": "Hero",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10029,
     "slug": "last-bastion",
     "nameZhHant": "Last Bastion",
     "nameEn": "Last Bastion",
-    "nameJa": "Last Bastion"
+    "nameJa": "Last Bastion",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10030,
     "slug": "stealth",
     "nameZhHant": "Stealth",
     "nameEn": "Stealth",
-    "nameJa": "Stealth"
+    "nameJa": "Stealth",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10031,
     "slug": "vanguard",
     "nameZhHant": "Vanguard",
     "nameEn": "Vanguard",
-    "nameJa": "Vanguard"
+    "nameJa": "Vanguard",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10032,
     "slug": "nomad",
     "nameZhHant": "Nomad",
     "nameEn": "Nomad",
-    "nameJa": "Nomad"
+    "nameJa": "Nomad",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10033,
     "slug": "sequence",
     "nameZhHant": "Sequence",
     "nameEn": "Sequence",
-    "nameJa": "Sequence"
+    "nameJa": "Sequence",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10034,
     "slug": "grass-cloak",
     "nameZhHant": "Grass Cloak",
     "nameEn": "Grass Cloak",
-    "nameJa": "Grass Cloak"
+    "nameJa": "Grass Cloak",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10035,
     "slug": "celebrate",
     "nameZhHant": "Celebrate",
     "nameEn": "Celebrate",
-    "nameJa": "Celebrate"
+    "nameJa": "Celebrate",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10036,
     "slug": "lullaby",
     "nameZhHant": "Lullaby",
     "nameEn": "Lullaby",
-    "nameJa": "Lullaby"
+    "nameJa": "Lullaby",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10037,
     "slug": "calming",
     "nameZhHant": "Calming",
     "nameEn": "Calming",
-    "nameJa": "Calming"
+    "nameJa": "Calming",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10038,
     "slug": "daze",
     "nameZhHant": "Daze",
     "nameEn": "Daze",
-    "nameJa": "Daze"
+    "nameJa": "Daze",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10039,
     "slug": "frighten",
     "nameZhHant": "Frighten",
     "nameEn": "Frighten",
-    "nameJa": "Frighten"
+    "nameJa": "Frighten",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10040,
     "slug": "interference",
     "nameZhHant": "Interference",
     "nameEn": "Interference",
-    "nameJa": "Interference"
+    "nameJa": "Interference",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10041,
     "slug": "mood-maker",
     "nameZhHant": "Mood Maker",
     "nameEn": "Mood Maker",
-    "nameJa": "Mood Maker"
+    "nameJa": "Mood Maker",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10042,
     "slug": "confidence",
     "nameZhHant": "Confidence",
     "nameEn": "Confidence",
-    "nameJa": "Confidence"
+    "nameJa": "Confidence",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10043,
     "slug": "fortune",
     "nameZhHant": "Fortune",
     "nameEn": "Fortune",
-    "nameJa": "Fortune"
+    "nameJa": "Fortune",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10044,
     "slug": "bonanza",
     "nameZhHant": "Bonanza",
     "nameEn": "Bonanza",
-    "nameJa": "Bonanza"
+    "nameJa": "Bonanza",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10045,
     "slug": "explode",
     "nameZhHant": "Explode",
     "nameEn": "Explode",
-    "nameJa": "Explode"
+    "nameJa": "Explode",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10046,
     "slug": "omnipotent",
     "nameZhHant": "Omnipotent",
     "nameEn": "Omnipotent",
-    "nameJa": "Omnipotent"
+    "nameJa": "Omnipotent",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10047,
     "slug": "share",
     "nameZhHant": "Share",
     "nameEn": "Share",
-    "nameJa": "Share"
+    "nameJa": "Share",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10048,
     "slug": "black-hole",
     "nameZhHant": "Black Hole",
     "nameEn": "Black Hole",
-    "nameJa": "Black Hole"
+    "nameJa": "Black Hole",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10049,
     "slug": "shadow-dash",
     "nameZhHant": "Shadow Dash",
     "nameEn": "Shadow Dash",
-    "nameJa": "Shadow Dash"
+    "nameJa": "Shadow Dash",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10050,
     "slug": "sprint",
     "nameZhHant": "Sprint",
     "nameEn": "Sprint",
-    "nameJa": "Sprint"
+    "nameJa": "Sprint",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10051,
     "slug": "disgust",
     "nameZhHant": "Disgust",
     "nameEn": "Disgust",
-    "nameJa": "Disgust"
+    "nameJa": "Disgust",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10052,
     "slug": "high-rise",
     "nameZhHant": "High Rise",
     "nameEn": "High-rise",
-    "nameJa": "High-rise"
+    "nameJa": "High-rise",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10053,
     "slug": "climber",
     "nameZhHant": "Climber",
     "nameEn": "Climber",
-    "nameJa": "Climber"
+    "nameJa": "Climber",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10054,
     "slug": "flame-boost",
     "nameZhHant": "Flame Boost",
     "nameEn": "Flame Boost",
-    "nameJa": "Flame Boost"
+    "nameJa": "Flame Boost",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10055,
     "slug": "aqua-boost",
     "nameZhHant": "Aqua Boost",
     "nameEn": "Aqua Boost",
-    "nameJa": "Aqua Boost"
+    "nameJa": "Aqua Boost",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10056,
     "slug": "run-up",
     "nameZhHant": "Run Up",
     "nameEn": "Run Up",
-    "nameJa": "Run Up"
+    "nameJa": "Run Up",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10057,
     "slug": "conqueror",
     "nameZhHant": "Conqueror",
     "nameEn": "Conqueror",
-    "nameJa": "Conqueror"
+    "nameJa": "Conqueror",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10058,
     "slug": "shackle",
     "nameZhHant": "Shackle",
     "nameEn": "Shackle",
-    "nameJa": "Shackle"
+    "nameJa": "Shackle",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10059,
     "slug": "decoy",
     "nameZhHant": "Decoy",
     "nameEn": "Decoy",
-    "nameJa": "Decoy"
+    "nameJa": "Decoy",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   },
   {
     "id": 10060,
     "slug": "shield",
     "nameZhHant": "Shield",
     "nameEn": "Shield",
-    "nameJa": "Shield"
+    "nameJa": "Shield",
+    "generationId": 5,
+    "generationLabel": "Gen 5 · 合眾"
   }
 ]

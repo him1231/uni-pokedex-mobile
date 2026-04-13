@@ -27,15 +27,15 @@ export interface PokemonSummary {
   // Runtime-enriched fields
   versionTags: VersionTag[]
   championAvailable: boolean
-  // Added after M2 dataset rebuild
-  isChampionsLegal?: boolean
-  hp?: number
-  atk?: number
-  def?: number
-  spa?: number
-  spd?: number
-  spe?: number
-  bst?: number
+  // Added in M2 dataset rebuild
+  isChampionsLegal: boolean
+  hp: number
+  atk: number
+  def: number
+  spa: number
+  spd: number
+  spe: number
+  bst: number
 }
 
 export interface AbilityRef {

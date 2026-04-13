@@ -1,0 +1,3167 @@
+{
+  "lastUpdated": "2026-04-08",
+  "routes": [
+    {
+      "speciesId": 3,
+      "slug": "venusaur",
+      "nameZhHant": "妙蛙花",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 6,
+      "slug": "charizard",
+      "nameZhHant": "噴火龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 9,
+      "slug": "blastoise",
+      "nameZhHant": "水箭龜",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 15,
+      "slug": "beedrill",
+      "nameZhHant": "大針蜂",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 18,
+      "slug": "pidgeot",
+      "nameZhHant": "大比鳥",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 24,
+      "slug": "arbok",
+      "nameZhHant": "阿柏怪",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 25,
+      "slug": "pikachu",
+      "nameZhHant": "皮卡丘",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 26,
+      "slug": "raichu",
+      "nameZhHant": "雷丘",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 36,
+      "slug": "clefable",
+      "nameZhHant": "皮可西",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 38,
+      "slug": "ninetales",
+      "nameZhHant": "九尾",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 59,
+      "slug": "arcanine",
+      "nameZhHant": "風速狗",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 65,
+      "slug": "alakazam",
+      "nameZhHant": "胡地",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 68,
+      "slug": "machamp",
+      "nameZhHant": "怪力",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 71,
+      "slug": "victreebel",
+      "nameZhHant": "大食花",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 80,
+      "slug": "slowbro",
+      "nameZhHant": "呆殼獸",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 94,
+      "slug": "gengar",
+      "nameZhHant": "耿鬼",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 115,
+      "slug": "kangaskhan",
+      "nameZhHant": "袋獸",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 121,
+      "slug": "starmie",
+      "nameZhHant": "寶石海星",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 127,
+      "slug": "pinsir",
+      "nameZhHant": "凱羅斯",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 128,
+      "slug": "tauros",
+      "nameZhHant": "肯泰羅",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 130,
+      "slug": "gyarados",
+      "nameZhHant": "暴鯉龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 132,
+      "slug": "ditto",
+      "nameZhHant": "百變怪",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 134,
+      "slug": "vaporeon",
+      "nameZhHant": "水伊布",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 135,
+      "slug": "jolteon",
+      "nameZhHant": "雷伊布",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 136,
+      "slug": "flareon",
+      "nameZhHant": "火伊布",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 142,
+      "slug": "aerodactyl",
+      "nameZhHant": "化石翼龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 143,
+      "slug": "snorlax",
+      "nameZhHant": "卡比獸",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 149,
+      "slug": "dragonite",
+      "nameZhHant": "快龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 154,
+      "slug": "meganium",
+      "nameZhHant": "大竺葵",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 157,
+      "slug": "typhlosion",
+      "nameZhHant": "火爆獸",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 160,
+      "slug": "feraligatr",
+      "nameZhHant": "大力鱷",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 168,
+      "slug": "ariados",
+      "nameZhHant": "阿利多斯",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 181,
+      "slug": "ampharos",
+      "nameZhHant": "電龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 184,
+      "slug": "azumarill",
+      "nameZhHant": "瑪力露麗",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 186,
+      "slug": "politoed",
+      "nameZhHant": "蚊香蛙皇",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 196,
+      "slug": "espeon",
+      "nameZhHant": "太陽伊布",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 197,
+      "slug": "umbreon",
+      "nameZhHant": "月亮伊布",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 199,
+      "slug": "slowking",
+      "nameZhHant": "呆呆王",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 205,
+      "slug": "forretress",
+      "nameZhHant": "佛烈托斯",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 208,
+      "slug": "steelix",
+      "nameZhHant": "大鋼蛇",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 212,
+      "slug": "scizor",
+      "nameZhHant": "巨鉗螳螂",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 214,
+      "slug": "heracross",
+      "nameZhHant": "赫拉克羅斯",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 227,
+      "slug": "skarmory",
+      "nameZhHant": "盔甲鳥",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 229,
+      "slug": "houndoom",
+      "nameZhHant": "黑魯加",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 248,
+      "slug": "tyranitar",
+      "nameZhHant": "班基拉斯",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 279,
+      "slug": "pelipper",
+      "nameZhHant": "大嘴鷗",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 282,
+      "slug": "gardevoir",
+      "nameZhHant": "沙奈朵",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 302,
+      "slug": "sableye",
+      "nameZhHant": "勾魂眼",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 306,
+      "slug": "aggron",
+      "nameZhHant": "波士可多拉",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 308,
+      "slug": "medicham",
+      "nameZhHant": "恰雷姆",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 310,
+      "slug": "manectric",
+      "nameZhHant": "雷電獸",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 319,
+      "slug": "sharpedo",
+      "nameZhHant": "巨牙鯊",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 323,
+      "slug": "camerupt",
+      "nameZhHant": "噴火駝",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 324,
+      "slug": "torkoal",
+      "nameZhHant": "煤炭龜",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 334,
+      "slug": "altaria",
+      "nameZhHant": "七夕青鳥",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 350,
+      "slug": "milotic",
+      "nameZhHant": "美納斯",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 351,
+      "slug": "castform",
+      "nameZhHant": "飄浮泡泡",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 354,
+      "slug": "banette",
+      "nameZhHant": "詛咒娃娃",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 358,
+      "slug": "chimecho",
+      "nameZhHant": "風鈴鈴",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 359,
+      "slug": "absol",
+      "nameZhHant": "阿勃梭魯",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 362,
+      "slug": "glalie",
+      "nameZhHant": "冰鬼護",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 389,
+      "slug": "torterra",
+      "nameZhHant": "土台龜",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 392,
+      "slug": "infernape",
+      "nameZhHant": "烈焰猴",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 395,
+      "slug": "empoleon",
+      "nameZhHant": "帝王拿波",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 405,
+      "slug": "luxray",
+      "nameZhHant": "倫琴貓",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 407,
+      "slug": "roserade",
+      "nameZhHant": "羅絲雷朵",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 409,
+      "slug": "rampardos",
+      "nameZhHant": "戰槌龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 411,
+      "slug": "bastiodon",
+      "nameZhHant": "護城龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 428,
+      "slug": "lopunny",
+      "nameZhHant": "長耳兔",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 442,
+      "slug": "spiritomb",
+      "nameZhHant": "花岩怪",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 445,
+      "slug": "garchomp",
+      "nameZhHant": "烈咬陸鯊",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 448,
+      "slug": "lucario",
+      "nameZhHant": "路卡利歐",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 450,
+      "slug": "hippowdon",
+      "nameZhHant": "河馬獸",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 454,
+      "slug": "toxicroak",
+      "nameZhHant": "毒骷蛙",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 460,
+      "slug": "abomasnow",
+      "nameZhHant": "暴雪王",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 461,
+      "slug": "weavile",
+      "nameZhHant": "瑪狃拉",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 464,
+      "slug": "rhyperior",
+      "nameZhHant": "超甲狂犀",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 470,
+      "slug": "leafeon",
+      "nameZhHant": "葉伊布",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 471,
+      "slug": "glaceon",
+      "nameZhHant": "冰伊布",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 472,
+      "slug": "gliscor",
+      "nameZhHant": "天蠍王",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 473,
+      "slug": "mamoswine",
+      "nameZhHant": "象牙豬",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 475,
+      "slug": "gallade",
+      "nameZhHant": "艾路雷朵",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 478,
+      "slug": "froslass",
+      "nameZhHant": "雪妖女",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 479,
+      "slug": "rotom",
+      "nameZhHant": "洛托姆",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 497,
+      "slug": "serperior",
+      "nameZhHant": "君主蛇",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 500,
+      "slug": "emboar",
+      "nameZhHant": "炎武王",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 503,
+      "slug": "samurott",
+      "nameZhHant": "大劍鬼",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 505,
+      "slug": "watchog",
+      "nameZhHant": "步哨鼠",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 510,
+      "slug": "liepard",
+      "nameZhHant": "酷豹",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 512,
+      "slug": "simisage",
+      "nameZhHant": "花椰猿",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 514,
+      "slug": "simisear",
+      "nameZhHant": "爆香猿",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 516,
+      "slug": "simipour",
+      "nameZhHant": "冷水猿",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 530,
+      "slug": "excadrill",
+      "nameZhHant": "龍頭地鼠",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 531,
+      "slug": "audino",
+      "nameZhHant": "差不多娃娃",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 534,
+      "slug": "conkeldurr",
+      "nameZhHant": "修建老匠",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 547,
+      "slug": "whimsicott",
+      "nameZhHant": "風妖精",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 553,
+      "slug": "krookodile",
+      "nameZhHant": "流氓鱷",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 563,
+      "slug": "cofagrigus",
+      "nameZhHant": "死神棺",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 569,
+      "slug": "garbodor",
+      "nameZhHant": "灰塵山",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 571,
+      "slug": "zoroark",
+      "nameZhHant": "索羅亞克",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 579,
+      "slug": "reuniclus",
+      "nameZhHant": "人造細胞卵",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 584,
+      "slug": "vanilluxe",
+      "nameZhHant": "雙倍多多冰",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 587,
+      "slug": "emolga",
+      "nameZhHant": "電飛鼠",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 609,
+      "slug": "chandelure",
+      "nameZhHant": "水晶燈火靈",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 614,
+      "slug": "beartic",
+      "nameZhHant": "凍原熊",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 618,
+      "slug": "stunfisk",
+      "nameZhHant": "泥巴魚",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 623,
+      "slug": "golurk",
+      "nameZhHant": "泥偶巨人",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 635,
+      "slug": "hydreigon",
+      "nameZhHant": "三首惡龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 637,
+      "slug": "volcarona",
+      "nameZhHant": "火神蛾",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 652,
+      "slug": "chesnaught",
+      "nameZhHant": "布里卡隆",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 655,
+      "slug": "delphox",
+      "nameZhHant": "妖火紅狐",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 658,
+      "slug": "greninja",
+      "nameZhHant": "甲賀忍蛙",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 660,
+      "slug": "diggersby",
+      "nameZhHant": "掘地兔",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 663,
+      "slug": "talonflame",
+      "nameZhHant": "烈箭鷹",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 666,
+      "slug": "vivillon",
+      "nameZhHant": "彩粉蝶",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 670,
+      "slug": "floette",
+      "nameZhHant": "花葉蒂",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 671,
+      "slug": "florges",
+      "nameZhHant": "花潔夫人",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 675,
+      "slug": "pangoro",
+      "nameZhHant": "流氓熊貓",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 676,
+      "slug": "furfrou",
+      "nameZhHant": "多麗米亞",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 678,
+      "slug": "meowstic-male",
+      "nameZhHant": "超能妙喵",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 681,
+      "slug": "aegislash-shield",
+      "nameZhHant": "堅盾劍怪",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 683,
+      "slug": "aromatisse",
+      "nameZhHant": "芳香精",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 685,
+      "slug": "slurpuff",
+      "nameZhHant": "胖甜妮",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 693,
+      "slug": "clawitzer",
+      "nameZhHant": "鋼炮臂蝦",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 695,
+      "slug": "heliolisk",
+      "nameZhHant": "光電傘蜥",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 697,
+      "slug": "tyrantrum",
+      "nameZhHant": "怪顎龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 699,
+      "slug": "aurorus",
+      "nameZhHant": "冰雪巨龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 700,
+      "slug": "sylveon",
+      "nameZhHant": "仙子伊布",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 701,
+      "slug": "hawlucha",
+      "nameZhHant": "摔角鷹人",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 702,
+      "slug": "dedenne",
+      "nameZhHant": "咚咚鼠",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 706,
+      "slug": "goodra",
+      "nameZhHant": "黏美龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 707,
+      "slug": "klefki",
+      "nameZhHant": "鑰圈兒",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 709,
+      "slug": "trevenant",
+      "nameZhHant": "朽木妖",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 711,
+      "slug": "gourgeist-average",
+      "nameZhHant": "南瓜怪人",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 713,
+      "slug": "avalugg",
+      "nameZhHant": "冰岩怪",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 715,
+      "slug": "noivern",
+      "nameZhHant": "音波龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 724,
+      "slug": "decidueye",
+      "nameZhHant": "狙射樹梟",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 727,
+      "slug": "incineroar",
+      "nameZhHant": "熾焰咆哮虎",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 730,
+      "slug": "primarina",
+      "nameZhHant": "西獅海壬",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 733,
+      "slug": "toucannon",
+      "nameZhHant": "銃嘴大鳥",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 740,
+      "slug": "crabominable",
+      "nameZhHant": "好勝毛蟹",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 745,
+      "slug": "lycanroc-midday",
+      "nameZhHant": "鬃岩狼人",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 748,
+      "slug": "toxapex",
+      "nameZhHant": "超壞星",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 750,
+      "slug": "mudsdale",
+      "nameZhHant": "重泥挽馬",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 752,
+      "slug": "araquanid",
+      "nameZhHant": "滴蛛霸",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 758,
+      "slug": "salazzle",
+      "nameZhHant": "焰后蜥",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 763,
+      "slug": "tsareena",
+      "nameZhHant": "甜冷美后",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 765,
+      "slug": "oranguru",
+      "nameZhHant": "智揮猩",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 766,
+      "slug": "passimian",
+      "nameZhHant": "投擲猴",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 778,
+      "slug": "mimikyu-disguised",
+      "nameZhHant": "謎擬Ｑ",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 780,
+      "slug": "drampa",
+      "nameZhHant": "老翁龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 784,
+      "slug": "kommo-o",
+      "nameZhHant": "杖尾鱗甲龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 823,
+      "slug": "corviknight",
+      "nameZhHant": "鋼鎧鴉",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 841,
+      "slug": "flapple",
+      "nameZhHant": "蘋裹龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 842,
+      "slug": "appletun",
+      "nameZhHant": "豐蜜龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 844,
+      "slug": "sandaconda",
+      "nameZhHant": "沙螺蟒",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 855,
+      "slug": "polteageist",
+      "nameZhHant": "怖思壺",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 858,
+      "slug": "hatterene",
+      "nameZhHant": "布莉姆溫",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 866,
+      "slug": "mr-rime",
+      "nameZhHant": "踏冰人偶",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 867,
+      "slug": "runerigus",
+      "nameZhHant": "死神板",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 869,
+      "slug": "alcremie",
+      "nameZhHant": "霜奶仙",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 877,
+      "slug": "morpeko-full-belly",
+      "nameZhHant": "莫魯貝可",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 887,
+      "slug": "dragapult",
+      "nameZhHant": "多龍巴魯托",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 899,
+      "slug": "wyrdeer",
+      "nameZhHant": "詭角鹿",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 900,
+      "slug": "kleavor",
+      "nameZhHant": "劈斧螳螂",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 902,
+      "slug": "basculegion-male",
+      "nameZhHant": "幽尾玄魚",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 903,
+      "slug": "sneasler",
+      "nameZhHant": "大狃拉",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 908,
+      "slug": "meowscarada",
+      "nameZhHant": "魔幻假面喵",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 911,
+      "slug": "skeledirge",
+      "nameZhHant": "骨紋巨聲鱷",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 914,
+      "slug": "quaquaval",
+      "nameZhHant": "狂歡浪舞鴨",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 925,
+      "slug": "maushold-family-of-four",
+      "nameZhHant": "一家鼠",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 934,
+      "slug": "garganacl",
+      "nameZhHant": "鹽石巨靈",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 936,
+      "slug": "armarouge",
+      "nameZhHant": "紅蓮鎧騎",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 937,
+      "slug": "ceruledge",
+      "nameZhHant": "蒼炎刃鬼",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 939,
+      "slug": "bellibolt",
+      "nameZhHant": "電肚蛙",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 952,
+      "slug": "scovillain",
+      "nameZhHant": "狠辣椒",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 956,
+      "slug": "espathra",
+      "nameZhHant": "超能艷鴕",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 959,
+      "slug": "tinkaton",
+      "nameZhHant": "巨鍛匠",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 964,
+      "slug": "palafin-zero",
+      "nameZhHant": "海豚俠",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 968,
+      "slug": "orthworm",
+      "nameZhHant": "拖拖蚓",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 970,
+      "slug": "glimmora",
+      "nameZhHant": "晶光花",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 981,
+      "slug": "farigiraf",
+      "nameZhHant": "奇麒麟",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 983,
+      "slug": "kingambit",
+      "nameZhHant": "仆刀將軍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 1013,
+      "slug": "sinistcha",
+      "nameZhHant": "來悲粗茶",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 1018,
+      "slug": "archaludon",
+      "nameZhHant": "鋁鋼橋龍",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "speciesId": 1019,
+      "slug": "hydrapple",
+      "nameZhHant": "蜜集大蛇",
+      "methods": [
+        {
+          "fromGame": "home-direct",
+          "labelZhHant": "Pokémon HOME 直接存入",
+          "notes": ""
+        },
+        {
+          "fromGame": "go-home",
+          "labelZhHant": "Pokémon GO → HOME → Champions",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

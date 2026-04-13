@@ -15,7 +15,7 @@ function formatNo(no: number) {
 export default function PokemonCard({ pokemon, onClick, isFav, onToggleFav }: PokemonCardProps) {
   return (
     <article
-      className="pokemon-card"
+      className={`pokemon-card${pokemon.isChampionsLegal ? '' : ' pokemon-card--not-legal'}`}
       onClick={onClick}
       role="button"
       tabIndex={0}
@@ -29,17 +29,22 @@ export default function PokemonCard({ pokemon, onClick, isFav, onToggleFav }: Po
       <div className="pokemon-card__body">
         <div className="pokemon-card__topline">
           <span className="pokemon-card__id">#{formatNo(pokemon.speciesId)}</span>
-          <button
-            className={`pokemon-card__fav ${isFav ? 'is-on' : ''}`}
-            onClick={(event) => {
-              event.stopPropagation()
-              onToggleFav()
-            }}
-            aria-label={isFav ? '取消收藏' : '加入收藏'}
-            type="button"
-          >
-            {isFav ? '★' : '☆'}
-          </button>
+          <div className="pokemon-card__topline-right">
+            {pokemon.isChampionsLegal && (
+              <span className="pokemon-card__champions-badge" aria-label="Champions 可用">⚔️</span>
+            )}
+            <button
+              className={`pokemon-card__fav ${isFav ? 'is-on' : ''}`}
+              onClick={(event) => {
+                event.stopPropagation()
+                onToggleFav()
+              }}
+              aria-label={isFav ? '取消收藏' : '加入收藏'}
+              type="button"
+            >
+              {isFav ? '★' : '☆'}
+            </button>
+          </div>
         </div>
 
         <div className="pokemon-card__name">{pokemon.nameZhHant}</div>

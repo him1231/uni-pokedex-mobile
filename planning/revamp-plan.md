@@ -82,24 +82,24 @@
 ## Milestone 2 — Champions Data Layer
 
 ### Step 7: Champions availability module
-- [ ] `src/data/championsAvailability.ts` — `CHAMPIONS_SPECIES_IDS` (186 species), `CHAMPIONS_REGIONAL_FORMS`, `CHAMPIONS_MEGA_FORMS`, `isChampionsLegal(id)` helper
-- [ ] Migrate `src/data/versionExclusives.js` → `.ts`
+- [x] `src/data/championsAvailability.ts` — `CHAMPIONS_SPECIES_IDS` (186 species), `CHAMPIONS_REGIONAL_FORMS`, `CHAMPIONS_MEGA_FORMS`, `isChampionsLegal(id)` helper
+- [x] Migrate `src/data/versionExclusives.js` → `.ts`
 - [ ] Unit test: `isChampionsLegal` edge cases (Tauros 128, Hydrapple 1019, non-Champions Bulbasaur 1)
 
 ### Step 8: Expand Python dataset builder
-- [ ] Add base stats (hp/atk/def/spa/spd/spe/bst) to `pokedex-summary.json`
-- [ ] Fix ability `generationId` + `generationLabel` in `abilities-summary.json`
-- [ ] Add `isChampionsLegal: boolean` to each entry in `pokedex-summary.json`
-- [ ] Regenerate & commit both JSON files
+- [x] Add base stats (hp/atk/def/spa/spd/spe/bst) to `pokedex-summary.json`
+- [x] Fix ability `generationId` + `generationLabel` in `abilities-summary.json`
+- [x] Add `isChampionsLegal: boolean` to each entry in `pokedex-summary.json`
+- [x] Regenerate & commit both JSON files
 
 ### Step 9: Home transfer routes dataset
-- [ ] Manually author `public/data/home-transfer-routes.json` from official HOME + Champions docs
-- [ ] Add `HomeTransferRoute` type to `src/types/pokemon.ts`
+- [x] Manually author `public/data/home-transfer-routes.json` from official HOME + Champions docs
+- [x] Add `HomeTransferRoute` type to `src/types/pokemon.ts`
 
 ### Step 10: Surface Champions legality on Dex page
-- [ ] `PokemonCard` shows ⚔️ badge for Champions-legal Pokémon
-- [ ] Non-legal Pokémon rendered greyed/dimmed
-- [ ] "僅Champions" toggle filter added to DexPage `FilterPanel`
+- [x] `PokemonCard` shows ⚔️ badge for Champions-legal Pokémon
+- [x] Non-legal Pokémon rendered greyed/dimmed
+- [x] "僅Champions" toggle filter added to DexPage `FilterPanel`
 
 ---
 

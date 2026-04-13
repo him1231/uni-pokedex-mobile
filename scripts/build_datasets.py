@@ -24,6 +24,39 @@ GENERATION_LABELS = {
     9: "Gen 9 · 帕底亞",
 }
 
+# Champions-legal species (186 base species IDs)
+# Matches src/data/championsAvailability.ts CHAMPIONS_SPECIES_IDS
+CHAMPIONS_SPECIES_IDS: frozenset[int] = frozenset([
+    # Gen 1
+    3, 6, 9, 15, 18, 24, 25, 26, 36, 38, 59, 65, 68, 71, 80, 94, 115, 121, 127,
+    128, 130, 132, 134, 135, 136, 142, 143, 149,
+    # Gen 2
+    154, 157, 160, 168, 181, 184, 186, 196, 197, 199, 205, 208, 212, 214, 227,
+    229, 248,
+    # Gen 3
+    279, 282, 302, 306, 308, 310, 319, 323, 324, 334, 350, 351, 354, 358, 359,
+    362,
+    # Gen 4
+    389, 392, 395, 405, 407, 409, 411, 428, 442, 445, 448, 450, 454, 460, 461,
+    464, 470, 471, 472, 473, 475, 478, 479,
+    # Gen 5
+    497, 500, 503, 505, 510, 512, 514, 516, 530, 531, 534, 547, 553, 563, 569,
+    571, 579, 584, 587, 609, 614, 618, 623, 635, 637,
+    # Gen 6
+    652, 655, 658, 660, 663, 666, 670, 671, 675, 676, 678, 681, 683, 685, 693,
+    695, 697, 699, 700, 701, 702, 706, 707, 709, 711, 713, 715,
+    # Gen 7
+    724, 727, 730, 733, 740, 745, 748, 750, 752, 758, 763, 765, 766, 778, 780,
+    784,
+    # Gen 8
+    823, 841, 842, 844, 855, 858, 866, 867, 869, 877, 887, 899, 900, 902, 903,
+    # Gen 9
+    908, 911, 914, 925, 934, 936, 937, 939, 952, 956, 959, 964, 968, 970, 981,
+    983, 1013, 1018, 1019,
+])
+
+STAT_ID_TO_KEY = {1: "hp", 2: "atk", 3: "def", 4: "spa", 5: "spd", 6: "spe"}
+
 MOVE_CLASS_LABELS = {
     "1": {"slug": "status", "labelZhHant": "變化", "labelEn": "Status"},
     "2": {"slug": "physical", "labelZhHant": "物理", "labelEn": "Physical"},
@@ -39,6 +72,20 @@ def read_csv(name: str):
 
 def titleize_slug(slug: str) -> str:
     return slug.replace("-", " ").title()
+
+
+def build_pokemon_stats() -> dict[int, dict]:
+    """Returns dict mapping pokemon_id -> {hp, atk, def, spa, spd, spe, bst}."""
+    stats: dict[int, dict] = defaultdict(lambda: {k: 0 for k in STAT_ID_TO_KEY.values()})
+    for row in read_csv("pokemon_stats.csv"):
+        stat_key = STAT_ID_TO_KEY.get(int(row["stat_id"]))
+        if stat_key:
+            stats[int(row["pokemon_id"])][stat_key] = int(row["base_stat"])
+    result: dict[int, dict] = {}
+    for pid, s in stats.items():
+        bst = s["hp"] + s["atk"] + s["def"] + s["spa"] + s["spd"] + s["spe"]
+        result[pid] = {**s, "bst": bst}
+    return result
 
 
 def build_type_maps() -> dict[int, dict]:
@@ -58,7 +105,7 @@ def build_type_maps() -> dict[int, dict]:
     return types
 
 
-def build_pokedex_summary(types: dict[int, dict]) -> list[dict]:
+def build_pokedex_summary(types: dict[int, dict], stats: dict[int, dict]) -> list[dict]:
     pokemon_rows = read_csv("pokemon.csv")
     species_rows = read_csv("pokemon_species.csv")
     species_name_rows = read_csv("pokemon_species_names.csv")
@@ -115,6 +162,8 @@ def build_pokedex_summary(types: dict[int, dict]) -> list[dict]:
                 "generationLabel": GENERATION_LABELS.get(generation_id, f"Gen {generation_id}"),
                 "types": slot_types,
                 "sprite": f"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{pokemon_id}.png",
+                "isChampionsLegal": species_id in CHAMPIONS_SPECIES_IDS,
+                **stats.get(pokemon_id, {"hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0, "bst": 0}),
             }
         )
 
@@ -182,6 +231,7 @@ def build_ability_summary() -> list[dict]:
     for row in ability_rows:
         ability_id = int(row["id"])
         names = ability_names.get(ability_id, {})
+        generation_id = int(row["generation_id"])
         entries.append(
             {
                 "id": ability_id,
@@ -189,6 +239,8 @@ def build_ability_summary() -> list[dict]:
                 "nameZhHant": names.get("nameZhHant") or titleize_slug(row["identifier"]),
                 "nameEn": names.get("nameEn") or titleize_slug(row["identifier"]),
                 "nameJa": names.get("nameJa") or names.get("nameEn") or titleize_slug(row["identifier"]),
+                "generationId": generation_id,
+                "generationLabel": GENERATION_LABELS.get(generation_id, f"Gen {generation_id}"),
             }
         )
 
@@ -198,7 +250,8 @@ def build_ability_summary() -> list[dict]:
 def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     types = build_type_maps()
-    pokedex = build_pokedex_summary(types)
+    stats = build_pokemon_stats()
+    pokedex = build_pokedex_summary(types, stats)
     moves = build_move_summary(types)
     abilities = build_ability_summary()
 
