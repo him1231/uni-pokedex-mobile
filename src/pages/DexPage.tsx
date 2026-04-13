@@ -12,14 +12,12 @@ const CARD_HEIGHT = 168 // px per row, including padding
 interface CellItemData {
   items: PokemonSummary[]
   colCount: number
-  favorites: number[]
   onCardClick: (p: PokemonSummary) => void
-  onToggleFav: (id: number) => void
 }
 
 // Defined outside DexPage to prevent re-creation on each render
 function Cell(props: CellComponentProps<CellItemData>) {
-  const { columnIndex, rowIndex, style, items, colCount, favorites, onCardClick, onToggleFav } = props
+  const { columnIndex, rowIndex, style, items, colCount, onCardClick } = props
   const index = rowIndex * colCount + columnIndex
   if (index >= items.length) return <div style={style} />
   const p = items[index]
@@ -28,8 +26,6 @@ function Cell(props: CellComponentProps<CellItemData>) {
       <PokemonCard
         pokemon={p}
         onClick={() => onCardClick(p)}
-        isFav={favorites.includes(p.id)}
-        onToggleFav={() => onToggleFav(p.id)}
       />
     </div>
   )
@@ -79,13 +75,6 @@ export default function DexPage() {
   const [showChampionsOnly, setShowChampionsOnly] = useState(false)
   const [showTypePanel, setShowTypePanel] = useState(false)
   const [showSortPanel, setShowSortPanel] = useState(false)
-  const [favorites, setFavorites] = useState<number[]>(() => {
-    try {
-      return JSON.parse(localStorage.getItem('ufavs') || '[]') as number[]
-    } catch {
-      return []
-    }
-  })
 
   const pokedexGenerationOptions = useMemo(() => {
     const set = new Set<string>()
@@ -124,14 +113,6 @@ export default function DexPage() {
     return res
   }, [list, query, versionFilter, generationFilter, typeFilter, sortOption, showChampionsOnly])
 
-  const toggleFav = useCallback((id: number) => {
-    setFavorites((prev) => {
-      const next = prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
-      localStorage.setItem('ufavs', JSON.stringify(next))
-      return next
-    })
-  }, [])
-
   const handleCardClick = useCallback((p: PokemonSummary) => {
     navigate(`/pokemon/${p.speciesId || p.id}`)
   }, [navigate])
@@ -150,10 +131,8 @@ export default function DexPage() {
   const itemData: CellItemData = useMemo(() => ({
     items: filtered,
     colCount: COLUMN_COUNT,
-    favorites,
     onCardClick: handleCardClick,
-    onToggleFav: toggleFav,
-  }), [filtered, favorites, handleCardClick, toggleFav])
+  }), [filtered, handleCardClick])
 
   return (
     <div className="dex-page">

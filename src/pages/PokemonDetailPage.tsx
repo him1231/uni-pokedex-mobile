@@ -1,8 +1,9 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { usePokemonDetail } from '@/hooks/usePokemonDetail'
 import { usePokemonList, useHomeTransferData } from '@/hooks/usePokemonList'
 import { useTypeEffectiveness } from '@/hooks/useTypeEffectiveness'
+import { useWorkspaceStore } from '@/store/workspaceStore'
 import FormTabStrip from '@/components/pokemon/FormTabStrip'
 import StatBars from '@/components/pokemon/StatBars'
 import EvolutionChain from '@/components/pokemon/EvolutionChain'
@@ -16,6 +17,18 @@ export default function PokemonDetailPage() {
 
   const { data: list = [] } = usePokemonList()
   const { data: homeTransferData } = useHomeTransferData()
+
+  const addRecent = useWorkspaceStore((s) => s.addRecent)
+  const pins = useWorkspaceStore((s) => s.pins)
+  const togglePin = useWorkspaceStore((s) => s.togglePin)
+  const addToTeam = useWorkspaceStore((s) => s.addToTeam)
+  const addToCompare = useWorkspaceStore((s) => s.addToCompare)
+  const compareSet = useWorkspaceStore((s) => s.compareSet)
+
+  // Record this visit in recents
+  useEffect(() => {
+    if (pokemonId) addRecent(pokemonId)
+  }, [pokemonId, addRecent])
 
   const summary = useMemo(
     () => list.find((p) => (p.speciesId || p.id) === pokemonId),
@@ -78,6 +91,37 @@ export default function PokemonDetailPage() {
               <div className="champions-legal-badge">⚔️ Pokémon Champions 可用</div>
             )}
           </div>
+        </div>
+      )}
+
+      {/* Workspace CTAs */}
+      {summary && pokemonId && (
+        <div className="detail-workspace-actions">
+          <button
+            type="button"
+            className={`workspace-btn workspace-btn--pin${pins.includes(pokemonId) ? ' is-on' : ''}`}
+            onClick={() => togglePin(pokemonId)}
+            aria-label={pins.includes(pokemonId) ? '取消收藏' : '加入收藏'}
+          >
+            {pins.includes(pokemonId) ? '★ 已收藏' : '☆ 收藏'}
+          </button>
+          <button
+            type="button"
+            className="workspace-btn workspace-btn--team"
+            onClick={() => addToTeam(pokemonId)}
+            aria-label={`將 ${summary.nameZhHant} 加入隊伍`}
+          >
+            ＋加入隊伍
+          </button>
+          <button
+            type="button"
+            className={`workspace-btn workspace-btn--compare${compareSet.includes(pokemonId) ? ' is-on' : ''}`}
+            onClick={() => compareSet.includes(pokemonId) ? undefined : addToCompare(pokemonId)}
+            aria-label={`將 ${summary.nameZhHant} 加入比較`}
+            disabled={compareSet.includes(pokemonId)}
+          >
+            {compareSet.includes(pokemonId) ? '✓ 比較中' : '⇄ 加入比較'}
+          </button>
         </div>
       )}
 

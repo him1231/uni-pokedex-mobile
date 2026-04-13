@@ -130,26 +130,26 @@
 ## Milestone 4 — Workspace Layer
 
 ### Step 14: Zustand workspace store
-- [ ] `src/store/workspaceStore.ts` — `pins`, `recents`, `team`, `compareSet` slices
-- [ ] `persist` middleware for `upins`, `uteam`, `ucompare`, `urecent`
-- [ ] Migrate existing `ufavs` localStorage key → `pins` on first hydration
+- [x] `src/store/workspaceStore.ts` — `pins`, `recents`, `team`, `compareSet` slices
+- [x] `persist` middleware for `upins`, `uteam`, `ucompare`, `urecent`
+- [x] Migrate existing `ufavs` localStorage key → `pins` on first hydration
 
 ### Step 15: Workspace action buttons
-- [ ] Pin + "加入隊伍" on `PokemonCard` (hover/focus visible)
-- [ ] "加入隊伍" + "加入比較" CTAs on `PokemonDetailPage`
-- [ ] `addRecent(speciesId)` on detail page mount
+- [x] Pin + "加入隊伍" on `PokemonCard` (hover/focus visible)
+- [x] "加入隊伍" + "加入比較" CTAs on `PokemonDetailPage`
+- [x] `addRecent(speciesId)` on detail page mount
 
 ### Step 16: Team Builder page
-- [ ] `src/pages/TeamBuilderPage.tsx` — 6 `TeamSlot` components
-- [ ] `src/components/team/TypeCoverageTable.tsx`
-- [ ] `src/components/team/WeaknessMatrix.tsx` — 18×6 matrix, color-coded
-- [ ] "分析隊伍" button to defer 36-call weakness matrix until user-initiated
-- [ ] "最近瀏覽" row for quick team additions
+- [x] `src/pages/TeamBuilderPage.tsx` — 6 `TeamSlot` components
+- [x] `src/components/team/TypeCoverageTable.tsx`
+- [x] `src/components/team/WeaknessMatrix.tsx` — 18×6 matrix, color-coded
+- [x] "分析隊伍" button to defer 36-call weakness matrix until user-initiated
+- [x] "最近瀏覽" row for quick team additions (picker shows recents when empty query)
 
 ### Step 17: Compare Board
-- [ ] `src/components/team/CompareBoard.tsx` — side-by-side stat comparison
-- [ ] Green/red cell highlighting for max/min stat per row
-- [ ] Integrated into TeamBuilderPage as a section
+- [x] `src/components/team/CompareBoard.tsx` — side-by-side stat comparison
+- [x] Green/red cell highlighting for max/min stat per row
+- [x] Integrated into TeamBuilderPage as a section
 
 ---
 

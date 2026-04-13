@@ -94,6 +94,116 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 .home-transfer__updated{font-size:11px;color:var(--muted);margin-top:4px}
 .ability-pokemon-link{color:var(--accent);text-decoration:underline;font-weight:700}
 
+/* ── Workspace action buttons ─────────────────────────────────────── */
+.detail-workspace-actions{display:flex;flex-wrap:wrap;gap:8px;padding:8px 12px}
+.workspace-btn{padding:6px 14px;border-radius:999px;border:1.5px solid #d1d5db;background:#fff;font-size:13px;cursor:pointer;font-weight:500;transition:background .15s,border-color .15s}
+.workspace-btn--pin.is-on{background:#fef9c3;border-color:#fde68a;color:#92400e}
+.workspace-btn--team{border-color:#a7f3d0;color:#065f46}
+.workspace-btn--team:hover{background:#d1fae5}
+.workspace-btn--compare{border-color:#bfdbfe;color:#1e40af}
+.workspace-btn--compare.is-on{background:#eff6ff;border-color:#93c5fd}
+.workspace-btn--compare:disabled{opacity:.6;cursor:default}
+.workspace-btn--clear{border-color:#fca5a5;color:#991b1b}
+.workspace-btn--clear:hover{background:#fee2e2}
+.workspace-btn--analyze{padding:8px 20px;background:#ef4444;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600}
+.workspace-btn--analyze:hover{background:#dc2626}
+
+/* ── PokemonCard hover workspace action ───────────────────────────── */
+.pokemon-card__actions{
+  position:absolute;bottom:0;left:0;right:0;
+  display:flex;justify-content:center;
+  padding:4px 6px 6px;
+  background:linear-gradient(transparent,rgba(0,0,0,.45));
+  border-radius:0 0 12px 12px;
+  opacity:0;transition:opacity .15s;
+  pointer-events:none;
+}
+.pokemon-card{position:relative}
+.pokemon-card:hover .pokemon-card__actions,
+.pokemon-card:focus-within .pokemon-card__actions{opacity:1;pointer-events:auto}
+.pokemon-card__action-btn{
+  padding:3px 10px;border-radius:999px;border:1.5px solid #fff;
+  background:rgba(255,255,255,.2);color:#fff;font-size:11px;font-weight:600;
+  cursor:pointer;backdrop-filter:blur(2px);
+}
+.pokemon-card__action-btn:hover{background:rgba(255,255,255,.4)}
+
+/* ── Team Builder page ────────────────────────────────────────────── */
+.team-builder-page{padding:12px}
+.team-builder-page__header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.team-builder-page__header h2{margin:0;font-size:20px}
+.team-slots{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:16px}
+.team-slot{border-radius:12px;border:1.5px solid #e5e7eb;overflow:visible;position:relative;min-height:72px}
+.team-slot--empty{display:flex;flex-direction:column;align-items:center;background:#f9fafb}
+.team-slot__add-btn{width:100%;min-height:72px;background:none;border:none;font-size:28px;color:#9ca3af;cursor:pointer;border-radius:12px}
+.team-slot__add-btn:hover{background:#f3f4f6;color:#6b7280}
+.team-slot__picker{position:absolute;top:100%;left:0;right:0;z-index:50;background:#fff;border:1.5px solid #e5e7eb;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.12);padding:8px}
+.team-slot__picker-input{width:100%;padding:6px 10px;border:1px solid #d1d5db;border-radius:8px;font-size:13px;box-sizing:border-box;margin-bottom:6px}
+.team-slot__picker-list{list-style:none;margin:0;padding:0;max-height:200px;overflow-y:auto}
+.team-slot__picker-item{display:flex;align-items:center;gap:6px;width:100%;padding:6px 8px;border:none;background:none;cursor:pointer;border-radius:8px;font-size:13px;text-align:left}
+.team-slot__picker-item:hover{background:#f3f4f6}
+.team-slot__picker-sprite{width:32px;height:32px;object-fit:contain}
+.team-slot__picker-id{margin-left:auto;color:#9ca3af;font-size:11px}
+.team-slot__picker-empty{padding:8px;color:#9ca3af;font-size:13px;text-align:center}
+.team-slot--filled{display:flex;align-items:center;padding:8px 10px;gap:8px;background:#fff}
+.team-slot__link{display:flex;align-items:center;gap:8px;flex:1;text-decoration:none;color:inherit;min-width:0}
+.team-slot__sprite{width:48px;height:48px;object-fit:contain}
+.team-slot__info{min-width:0}
+.team-slot__name{font-weight:600;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.team-slot__types{display:flex;flex-wrap:wrap;gap:3px;margin-top:2px}
+.team-slot__remove{background:none;border:none;color:#9ca3af;font-size:16px;cursor:pointer;padding:4px;border-radius:50%;flex-shrink:0}
+.team-slot__remove:hover{color:#ef4444;background:#fee2e2}
+
+/* ── Team analysis ────────────────────────────────────────────────── */
+.team-analysis{margin-top:8px}
+
+/* TypeCoverageTable */
+.type-coverage{margin-bottom:16px}
+.type-coverage h4{margin:0 0 8px;font-size:14px;font-weight:600}
+.type-coverage__grid{display:flex;flex-wrap:wrap;gap:4px}
+.type-pill--dim{opacity:.25;filter:grayscale(1)}
+
+/* WeaknessMatrix */
+.weakness-matrix-wrap{margin-bottom:16px}
+.weakness-matrix-wrap h4{margin:0 0 8px;font-size:14px;font-weight:600}
+.weakness-matrix-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.weakness-matrix{border-collapse:collapse;font-size:12px;white-space:nowrap}
+.wm-label-col,.wm-member-col{padding:4px 8px;border:1px solid #e5e7eb;text-align:center}
+.wm-label-col{font-size:11px;font-weight:600;background:#f9fafb;min-width:60px}
+.wm-member-col{min-width:64px;vertical-align:top}
+.wm-sprite{width:40px;height:40px;object-fit:contain}
+.wm-member-name{font-size:10px;color:#374151;overflow:hidden;text-overflow:ellipsis;max-width:64px}
+.wm-type-label{padding:3px 6px;font-size:11px;font-weight:600;border:1px solid #e5e7eb;white-space:nowrap;border-radius:4px}
+.wm-cell{padding:3px 6px;border:1px solid #e5e7eb;text-align:center;font-size:12px;font-weight:600;min-width:40px}
+.wm-cell--empty{color:#d1d5db}
+.wm-cell--immune{background:#1f2937;color:#fff}
+.wm-cell--resist2{background:#bbf7d0;color:#065f46}
+.wm-cell--resist{background:#d1fae5;color:#065f46}
+.wm-cell--neutral{background:#f9fafb}
+.wm-cell--weak{background:#fecaca;color:#991b1b}
+.wm-cell--weak2{background:#ef4444;color:#fff}
+
+/* ── Compare Board ────────────────────────────────────────────────── */
+.compare-board{margin-top:16px;border-top:1.5px solid #e5e7eb;padding-top:16px}
+.compare-board--empty{color:#9ca3af;font-size:13px;padding:12px 0}
+.compare-board__header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.compare-board__header h4{margin:0;font-size:14px;font-weight:600}
+.compare-board__scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.compare-table{border-collapse:collapse;font-size:13px;white-space:nowrap}
+.compare-member-col{padding:6px 10px;border:1px solid #e5e7eb;text-align:center;min-width:80px}
+.compare-member{display:flex;flex-direction:column;align-items:center;gap:2px}
+.compare-sprite{width:48px;height:48px;object-fit:contain}
+.compare-member-name{font-size:11px;font-weight:600;color:#374151}
+.compare-remove-btn{background:none;border:none;color:#9ca3af;cursor:pointer;font-size:12px;padding:0}
+.compare-remove-btn:hover{color:#ef4444}
+.compare-stat-label{padding:4px 10px;font-weight:600;font-size:12px;border:1px solid #e5e7eb;background:#f9fafb;white-space:nowrap}
+.compare-cell{padding:4px 10px;border:1px solid #e5e7eb;text-align:center;font-size:13px;font-weight:500}
+.compare-cell--max{background:#d1fae5;color:#065f46;font-weight:700}
+.compare-cell--min{background:#fee2e2;color:#991b1b;font-weight:700}
+.compare-cell--bst{background:#f0f9ff;font-weight:700;color:#1e40af}
+
+
+
 /* type pill base + colors */
 .type-pill{
   display:inline-flex;
