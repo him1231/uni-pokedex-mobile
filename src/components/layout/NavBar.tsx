@@ -6,6 +6,7 @@ const NAV_ITEMS = [
   { to: '/abilities', label: '特性', icon: '✨', end: false },
   { to: '/team', label: '隊伍', icon: '⚔️', end: false },
   { to: '/home-checker', label: 'HOME', icon: '🏠', end: false },
+  { to: '/vp-planner', label: 'VP', icon: '💎', end: false },
 ] as const
 
 export default function NavBar() {

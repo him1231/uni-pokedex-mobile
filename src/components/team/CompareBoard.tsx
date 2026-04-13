@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import { useWorkspaceStore } from '@/store/workspaceStore'
-import type { PokemonSummary } from '@/types/pokemon'
+import StatRadarChart from '@/components/pokemon/StatRadarChart'
+import type { PokemonSummary, StatEntry } from '@/types/pokemon'
 
 interface CompareBoardProps {
   summaryList: PokemonSummary[]
@@ -14,10 +16,21 @@ export default function CompareBoard({ summaryList }: CompareBoardProps) {
   const compareSet = useWorkspaceStore((s) => s.compareSet)
   const removeFromCompare = useWorkspaceStore((s) => s.removeFromCompare)
   const clearCompare = useWorkspaceStore((s) => s.clearCompare)
+  const [statView, setStatView] = useState<'table' | 'radar'>('table')
 
   const members = compareSet
     .map((id) => summaryList.find((p) => p.speciesId === id) ?? null)
     .filter(Boolean) as PokemonSummary[]
+
+  /** Convert flat summary stats to StatEntry[] for RadarChart */
+  const toStatEntries = (m: PokemonSummary): StatEntry[] => [
+    { slug: 'hp', label: 'HP', value: m.hp },
+    { slug: 'attack', label: '攻擊', value: m.atk },
+    { slug: 'defense', label: '防禦', value: m.def },
+    { slug: 'special-attack', label: '特攻', value: m.spa },
+    { slug: 'special-defense', label: '特防', value: m.spd },
+    { slug: 'speed', label: '速度', value: m.spe },
+  ]
 
   if (members.length === 0) {
     return (
@@ -31,12 +44,45 @@ export default function CompareBoard({ summaryList }: CompareBoardProps) {
     <div className="compare-board">
       <div className="compare-board__header">
         <h4>比較板</h4>
+        <div className="compare-view-toggle" role="group" aria-label="顯示模式">
+          <button
+            type="button"
+            className={`compare-view-btn${statView === 'table' ? ' compare-view-btn--active' : ''}`}
+            onClick={() => setStatView('table')}
+            aria-pressed={statView === 'table'}
+          >
+            表格
+          </button>
+          <button
+            type="button"
+            className={`compare-view-btn${statView === 'radar' ? ' compare-view-btn--active' : ''}`}
+            onClick={() => setStatView('radar')}
+            aria-pressed={statView === 'radar'}
+          >
+            雷達圖
+          </button>
+        </div>
         <button type="button" className="workspace-btn workspace-btn--clear" onClick={clearCompare}>
           清除全部
         </button>
       </div>
 
-      <div className="compare-board__scroll">
+      {statView === 'radar' && (
+        <div className="compare-radar-wrap">
+          {members.map((m, i) => (
+            <div key={m.speciesId} className="compare-radar-item">
+              <img src={m.sprite} alt={m.nameZhHant} className="compare-radar-sprite" />
+              <div className="compare-radar-label">{m.nameZhHant}</div>
+              <StatRadarChart
+                stats={toStatEntries(m)}
+                compareStats={i === 0 ? undefined : toStatEntries(members[0])}
+              />
+            </div>
+          ))}
+        </div>
+      )}
+
+      <div className={`compare-board__scroll${statView === 'radar' ? ' compare-board__scroll--hidden' : ''}`}>
         <table className="compare-table">
           <thead>
             <tr>

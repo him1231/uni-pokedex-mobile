@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useMovesList } from '@/hooks/usePokemonList'
 import { useMoveDetail } from '@/hooks/useMoveDetail'
 import type { MoveSummary } from '@/types/moves'
@@ -26,6 +26,7 @@ const TYPE_LABELS: Record<string, string> = {
 }
 
 export default function MoveDexPage() {
+  useEffect(() => { document.title = '招式圖鑑 | Uni 圖鑑' }, [])
   const { data: movesList = [], isLoading: listLoading } = useMovesList()
 
   const [moveQuery, setMoveQuery] = useState('')

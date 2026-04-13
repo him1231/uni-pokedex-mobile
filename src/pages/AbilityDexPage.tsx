@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useAbilitiesList } from '@/hooks/usePokemonList'
 import { useAbilityDetail } from '@/hooks/useAbilityDetail'
@@ -21,6 +21,7 @@ function sortByGenerationOrder(arr: string[]): string[] {
 }
 
 export default function AbilityDexPage() {
+  useEffect(() => { document.title = '特性圖鑑 | Uni 圖鑑' }, [])
   const { data: abilitiesList = [], isLoading: listLoading } = useAbilitiesList()
 
   const [abilityQuery, setAbilityQuery] = useState('')

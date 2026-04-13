@@ -258,3 +258,113 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 @media (min-width:720px){
   .detail-section.stats .stat-label{width:96px}
 }
+
+/* ===================== M5 / M6 additions ===================== */
+
+/* Version pills */
+.version-pill{display:inline-block;padding:2px 7px;border-radius:12px;font-size:11px;font-weight:700;line-height:1.4;white-space:nowrap}
+.version-pill--scarlet{background:#e74c3c;color:#fff}
+.version-pill--violet{background:#8e44ad;color:#fff}
+
+/* Stats view toggle (bars / radar) in PokemonDetailPage */
+.stats-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.stats-view-toggle{display:flex;gap:3px;background:#e5e7eb;border-radius:8px;padding:3px}
+.stats-view-btn{padding:4px 12px;border-radius:6px;border:none;background:transparent;font-size:13px;cursor:pointer;font-weight:600;color:#6b7280}
+.stats-view-btn.is-active{background:#fff;color:var(--accent);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.stat-radar-wrap{display:flex;justify-content:center;padding:8px 0}
+
+/* CompareBoard radar view */
+.compare-board__header{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 12px;border-bottom:1px solid #f3f4f6}
+.compare-view-toggle{display:flex;gap:3px;background:#e5e7eb;border-radius:8px;padding:3px;margin-right:auto}
+.compare-view-btn{padding:3px 10px;border-radius:6px;border:none;background:transparent;font-size:12px;cursor:pointer;font-weight:600;color:#6b7280}
+.compare-view-btn--active{background:#fff;color:var(--accent);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.compare-radar-wrap{display:flex;flex-wrap:wrap;gap:12px;padding:12px;justify-content:center}
+.compare-radar-item{display:flex;flex-direction:column;align-items:center;gap:6px}
+.compare-radar-sprite{width:56px;height:56px;object-fit:contain}
+.compare-radar-label{font-size:12px;font-weight:700;color:#374151}
+.compare-board__scroll--hidden{display:none}
+
+/* DexPage presets bar */
+.presets-bar{display:flex;flex-wrap:wrap;gap:6px;padding:6px 0;align-items:center}
+.preset-chip{display:flex;align-items:center;background:#ede9fe;border-radius:14px;overflow:hidden;border:1px solid #c4b5fd}
+.preset-chip__label{padding:3px 8px;border:none;background:transparent;font-size:12px;cursor:pointer;font-weight:600;color:#6d28d9}
+.preset-chip__del{padding:3px 6px;border:none;background:transparent;font-size:11px;cursor:pointer;color:#9ca3af}
+.preset-chip__del:hover{color:#ef4444}
+.preset-save-btn{padding:4px 10px;border:1px dashed #c4b5fd;border-radius:14px;background:transparent;font-size:12px;cursor:pointer;color:#7c3aed}
+
+/* DexPage result-mode toggle */
+.result-mode-toggle{display:flex;gap:4px;align-items:center;padding:4px 0}
+.result-mode-btn{padding:4px 12px;border-radius:8px;border:1px solid #e5e7eb;background:#fff;font-size:12px;cursor:pointer;color:#6b7280;font-weight:600}
+.result-mode-btn--active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.result-mode-count{margin-left:8px;font-size:12px;color:#9ca3af}
+
+/* DexPage list / thumb cell */
+.list-row{display:flex;align-items:center;gap:10px;cursor:pointer;background:#fff;border-bottom:1px solid #f3f4f6;padding:6px 12px;outline-offset:2px;width:100%}
+.list-row:hover,.list-row:focus{background:#f5f3ff}
+.list-row__sprite{width:44px;height:44px;object-fit:contain;flex-shrink:0}
+.list-row__info{flex:1;min-width:0}
+.list-row__id{font-size:11px;color:#9ca3af;margin-right:6px}
+.list-row__name{font-weight:700;font-size:14px;color:#1f2937}
+.list-row__types{display:flex;gap:4px;flex-shrink:0}
+.thumb-cell{display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;background:#fff;border:1px solid #f3f4f6;border-radius:8px;padding:4px 2px;outline-offset:2px;width:100%;height:100%;box-sizing:border-box}
+.thumb-cell:hover,.thumb-cell:focus{background:#f5f3ff}
+.thumb-cell__sprite{width:52px;height:52px;object-fit:contain}
+.thumb-cell__name{font-size:10px;color:#374151;text-align:center;line-height:1.2;word-break:keep-all}
+
+/* HomeCheckerPage */
+.hc-page{padding:12px}
+.hc-header{margin-bottom:12px}
+.hc-mode-toggle{display:flex;gap:6px;margin-top:8px}
+.hc-mode-btn{padding:5px 14px;border-radius:8px;border:1px solid #e5e7eb;background:#fff;font-size:13px;cursor:pointer;font-weight:600;color:#374151}
+.hc-mode-btn--active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.hc-search-section{display:flex;flex-direction:column;gap:10px}
+.hc-search-row{display:flex;gap:8px}
+.hc-search-input{flex:1;padding:8px 12px;border-radius:8px;border:1px solid #e5e7eb;font-size:14px}
+.hc-result-card{border:1px solid #e5e7eb;border-radius:10px;padding:14px;background:#fff}
+.hc-result-header{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.hc-result-sprite{width:72px;height:72px;object-fit:contain}
+.hc-result-name{font-size:18px;font-weight:700;color:#1f2937}
+.hc-no-route{background:#fef2f2;border:1px solid #fca5a5;border-radius:10px;padding:14px;color:#991b1b}
+.hc-route-card{border:1px solid #d1fae5;border-radius:10px;padding:14px;background:#f0fdf4}
+.hc-route-card__title{font-weight:700;margin-bottom:10px;color:#065f46}
+.hc-method{padding:6px 10px;background:#ecfdf5;border-radius:6px;margin-bottom:6px;border:1px solid #a7f3d0}
+.hc-method-label{font-weight:700;font-size:13px}
+.hc-method-notes{font-size:12px;color:#374151;margin-top:3px}
+.hc-full-section{margin-top:12px}
+.hc-group-controls{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.hc-group-controls select{padding:5px 10px;border-radius:6px;border:1px solid #e5e7eb}
+.hc-group-label{font-size:13px;color:#6b7280}
+.hc-group-header{font-weight:700;font-size:14px;color:#374151;background:#f9fafb;padding:6px 10px;border-radius:6px;margin:12px 0 6px 0}
+.hc-full-list{display:flex;flex-direction:column;gap:4px}
+.hc-full-row{display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid #f3f4f6;border-radius:8px;background:#fff}
+.hc-full-row__sprite{width:44px;height:44px;object-fit:contain}
+.hc-full-row__info{flex:1}
+.hc-full-row__name{font-weight:700;font-size:13px}
+.hc-full-row__method{font-size:11px;color:#6b7280;margin-top:2px}
+.hc-full-row--no-route{background:#fef2f2}
+.hc-no-support-badge{font-size:11px;color:#991b1b;background:#fee2e2;border-radius:4px;padding:2px 6px}
+.hc-last-updated{font-size:11px;color:#9ca3af;margin-top:4px}
+
+/* VPPlannerPage */
+.vp-page{padding:12px}
+.vp-header{margin-bottom:12px}
+.vp-header h2{margin:0 0 4px 0;font-size:20px;font-weight:700}
+.vp-controls{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.vp-search-input{flex:1;min-width:160px;padding:8px 12px;border-radius:8px;border:1px solid #e5e7eb;font-size:14px}
+.vp-budget-input{width:110px;padding:8px 12px;border-radius:8px;border:1px solid #e5e7eb;font-size:14px}
+.vp-unknown-toggle{display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer}
+.vp-sort-bar{display:flex;gap:6px;align-items:center;margin-bottom:8px}
+.vp-sort-btn{padding:4px 10px;border-radius:6px;border:1px solid #e5e7eb;background:#fff;font-size:12px;cursor:pointer;font-weight:600;color:#6b7280}
+.vp-sort-btn--active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.vp-total{font-size:13px;color:#6d28d9;font-weight:600;margin-left:auto}
+.vp-table{width:100%;border-collapse:collapse;font-size:13px}
+.vp-table th{padding:8px 6px;border-bottom:2px solid #e5e7eb;text-align:left;font-weight:700;background:#f9fafb}
+.vp-table td{padding:7px 6px;border-bottom:1px solid #f3f4f6;vertical-align:middle}
+.vp-table tr:hover td{background:#f5f3ff}
+.vp-row--unknown{background:#fffbeb}
+.vp-unknown{color:#d97706;font-style:italic;font-size:12px}
+.vp-known{font-weight:700;color:#1f2937}
+.vp-sprite{width:36px;height:36px;object-fit:contain}
+.vp-name-link{color:#4f46e5;font-weight:600;text-decoration:none}
+.vp-name-link:hover{text-decoration:underline}
+.vp-last-updated{font-size:11px;color:#9ca3af;margin-top:8px}

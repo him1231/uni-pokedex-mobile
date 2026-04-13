@@ -10,17 +10,17 @@
 
 ## Acceptance Criteria
 - [ ] TypeScript throughout — all new/migrated files `.ts`/`.tsx`, zero `any` in new code
-- [ ] Multi-page routing: `/`(圖鑑), `/pokemon/:id`, `/moves`, `/abilities`, `/team`, `/home-checker`
-- [ ] Champions dex shows 186 curated species + regional forms; non-Champions Pokémon visually marked
-- [ ] Pokémon detail page: sprite, types, stats, abilities, evolutions, moves, type-chart, HOME eligibility, form/Mega tabs
-- [ ] MoveDex and AbilityDex are standalone pages (not modals)
-- [ ] Team builder: 6 slots, persisted to localStorage, with type coverage and weakness matrix
-- [ ] Compare board: 2–6 Pokémon side-by-side with stat highlighting
-- [ ] HOME Transfer Checker page using curated data
-- [ ] API responses cached by TanStack Query — no duplicate calls for same resource
-- [ ] List virtualized (no 1025+ DOM nodes dumped at once)
-- [ ] All UI copy in zh-Hant
-- [ ] All existing features preserved (search, gen/type/version filters, sort, favorites)
+- [x] Multi-page routing: `/`(圖鑑), `/pokemon/:id`, `/moves`, `/abilities`, `/team`, `/home-checker`, `/vp-planner`
+- [x] Champions dex shows 186 curated species + regional forms; non-Champions Pokémon visually marked
+- [x] Pokémon detail page: sprite, types, stats, abilities, evolutions, moves, type-chart, HOME eligibility, form/Mega tabs
+- [x] MoveDex and AbilityDex are standalone pages (not modals)
+- [x] Team builder: 6 slots, persisted to localStorage, with type coverage and weakness matrix
+- [x] Compare board: 2–6 Pokémon side-by-side with stat highlighting
+- [x] HOME Transfer Checker page using curated data
+- [x] API responses cached by TanStack Query — no duplicate calls for same resource
+- [x] List virtualized (no 1025+ DOM nodes dumped at once)
+- [x] All UI copy in zh-Hant
+- [x] All existing features preserved (search, gen/type/version filters, sort, favorites)
 - [ ] Keyboard-navigable, WCAG AA contrast throughout
 - [ ] GitHub Pages deployable; all routes work on direct URL access
 
@@ -156,34 +156,34 @@
 ## Milestone 5 — Battle Tools
 
 ### Step 18: HOME Transfer Checker page
-- [ ] `src/pages/HomeCheckerPage.tsx` — search by name/ID, shows transfer routes
-- [ ] Full-list mode grouped by `fromGame`
-- [ ] Displays `lastUpdated` note
+- [x] `src/pages/HomeCheckerPage.tsx` — search by name/ID, shows transfer routes
+- [x] Full-list mode grouped by `fromGame`
+- [x] Displays `lastUpdated` note
 
 ### Step 19: VP Recruiting Planner (static guide)
-- [ ] `public/data/vp-recruitment.json` authored from official Champions data
-- [ ] `src/pages/VPPlannerPage.tsx` — filterable/sortable table with VP budget input
-- [ ] `vpCost: null` entries display "資料待確認"
+- [x] `public/data/vp-recruitment.json` authored from official Champions data
+- [x] `src/pages/VPPlannerPage.tsx` — filterable/sortable table with VP budget input
+- [x] `vpCost: null` entries display "資料待確認"
 
 ---
 
 ## Milestone 6 — Visual Analysis & Accessibility
 
 ### Step 20: SVG stat radar chart
-- [ ] `src/components/pokemon/StatRadarChart.tsx` — pure SVG, 6 axes
-- [ ] Used in `PokemonDetailPage` (toggle with bars) and `CompareBoard` (multi-overlay)
-- [ ] `aria-label` with stat values for screen readers
+- [x] `src/components/pokemon/StatRadarChart.tsx` — pure SVG, 6 axes
+- [x] Used in `PokemonDetailPage` (toggle with bars) and `CompareBoard` (multi-overlay)
+- [x] `aria-label` with stat values for screen readers
 
 ### Step 21: Filter presets + result modes
-- [ ] "儲存搜尋條件" saves up to 5 presets to localStorage
-- [ ] Result-mode toggle: 卡片 / 列表 / 縮略
+- [x] "儲存搜尋條件" saves up to 5 presets to localStorage
+- [x] Result-mode toggle: 卡片 / 列表 / 縮略
 
 ### Step 22: Accessibility audit
-- [ ] ARIA roles, `aria-label`, `aria-expanded` on all interactive panels
-- [ ] All interactions reachable via keyboard (Tab + Enter/Space)
+- [x] ARIA roles, `aria-label`, `aria-expanded` on all interactive panels
+- [x] All interactions reachable via keyboard (Tab + Enter/Space)
 - [ ] WCAG AA contrast verified for all 18 type badge colors
-- [ ] Per-route `<title>` in zh-Hant
-- [ ] Fix `version-pill--scarlet` / `version-pill--violet` CSS classes
+- [x] Per-route `<title>` in zh-Hant
+- [x] Fix `version-pill--scarlet` / `version-pill--violet` CSS classes
 
 ---
 

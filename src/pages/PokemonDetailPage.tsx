@@ -6,6 +6,7 @@ import { useTypeEffectiveness } from '@/hooks/useTypeEffectiveness'
 import { useWorkspaceStore } from '@/store/workspaceStore'
 import FormTabStrip from '@/components/pokemon/FormTabStrip'
 import StatBars from '@/components/pokemon/StatBars'
+import StatRadarChart from '@/components/pokemon/StatRadarChart'
 import EvolutionChain from '@/components/pokemon/EvolutionChain'
 import MoveTable from '@/components/pokemon/MoveTable'
 import TypeEffectivenessChart from '@/components/pokemon/TypeEffectivenessChart'
@@ -30,6 +31,15 @@ export default function PokemonDetailPage() {
     if (pokemonId) addRecent(pokemonId)
   }, [pokemonId, addRecent])
 
+  // Per-route page title
+  useEffect(() => {
+    if (summary) {
+      document.title = `${summary.nameZhHant} | Uni 圖鑑`
+    } else {
+      document.title = 'Uni 圖鑑'
+    }
+  }, [summary])
+
   const summary = useMemo(
     () => list.find((p) => (p.speciesId || p.id) === pokemonId),
     [list, pokemonId],
@@ -41,6 +51,7 @@ export default function PokemonDetailPage() {
 
   // Form tab — null means use base species slug
   const [activeFormSlug, setActiveFormSlug] = useState<string | null>(null)
+  const [statView, setStatView] = useState<'bars' | 'radar'>('bars')
   const resolvedSlug = activeFormSlug ?? summary?.slug ?? pokemonId
 
   const { data: detail, isLoading, isError } = usePokemonDetail(resolvedSlug)
@@ -151,8 +162,34 @@ export default function PokemonDetailPage() {
             />
 
             <section className="detail-section stats">
-              <h3>種族值</h3>
-              <StatBars stats={detail.stats} />
+              <div className="stats-header">
+                <h3>種族值</h3>
+                <div className="stats-view-toggle" role="group" aria-label="種族值顯示方式">
+                  <button
+                    type="button"
+                    className={`stats-view-btn${statView === 'bars' ? ' is-active' : ''}`}
+                    onClick={() => setStatView('bars')}
+                    aria-pressed={statView === 'bars'}
+                  >
+                    列表
+                  </button>
+                  <button
+                    type="button"
+                    className={`stats-view-btn${statView === 'radar' ? ' is-active' : ''}`}
+                    onClick={() => setStatView('radar')}
+                    aria-pressed={statView === 'radar'}
+                  >
+                    雷達圖
+                  </button>
+                </div>
+              </div>
+              {statView === 'bars' ? (
+                <StatBars stats={detail.stats} />
+              ) : (
+                <div className="stat-radar-wrap">
+                  <StatRadarChart stats={detail.stats} />
+                </div>
+              )}
             </section>
 
             <section className="detail-section abilities">

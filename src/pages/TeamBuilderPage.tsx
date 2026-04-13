@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useWorkspaceStore } from '@/store/workspaceStore'
 import { usePokemonList } from '@/hooks/usePokemonList'
@@ -113,6 +113,7 @@ function TeamSlot({
 }
 
 export default function TeamBuilderPage() {
+  useEffect(() => { document.title = '隊伍建立 | Uni 圖鑑' }, [])
   const team = useWorkspaceStore((s) => s.team)
   const clearTeam = useWorkspaceStore((s) => s.clearTeam)
   const { data: list = [] } = usePokemonList()

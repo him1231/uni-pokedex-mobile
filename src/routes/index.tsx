@@ -6,6 +6,7 @@ import MoveDexPage from '@/pages/MoveDexPage'
 import AbilityDexPage from '@/pages/AbilityDexPage'
 import TeamBuilderPage from '@/pages/TeamBuilderPage'
 import HomeCheckerPage from '@/pages/HomeCheckerPage'
+import VPPlannerPage from '@/pages/VPPlannerPage'
 
 export const router = createBrowserRouter(
   [
@@ -19,6 +20,7 @@ export const router = createBrowserRouter(
         { path: 'abilities', element: <AbilityDexPage /> },
         { path: 'team', element: <TeamBuilderPage /> },
         { path: 'home-checker', element: <HomeCheckerPage /> },
+        { path: 'vp-planner', element: <VPPlannerPage /> },
       ],
     },
   ],
